@@ -1,0 +1,25 @@
+D:\code\IKAVA Systembehandler\IKAVA Systembehandler\bin\Release\IKAVA Systembehandler.exe.config
+D:\code\IKAVA Systembehandler\IKAVA Systembehandler\bin\Release\settings.xml
+D:\code\IKAVA Systembehandler\IKAVA Systembehandler\bin\Release\IKAVA Systembehandler.exe.manifest
+D:\code\IKAVA Systembehandler\IKAVA Systembehandler\bin\Release\IKAVA Systembehandler.application
+D:\code\IKAVA Systembehandler\IKAVA Systembehandler\bin\Release\IKAVA Systembehandler.exe
+D:\code\IKAVA Systembehandler\IKAVA Systembehandler\bin\Release\IKAVA Systembehandler.pdb
+D:\code\IKAVA Systembehandler\IKAVA Systembehandler\bin\Release\IKAVA DBConnectionHandler.dll
+D:\code\IKAVA Systembehandler\IKAVA Systembehandler\bin\Release\IKAVA_MSSql.dll
+D:\code\IKAVA Systembehandler\IKAVA Systembehandler\bin\Release\IKAVA_MySql.dll
+D:\code\IKAVA Systembehandler\IKAVA Systembehandler\bin\Release\IKAVA_Tools.dll
+D:\code\IKAVA Systembehandler\IKAVA Systembehandler\bin\Release\MySql.Data.dll
+D:\code\IKAVA Systembehandler\IKAVA Systembehandler\bin\Release\IKAVA DBConnectionHandler.pdb
+D:\code\IKAVA Systembehandler\IKAVA Systembehandler\bin\Release\IKAVA_MSSql.pdb
+D:\code\IKAVA Systembehandler\IKAVA Systembehandler\bin\Release\IKAVA_MySql.pdb
+D:\code\IKAVA Systembehandler\IKAVA Systembehandler\bin\Release\IKAVA_Tools.pdb
+D:\code\IKAVA Systembehandler\IKAVA Systembehandler\obj\Release\IKAVA Systembehandler.csprojResolveAssemblyReference.cache
+D:\code\IKAVA Systembehandler\IKAVA Systembehandler\obj\Release\IKAVA_Systembehandler.AboutBox1.resources
+D:\code\IKAVA Systembehandler\IKAVA Systembehandler\obj\Release\IKAVA_Systembehandler.Form1.resources
+D:\code\IKAVA Systembehandler\IKAVA Systembehandler\obj\Release\IKAVA_Systembehandler.Properties.Resources.resources
+D:\code\IKAVA Systembehandler\IKAVA Systembehandler\obj\Release\IKAVA Systembehandler.csproj.GenerateResource.Cache
+D:\code\IKAVA Systembehandler\IKAVA Systembehandler\obj\Release\IKAVA Systembehandler.TrustInfo.xml
+D:\code\IKAVA Systembehandler\IKAVA Systembehandler\obj\Release\IKAVA Systembehandler.exe.manifest
+D:\code\IKAVA Systembehandler\IKAVA Systembehandler\obj\Release\IKAVA Systembehandler.application
+D:\code\IKAVA Systembehandler\IKAVA Systembehandler\obj\Release\IKAVA Systembehandler.exe
+D:\code\IKAVA Systembehandler\IKAVA Systembehandler\obj\Release\IKAVA Systembehandler.pdb

@@ -1,0 +1,5 @@
+C:\Documents and Settings\tormod\Mine dokumenter\Visual Studio 2010\Projects\IKAVA_AnyDoc2PDFAConverter\IKAVA_Logger\obj\Release\ResolveAssemblyReference.cache
+C:\Documents and Settings\tormod\Mine dokumenter\Visual Studio 2010\Projects\IKAVA_AnyDoc2PDFAConverter\IKAVA_Logger\bin\Release\IKAVA_Logger.dll
+C:\Documents and Settings\tormod\Mine dokumenter\Visual Studio 2010\Projects\IKAVA_AnyDoc2PDFAConverter\IKAVA_Logger\bin\Release\IKAVA_Logger.pdb
+C:\Documents and Settings\tormod\Mine dokumenter\Visual Studio 2010\Projects\IKAVA_AnyDoc2PDFAConverter\IKAVA_Logger\obj\Release\IKAVA_Logger.dll
+C:\Documents and Settings\tormod\Mine dokumenter\Visual Studio 2010\Projects\IKAVA_AnyDoc2PDFAConverter\IKAVA_Logger\obj\Release\IKAVA_Logger.pdb

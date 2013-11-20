@@ -1,0 +1,18 @@
+C:\Documents and Settings\tormod\Mine dokumenter\Dropbox\code\IKAVA getASCII GUI\IKAVA_MySql\bin\Debug\IKAVA_MySql.dll
+C:\Documents and Settings\tormod\Mine dokumenter\Dropbox\code\IKAVA getASCII GUI\IKAVA_MySql\bin\Debug\IKAVA_MySql.pdb
+C:\Documents and Settings\tormod\Mine dokumenter\Dropbox\code\IKAVA getASCII GUI\IKAVA_MySql\bin\Debug\MySql.Data.dll
+C:\Documents and Settings\tormod\Mine dokumenter\Dropbox\code\IKAVA getASCII GUI\IKAVA_MySql\obj\Debug\ResolveAssemblyReference.cache
+C:\Documents and Settings\tormod\Mine dokumenter\Dropbox\code\IKAVA getASCII GUI\IKAVA_MySql\obj\Debug\IKAVA_MySql.dll
+C:\Documents and Settings\tormod\Mine dokumenter\Dropbox\code\IKAVA getASCII GUI\IKAVA_MySql\obj\Debug\IKAVA_MySql.pdb
+C:\Code\IKAVA Dokumentuthenter\IKAVA_MySql\bin\Debug\IKAVA_MySql.dll
+C:\Code\IKAVA Dokumentuthenter\IKAVA_MySql\bin\Debug\IKAVA_MySql.pdb
+C:\Code\IKAVA Dokumentuthenter\IKAVA_MySql\bin\Debug\MySql.Data.dll
+C:\Code\IKAVA Dokumentuthenter\IKAVA_MySql\obj\Debug\ResolveAssemblyReference.cache
+C:\Code\IKAVA Dokumentuthenter\IKAVA_MySql\obj\Debug\IKAVA_MySql.dll
+C:\Code\IKAVA Dokumentuthenter\IKAVA_MySql\obj\Debug\IKAVA_MySql.pdb
+O:\Code\IKAVA Dokumentuthenter\IKAVA_MySql\bin\Debug\IKAVA_MySql.dll
+O:\Code\IKAVA Dokumentuthenter\IKAVA_MySql\bin\Debug\IKAVA_MySql.pdb
+O:\Code\IKAVA Dokumentuthenter\IKAVA_MySql\bin\Debug\MySql.Data.dll
+O:\Code\IKAVA Dokumentuthenter\IKAVA_MySql\obj\Debug\IKAVA_MySql.csprojResolveAssemblyReference.cache
+O:\Code\IKAVA Dokumentuthenter\IKAVA_MySql\obj\Debug\IKAVA_MySql.dll
+O:\Code\IKAVA Dokumentuthenter\IKAVA_MySql\obj\Debug\IKAVA_MySql.pdb

@@ -1,0 +1,10 @@
+C:\Documents and Settings\tormod\Mine dokumenter\Visual Studio 2010\Projects\IKAVA_AnyDoc2PDFAConverter\ConsoleApplication1\obj\x86\Debug\ResolveAssemblyReference.cache
+C:\Documents and Settings\tormod\Mine dokumenter\Visual Studio 2010\Projects\IKAVA_AnyDoc2PDFAConverter\ConsoleApplication1\bin\Debug\IKAVA_DialogFinder.dll
+C:\Documents and Settings\tormod\Mine dokumenter\Visual Studio 2010\Projects\IKAVA_AnyDoc2PDFAConverter\ConsoleApplication1\bin\Debug\IKAVA_DialogFinder.pdb
+C:\Documents and Settings\tormod\Mine dokumenter\Visual Studio 2010\Projects\IKAVA_AnyDoc2PDFAConverter\ConsoleApplication1\obj\x86\Debug\IKAVA_DialogFinder.dll
+C:\Documents and Settings\tormod\Mine dokumenter\Visual Studio 2010\Projects\IKAVA_AnyDoc2PDFAConverter\ConsoleApplication1\obj\x86\Debug\IKAVA_DialogFinder.pdb
+F:\tormod\Projects\IKAVA_AnyDoc2PDFAConverter\ConsoleApplication1\bin\Debug\IKAVA_DialogFinder.dll
+F:\tormod\Projects\IKAVA_AnyDoc2PDFAConverter\ConsoleApplication1\bin\Debug\IKAVA_DialogFinder.pdb
+F:\tormod\Projects\IKAVA_AnyDoc2PDFAConverter\ConsoleApplication1\obj\x86\Debug\IKAVA_DialogFinder.csprojResolveAssemblyReference.cache
+F:\tormod\Projects\IKAVA_AnyDoc2PDFAConverter\ConsoleApplication1\obj\x86\Debug\IKAVA_DialogFinder.dll
+F:\tormod\Projects\IKAVA_AnyDoc2PDFAConverter\ConsoleApplication1\obj\x86\Debug\IKAVA_DialogFinder.pdb

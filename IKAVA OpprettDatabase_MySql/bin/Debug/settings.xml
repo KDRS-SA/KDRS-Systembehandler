@@ -1,0 +1,8 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<settings>
+  <servertype>0</servertype>
+  <server>localhost</server>
+  <user>root</user>
+  <pass>root</pass>
+  <MySqlDumpExe>c:\program files\mysqls\mysql server 5.6\bin\mysqldump.exe</MySqlDumpExe>
+</settings>

@@ -1,0 +1,16 @@
+O:\Code\IKAVA Dokumentuthenter\IKAVA_MSSql\bin\Debug\IKAVA_MSSql.dll
+O:\Code\IKAVA Dokumentuthenter\IKAVA_MSSql\bin\Debug\IKAVA_MSSql.pdb
+O:\Code\IKAVA Dokumentuthenter\IKAVA_MSSql\obj\Debug\IKAVA MSSql.csprojResolveAssemblyReference.cache
+O:\Code\IKAVA Dokumentuthenter\IKAVA_MSSql\obj\Debug\IKAVA_MSSql.dll
+O:\Code\IKAVA Dokumentuthenter\IKAVA_MSSql\obj\Debug\IKAVA_MSSql.pdb
+O:\Code\IKAVA Dokumentuthenter\IKAVA Systembehandler\bin\Debug\IKAVA_MSSql.dll
+O:\Code\IKAVA Dokumentuthenter\IKAVA Systembehandler\bin\Debug\IKAVA_MSSql.pdb
+D:\code\IKAVA Systembehandler\IKAVA_MSSql\obj\Debug\IKAVA MSSql.csprojResolveAssemblyReference.cache
+D:\code\IKAVA Systembehandler\IKAVA_MSSql\obj\Debug\IKAVA_MSSql.dll
+D:\code\IKAVA Systembehandler\IKAVA_MSSql\obj\Debug\IKAVA_MSSql.pdb
+D:\code\IKAVA Systembehandler\IKAVA Systembehandler\bin\Debug\IKAVA MSSql.dll
+D:\code\IKAVA Systembehandler\IKAVA Systembehandler\bin\Debug\IKAVA MSSql.pdb
+D:\code\IKAVA Systembehandler\IKAVA MSSql\obj\Debug\IKAVA MSSql.dll
+D:\code\IKAVA Systembehandler\IKAVA MSSql\obj\Debug\IKAVA MSSql.pdb
+D:\code\IKAVA Systembehandler\Programfiler\IKAVA MSSql.dll
+D:\code\IKAVA Systembehandler\Programfiler\IKAVA MSSql.pdb

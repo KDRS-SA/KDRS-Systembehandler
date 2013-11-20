@@ -1,0 +1,11 @@
+D:\code\IKAVA Systembehandler\IKAVA FireBirdBlobExtractor\obj\x86\Release\IKAVA FireBirdBlobExtractor.csprojResolveAssemblyReference.cache
+D:\code\IKAVA Systembehandler\IKAVA FireBirdBlobExtractor\obj\x86\Release\IKAVA_Systembehandler.Plugins.FirebirdBlobExtractorControl.resources
+D:\code\IKAVA Systembehandler\IKAVA FireBirdBlobExtractor\obj\x86\Release\FireBirdBlobExtractor.Properties.Resources.resources
+D:\code\IKAVA Systembehandler\IKAVA FireBirdBlobExtractor\obj\x86\Release\IKAVA FireBirdBlobExtractor.csproj.GenerateResource.Cache
+D:\code\IKAVA Systembehandler\IKAVA FireBirdBlobExtractor\bin\Release\IKAVA FireBirdBlobExtractor.dll.config
+D:\code\IKAVA Systembehandler\IKAVA FireBirdBlobExtractor\bin\Release\IKAVA FireBirdBlobExtractor.dll
+D:\code\IKAVA Systembehandler\IKAVA FireBirdBlobExtractor\bin\Release\IKAVA FireBirdBlobExtractor.pdb
+D:\code\IKAVA Systembehandler\IKAVA FireBirdBlobExtractor\bin\Release\FirebirdSql.Data.FirebirdClient.dll
+D:\code\IKAVA Systembehandler\IKAVA FireBirdBlobExtractor\bin\Release\FirebirdSql.Data.FirebirdClient.pdb
+D:\code\IKAVA Systembehandler\IKAVA FireBirdBlobExtractor\obj\x86\Release\IKAVA FireBirdBlobExtractor.dll
+D:\code\IKAVA Systembehandler\IKAVA FireBirdBlobExtractor\obj\x86\Release\IKAVA FireBirdBlobExtractor.pdb

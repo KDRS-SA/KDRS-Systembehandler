@@ -1,0 +1,97 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{7D193CC3-729F-4CA8-B3AC-A9BA9191D920}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>IKAVA_Tabelleksport</RootNamespace>
+    <AssemblyName>IKAVA Tabelleksport</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>..\Programfiler\Plugins\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="IKAVA_TableFunctionsControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="IKAVA_TableFunctionsControl.Designer.cs">
+      <DependentUpon>IKAVA_TableFunctionsControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="TabellEksport.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="TabellEksport.Designer.cs">
+      <DependentUpon>TabellEksport.cs</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="IKAVA_TableFunctionsControl.resx">
+      <DependentUpon>IKAVA_TableFunctionsControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TabellEksport.resx">
+      <DependentUpon>TabellEksport.cs</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\IKAVA DBConnectionHandler\IKAVA DBConnectionHandler.csproj">
+      <Project>{49a48f47-13b9-48ef-b765-66bbd2da87bf}</Project>
+      <Name>IKAVA DBConnectionHandler</Name>
+      <Private>False</Private>
+    </ProjectReference>
+    <ProjectReference Include="..\IKAVA Logger\IKAVA Logger.csproj">
+      <Project>{4bacc5cd-05e8-4f26-b059-297c1b19ac3b}</Project>
+      <Name>IKAVA Logger</Name>
+      <Private>False</Private>
+    </ProjectReference>
+    <ProjectReference Include="..\IKAVA Systembehandler Host\IKAVA Systembehandler Host.csproj">
+      <Project>{f1e22eaf-194a-438b-ad12-5ced66205109}</Project>
+      <Name>IKAVA Systembehandler Host</Name>
+      <Private>False</Private>
+    </ProjectReference>
+    <ProjectReference Include="..\IKAVA Tools\IKAVA Tools.csproj">
+      <Project>{d4752f25-6049-4dfb-b979-79eb10a75e92}</Project>
+      <Name>IKAVA Tools</Name>
+      <Private>False</Private>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

@@ -1,0 +1,17 @@
+O:\Code\IKAVA Dokumentuthenter\IKAVA_MySql\obj\Debug\IKAVA MySql.csprojResolveAssemblyReference.cache
+O:\Code\IKAVA Dokumentuthenter\IKAVA_MySql\obj\Debug\IKAVA_MySql.dll
+O:\Code\IKAVA Dokumentuthenter\IKAVA_MySql\obj\Debug\IKAVA_MySql.pdb
+O:\Code\IKAVA Dokumentuthenter\IKAVA_MySql\bin\Debug\IKAVA_MySql.dll
+O:\Code\IKAVA Dokumentuthenter\IKAVA_MySql\bin\Debug\IKAVA_MySql.pdb
+O:\Code\IKAVA Dokumentuthenter\IKAVA_MySql\bin\Debug\MySql.Data.dll
+O:\Code\IKAVA Dokumentuthenter\IKAVA Systembehandler\bin\Debug\IKAVA_MySql.dll
+O:\Code\IKAVA Dokumentuthenter\IKAVA Systembehandler\bin\Debug\IKAVA_MySql.pdb
+D:\code\IKAVA Systembehandler\IKAVA_MySql\obj\Debug\IKAVA_MySql.dll
+D:\code\IKAVA Systembehandler\IKAVA_MySql\obj\Debug\IKAVA_MySql.pdb
+D:\code\IKAVA Systembehandler\IKAVA_MySql\obj\Debug\IKAVA MySql.csprojResolveAssemblyReference.cache
+D:\code\IKAVA Systembehandler\IKAVA Systembehandler\bin\Debug\IKAVA MySql.dll
+D:\code\IKAVA Systembehandler\IKAVA Systembehandler\bin\Debug\IKAVA MySql.pdb
+D:\code\IKAVA Systembehandler\IKAVA MySql\obj\Debug\IKAVA MySql.dll
+D:\code\IKAVA Systembehandler\IKAVA MySql\obj\Debug\IKAVA MySql.pdb
+D:\code\IKAVA Systembehandler\Programfiler\IKAVA MySql.dll
+D:\code\IKAVA Systembehandler\Programfiler\IKAVA MySql.pdb

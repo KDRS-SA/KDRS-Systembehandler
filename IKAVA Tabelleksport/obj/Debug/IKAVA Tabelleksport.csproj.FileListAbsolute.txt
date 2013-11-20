@@ -1,0 +1,24 @@
+D:\code\IKAVA Systembehandler\IKAVA Tabelleksport\bin\Debug\IKAVA Tabelleksport.dll
+D:\code\IKAVA Systembehandler\IKAVA Tabelleksport\bin\Debug\IKAVA Tabelleksport.pdb
+D:\code\IKAVA Systembehandler\IKAVA Tabelleksport\obj\Debug\IKAVA Tabelleksport.dll
+D:\code\IKAVA Systembehandler\IKAVA Tabelleksport\obj\Debug\IKAVA Tabelleksport.pdb
+D:\code\IKAVA Systembehandler\IKAVA Tabelleksport\bin\Debug\settings.xml
+D:\code\IKAVA Systembehandler\IKAVA Tabelleksport\bin\Debug\IKAVA DBConnectionHandler.dll
+D:\code\IKAVA Systembehandler\IKAVA Tabelleksport\bin\Debug\IKAVA Systembehandler.exe
+D:\code\IKAVA Systembehandler\IKAVA Tabelleksport\bin\Debug\IKAVA_Tools.dll
+D:\code\IKAVA Systembehandler\IKAVA Tabelleksport\bin\Debug\IKAVA_MySql.dll
+D:\code\IKAVA Systembehandler\IKAVA Tabelleksport\bin\Debug\IKAVA_MSSql.dll
+D:\code\IKAVA Systembehandler\IKAVA Tabelleksport\bin\Debug\MySql.Data.dll
+D:\code\IKAVA Systembehandler\IKAVA Tabelleksport\bin\Debug\IKAVA DBConnectionHandler.pdb
+D:\code\IKAVA Systembehandler\IKAVA Tabelleksport\bin\Debug\IKAVA Systembehandler.pdb
+D:\code\IKAVA Systembehandler\IKAVA Tabelleksport\bin\Debug\IKAVA_Tools.pdb
+D:\code\IKAVA Systembehandler\IKAVA Tabelleksport\bin\Debug\IKAVA_MySql.pdb
+D:\code\IKAVA Systembehandler\IKAVA Tabelleksport\bin\Debug\IKAVA_MSSql.pdb
+D:\code\IKAVA Systembehandler\IKAVA Tabelleksport\obj\Debug\IKAVA Tabelleksport.csprojResolveAssemblyReference.cache
+D:\code\IKAVA Systembehandler\IKAVA Systembehandler\bin\Debug\plugins\IKAVA Tabelleksport.dll
+D:\code\IKAVA Systembehandler\IKAVA Systembehandler\bin\Debug\plugins\IKAVA Tabelleksport.pdb
+D:\code\IKAVA Systembehandler\IKAVA Tabelleksport\obj\Debug\IKAVA Tabelleksport.csproj.GenerateResource.Cache
+D:\code\IKAVA Systembehandler\IKAVA Tabelleksport\obj\Debug\IKAVA_Systembehandler.Plugins.TabellEksport.resources
+D:\code\IKAVA Systembehandler\IKAVA Tabelleksport\obj\Debug\IKAVA_Systembehandler.DB.TableFunctionsControl.resources
+D:\code\IKAVA Systembehandler\Programfiler\Plugins\IKAVA Tabelleksport.dll
+D:\code\IKAVA Systembehandler\Programfiler\Plugins\IKAVA Tabelleksport.pdb

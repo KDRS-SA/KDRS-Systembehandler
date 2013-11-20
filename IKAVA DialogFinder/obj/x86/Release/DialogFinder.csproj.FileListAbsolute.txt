@@ -1,0 +1,5 @@
+C:\Documents and Settings\tormod\Mine dokumenter\Visual Studio 2010\Projects\IKAVA_AnyDoc2PDFAConverter\ConsoleApplication1\bin\Release\DialogFinder.exe
+C:\Documents and Settings\tormod\Mine dokumenter\Visual Studio 2010\Projects\IKAVA_AnyDoc2PDFAConverter\ConsoleApplication1\bin\Release\DialogFinder.pdb
+C:\Documents and Settings\tormod\Mine dokumenter\Visual Studio 2010\Projects\IKAVA_AnyDoc2PDFAConverter\ConsoleApplication1\obj\x86\Release\ResolveAssemblyReference.cache
+C:\Documents and Settings\tormod\Mine dokumenter\Visual Studio 2010\Projects\IKAVA_AnyDoc2PDFAConverter\ConsoleApplication1\obj\x86\Release\DialogFinder.exe
+C:\Documents and Settings\tormod\Mine dokumenter\Visual Studio 2010\Projects\IKAVA_AnyDoc2PDFAConverter\ConsoleApplication1\obj\x86\Release\DialogFinder.pdb

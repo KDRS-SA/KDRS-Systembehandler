@@ -1,0 +1,5 @@
+C:\Documents and Settings\tormod\mine dokumenter\visual studio 2010\Projects\FireBirdBlobExtractor\FireBirdBlobExtractor_New\obj\x86\Release\ResolveAssemblyReference.cache
+C:\Documents and Settings\tormod\mine dokumenter\visual studio 2010\Projects\FireBirdBlobExtractor\FireBirdBlobExtractor_New\bin\Release\FireBirdBlobExtractor_New.exe
+C:\Documents and Settings\tormod\mine dokumenter\visual studio 2010\Projects\FireBirdBlobExtractor\FireBirdBlobExtractor_New\bin\Release\FireBirdBlobExtractor_New.pdb
+C:\Documents and Settings\tormod\mine dokumenter\visual studio 2010\Projects\FireBirdBlobExtractor\FireBirdBlobExtractor_New\obj\x86\Release\FireBirdBlobExtractor_New.exe
+C:\Documents and Settings\tormod\mine dokumenter\visual studio 2010\Projects\FireBirdBlobExtractor\FireBirdBlobExtractor_New\obj\x86\Release\FireBirdBlobExtractor_New.pdb

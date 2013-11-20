@@ -1,0 +1,28 @@
+D:\code\IKAVA Systembehandler\IKAVA Systembehandler\bin\Debug\IKAVA Systembehandler.exe.config
+D:\code\IKAVA Systembehandler\IKAVA Systembehandler\obj\Debug\IKAVA_Systembehandler.AboutBox1.resources
+D:\code\IKAVA Systembehandler\IKAVA Systembehandler\obj\Debug\IKAVA_Systembehandler.Form1.resources
+D:\code\IKAVA Systembehandler\IKAVA Systembehandler\obj\Debug\IKAVA_Systembehandler.Properties.Resources.resources
+D:\code\IKAVA Systembehandler\IKAVA Systembehandler\obj\Debug\IKAVA Systembehandler.csproj.GenerateResource.Cache
+D:\code\IKAVA Systembehandler\IKAVA Systembehandler\bin\Debug\IKAVA Systembehandler.exe
+D:\code\IKAVA Systembehandler\IKAVA Systembehandler\bin\Debug\IKAVA Systembehandler.pdb
+D:\code\IKAVA Systembehandler\IKAVA Systembehandler\obj\Debug\IKAVA Systembehandler.exe
+D:\code\IKAVA Systembehandler\IKAVA Systembehandler\obj\Debug\IKAVA Systembehandler.pdb
+D:\code\IKAVA Systembehandler\IKAVA Systembehandler\bin\Debug\IKAVA Systembehandler.exe.manifest
+D:\code\IKAVA Systembehandler\IKAVA Systembehandler\bin\Debug\IKAVA Systembehandler.application
+D:\code\IKAVA Systembehandler\IKAVA Systembehandler\obj\Debug\IKAVA Systembehandler.TrustInfo.xml
+D:\code\IKAVA Systembehandler\IKAVA Systembehandler\obj\Debug\IKAVA Systembehandler.exe.manifest
+D:\code\IKAVA Systembehandler\IKAVA Systembehandler\obj\Debug\IKAVA Systembehandler.application
+D:\code\IKAVA Systembehandler\IKAVA Systembehandler\bin\Debug\settings.xml
+D:\code\IKAVA Systembehandler\IKAVA Systembehandler\bin\Debug\IKAVA_MSSql.dll
+D:\code\IKAVA Systembehandler\IKAVA Systembehandler\bin\Debug\IKAVA_MySql.dll
+D:\code\IKAVA Systembehandler\IKAVA Systembehandler\bin\Debug\MySql.Data.dll
+D:\code\IKAVA Systembehandler\IKAVA Systembehandler\bin\Debug\IKAVA_MSSql.pdb
+D:\code\IKAVA Systembehandler\IKAVA Systembehandler\bin\Debug\IKAVA_MySql.pdb
+D:\code\IKAVA Systembehandler\IKAVA Systembehandler\bin\Debug\IKAVA DBConnectionHandler.pdb
+D:\code\IKAVA Systembehandler\Programfiler\IKAVA Systembehandler.exe.config
+D:\code\IKAVA Systembehandler\Programfiler\settings.xml
+D:\code\IKAVA Systembehandler\Programfiler\IKAVA Systembehandler.exe.manifest
+D:\code\IKAVA Systembehandler\Programfiler\IKAVA Systembehandler.application
+D:\code\IKAVA Systembehandler\Programfiler\IKAVA Systembehandler.exe
+D:\code\IKAVA Systembehandler\Programfiler\IKAVA Systembehandler.pdb
+D:\code\IKAVA Systembehandler\IKAVA Systembehandler\obj\Debug\IKAVA Systembehandler.csprojResolveAssemblyReference.cache

@@ -1,0 +1,4 @@
+D:\code\IKAVA Systembehandler\IKAVA_AnyDoc2PDFAConverter\IKAVA_Logger\bin\Release\IKAVA_Logger.dll
+D:\code\IKAVA Systembehandler\IKAVA_AnyDoc2PDFAConverter\IKAVA_Logger\bin\Release\IKAVA_Logger.pdb
+D:\code\IKAVA Systembehandler\IKAVA_AnyDoc2PDFAConverter\IKAVA_Logger\obj\Release\IKAVA_Logger.dll
+D:\code\IKAVA Systembehandler\IKAVA_AnyDoc2PDFAConverter\IKAVA_Logger\obj\Release\IKAVA_Logger.pdb

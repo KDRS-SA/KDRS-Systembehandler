@@ -1,0 +1,5 @@
+O:\Code\IKAVA Dokumentuthenter\IKAVA_MSSql\bin\Release\IKAVA_MSSql.dll
+O:\Code\IKAVA Dokumentuthenter\IKAVA_MSSql\bin\Release\IKAVA_MSSql.pdb
+O:\Code\IKAVA Dokumentuthenter\IKAVA_MSSql\obj\Release\IKAVA MSSql.csprojResolveAssemblyReference.cache
+O:\Code\IKAVA Dokumentuthenter\IKAVA_MSSql\obj\Release\IKAVA_MSSql.dll
+O:\Code\IKAVA Dokumentuthenter\IKAVA_MSSql\obj\Release\IKAVA_MSSql.pdb

@@ -1,0 +1,22 @@
+D:\code\IKAVA Systembehandler\IKAVA FireBirdBlobExtractor\obj\x86\Debug\IKAVA FireBirdBlobExtractor.csprojResolveAssemblyReference.cache
+D:\code\IKAVA Systembehandler\IKAVA FireBirdBlobExtractor\obj\x86\Debug\IKAVA_Systembehandler.Plugins.FirebirdBlobExtractorControl.resources
+D:\code\IKAVA Systembehandler\IKAVA FireBirdBlobExtractor\obj\x86\Debug\IKAVA FireBirdBlobExtractor.csproj.GenerateResource.Cache
+D:\code\IKAVA Systembehandler\IKAVA FireBirdBlobExtractor\bin\Debug\settings.xml
+D:\code\IKAVA Systembehandler\IKAVA FireBirdBlobExtractor\bin\Debug\IKAVA_FireBirdBlobExtractor.exe.config
+D:\code\IKAVA Systembehandler\IKAVA FireBirdBlobExtractor\bin\Debug\IKAVA_FireBirdBlobExtractor.exe
+D:\code\IKAVA Systembehandler\IKAVA FireBirdBlobExtractor\bin\Debug\IKAVA_FireBirdBlobExtractor.pdb
+D:\code\IKAVA Systembehandler\IKAVA FireBirdBlobExtractor\bin\Debug\FirebirdSql.Data.FirebirdClient.dll
+D:\code\IKAVA Systembehandler\IKAVA FireBirdBlobExtractor\bin\Debug\IKAVA Systembehandler.exe
+D:\code\IKAVA Systembehandler\IKAVA FireBirdBlobExtractor\bin\Debug\IKAVA_Tools.dll
+D:\code\IKAVA Systembehandler\IKAVA FireBirdBlobExtractor\bin\Debug\IKAVA Systembehandler.pdb
+D:\code\IKAVA Systembehandler\IKAVA FireBirdBlobExtractor\bin\Debug\IKAVA_Tools.pdb
+D:\code\IKAVA Systembehandler\IKAVA FireBirdBlobExtractor\bin\Debug\FirebirdSql.Data.FirebirdClient.pdb
+D:\code\IKAVA Systembehandler\IKAVA FireBirdBlobExtractor\obj\x86\Debug\FireBirdBlobExtractor.Properties.Resources.resources
+D:\code\IKAVA Systembehandler\IKAVA Systembehandler\bin\Debug\plugins\IKAVA FireBirdBlobExtractor.dll.config
+D:\code\IKAVA Systembehandler\IKAVA Systembehandler\bin\Debug\plugins\IKAVA FireBirdBlobExtractor.dll
+D:\code\IKAVA Systembehandler\IKAVA Systembehandler\bin\Debug\plugins\IKAVA FireBirdBlobExtractor.pdb
+D:\code\IKAVA Systembehandler\IKAVA FireBirdBlobExtractor\obj\x86\Debug\IKAVA FireBirdBlobExtractor.dll
+D:\code\IKAVA Systembehandler\IKAVA FireBirdBlobExtractor\obj\x86\Debug\IKAVA FireBirdBlobExtractor.pdb
+D:\code\IKAVA Systembehandler\IKAVA Systembehandler\bin\Debug\plugins\settings.xml
+D:\code\IKAVA Systembehandler\Programfiler\Plugins\IKAVA FireBirdBlobExtractor.dll
+D:\code\IKAVA Systembehandler\Programfiler\Plugins\IKAVA FireBirdBlobExtractor.pdb

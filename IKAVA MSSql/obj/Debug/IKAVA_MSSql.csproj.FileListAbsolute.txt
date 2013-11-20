@@ -1,0 +1,9 @@
+C:\Code\IKAVA Dokumentuthenter\IKAVA_MSSql\bin\Debug\IKAVA_MSSql.dll
+C:\Code\IKAVA Dokumentuthenter\IKAVA_MSSql\bin\Debug\IKAVA_MSSql.pdb
+C:\Code\IKAVA Dokumentuthenter\IKAVA_MSSql\obj\Debug\ResolveAssemblyReference.cache
+C:\Code\IKAVA Dokumentuthenter\IKAVA_MSSql\obj\Debug\IKAVA_MSSql.dll
+C:\Code\IKAVA Dokumentuthenter\IKAVA_MSSql\obj\Debug\IKAVA_MSSql.pdb
+O:\Code\IKAVA Dokumentuthenter\IKAVA_MSSql\bin\Debug\IKAVA_MSSql.dll
+O:\Code\IKAVA Dokumentuthenter\IKAVA_MSSql\bin\Debug\IKAVA_MSSql.pdb
+O:\Code\IKAVA Dokumentuthenter\IKAVA_MSSql\obj\Debug\IKAVA_MSSql.dll
+O:\Code\IKAVA Dokumentuthenter\IKAVA_MSSql\obj\Debug\IKAVA_MSSql.pdb

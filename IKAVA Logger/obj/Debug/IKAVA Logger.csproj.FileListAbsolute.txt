@@ -1,0 +1,18 @@
+F:\tormod\Projects\IKAVA_AnyDoc2PDFAConverter\IKAVA_Logger\bin\Debug\IKAVA_Logger.dll
+F:\tormod\Projects\IKAVA_AnyDoc2PDFAConverter\IKAVA_Logger\bin\Debug\IKAVA_Logger.pdb
+F:\tormod\Projects\IKAVA_AnyDoc2PDFAConverter\IKAVA_Logger\obj\Debug\IKAVA Logger.csprojResolveAssemblyReference.cache
+F:\tormod\Projects\IKAVA_AnyDoc2PDFAConverter\IKAVA_Logger\obj\Debug\IKAVA_Logger.dll
+F:\tormod\Projects\IKAVA_AnyDoc2PDFAConverter\IKAVA_Logger\obj\Debug\IKAVA_Logger.pdb
+D:\code\IKAVA Systembehandler\IKAVA_AnyDoc2PDFAConverter\IKAVA Systembehandler\bin\Debug\IKAVA_Logger.dll
+D:\code\IKAVA Systembehandler\IKAVA_AnyDoc2PDFAConverter\IKAVA Systembehandler\bin\Debug\IKAVA_Logger.pdb
+D:\code\IKAVA Systembehandler\IKAVA_AnyDoc2PDFAConverter\IKAVA_Logger\obj\Debug\IKAVA_Logger.dll
+D:\code\IKAVA Systembehandler\IKAVA_AnyDoc2PDFAConverter\IKAVA_Logger\obj\Debug\IKAVA_Logger.pdb
+D:\code\IKAVA Systembehandler\IKAVA Systembehandler\bin\Debug\IKAVA_Logger.dll
+D:\code\IKAVA Systembehandler\IKAVA Systembehandler\bin\Debug\IKAVA_Logger.pdb
+D:\code\IKAVA Systembehandler\IKAVA_AnyDoc2PDFAConverter\IKAVA_Logger\obj\Debug\IKAVA Logger.csprojResolveAssemblyReference.cache
+D:\code\IKAVA Systembehandler\bin\Debug\IKAVA Logger.dll
+D:\code\IKAVA Systembehandler\bin\Debug\IKAVA Logger.pdb
+D:\code\IKAVA Systembehandler\IKAVA Logger\obj\Debug\IKAVA Logger.dll
+D:\code\IKAVA Systembehandler\IKAVA Logger\obj\Debug\IKAVA Logger.pdb
+D:\code\IKAVA Systembehandler\Programfiler\IKAVA Logger.dll
+D:\code\IKAVA Systembehandler\Programfiler\IKAVA Logger.pdb

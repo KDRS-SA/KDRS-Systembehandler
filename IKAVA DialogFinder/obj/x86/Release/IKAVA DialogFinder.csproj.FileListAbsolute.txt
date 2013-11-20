@@ -1,0 +1,5 @@
+D:\code\IKAVA Systembehandler\IKAVA_AnyDoc2PDFAConverter\ConsoleApplication1\bin\Release\IKAVA_DialogFinder.dll
+D:\code\IKAVA Systembehandler\IKAVA_AnyDoc2PDFAConverter\ConsoleApplication1\bin\Release\IKAVA_DialogFinder.pdb
+D:\code\IKAVA Systembehandler\IKAVA_AnyDoc2PDFAConverter\ConsoleApplication1\obj\x86\Release\IKAVA DialogFinder.csprojResolveAssemblyReference.cache
+D:\code\IKAVA Systembehandler\IKAVA_AnyDoc2PDFAConverter\ConsoleApplication1\obj\x86\Release\IKAVA_DialogFinder.dll
+D:\code\IKAVA Systembehandler\IKAVA_AnyDoc2PDFAConverter\ConsoleApplication1\obj\x86\Release\IKAVA_DialogFinder.pdb

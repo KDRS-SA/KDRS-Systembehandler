@@ -1,0 +1,16 @@
+D:\code\IKAVA Systembehandler\IKAVA Unique\obj\Debug\IKAVA Unique.csprojResolveAssemblyReference.cache
+D:\code\IKAVA Systembehandler\IKAVA Unique\obj\Debug\IKAVA Unique.csproj.GenerateResource.Cache
+D:\code\IKAVA Systembehandler\IKAVA Unique\bin\Debug\IKAVA Unique.dll
+D:\code\IKAVA Systembehandler\IKAVA Unique\bin\Debug\IKAVA Unique.pdb
+D:\code\IKAVA Systembehandler\IKAVA Unique\bin\Debug\IKAVA_MSSql.dll
+D:\code\IKAVA Systembehandler\IKAVA Unique\bin\Debug\IKAVA_MSSql.pdb
+D:\code\IKAVA Systembehandler\IKAVA Unique\obj\Debug\IKAVA Unique.dll
+D:\code\IKAVA Systembehandler\IKAVA Unique\obj\Debug\IKAVA Unique.pdb
+D:\code\IKAVA Systembehandler\IKAVA Unique\obj\Debug\IKAVA_Systembehandler.Plugins.Unique.resources
+D:\code\IKAVA Systembehandler\IKAVA Unique\bin\Debug\IKAVA Systembehandler.exe
+D:\code\IKAVA Systembehandler\IKAVA Unique\bin\Debug\IKAVA Systembehandler.pdb
+D:\code\IKAVA Systembehandler\IKAVA Systembehandler\bin\Debug\plugins\IKAVA Unique.dll
+D:\code\IKAVA Systembehandler\IKAVA Systembehandler\bin\Debug\plugins\IKAVA Unique.pdb
+D:\code\IKAVA Systembehandler\IKAVA Unique\obj\Debug\IKAVA_Unique.Properties.Resources.resources
+D:\code\IKAVA Systembehandler\Programfiler\Plugins\IKAVA Unique.dll
+D:\code\IKAVA Systembehandler\Programfiler\Plugins\IKAVA Unique.pdb
