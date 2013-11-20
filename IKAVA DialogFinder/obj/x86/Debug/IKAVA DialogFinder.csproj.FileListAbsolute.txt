@@ -20,3 +20,7 @@ D:\code\IKAVA Systembehandler\IKAVA DialogFinder\Programfiler\IKAVA DialogFinder
 D:\code\IKAVA Systembehandler\Programfiler\IKAVA DialogFinder.dll
 D:\code\IKAVA Systembehandler\Programfiler\IKAVA DialogFinder.pdb
 D:\code\IKAVA Systembehandler\IKAVA DialogFinder\obj\x86\Debug\IKAVA DialogFinder.csprojResolveAssemblyReference.cache
+C:\code\IKAVA Systembehandler\Programfiler\IKAVA DialogFinder.dll
+C:\code\IKAVA Systembehandler\Programfiler\IKAVA DialogFinder.pdb
+C:\code\IKAVA Systembehandler\IKAVA DialogFinder\obj\x86\Debug\IKAVA DialogFinder.dll
+C:\code\IKAVA Systembehandler\IKAVA DialogFinder\obj\x86\Debug\IKAVA DialogFinder.pdb

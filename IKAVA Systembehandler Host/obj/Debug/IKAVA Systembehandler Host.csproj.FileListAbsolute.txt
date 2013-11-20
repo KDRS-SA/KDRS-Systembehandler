@@ -16,3 +16,19 @@ D:\code\IKAVA Systembehandler\IKAVA Systembehandler\obj\Debug\IKAVA Systembehand
 D:\code\IKAVA Systembehandler\IKAVA Systembehandler\obj\Debug\IKAVA Systembehandler.pdb
 D:\code\IKAVA Systembehandler\IKAVA Systembehandler Host\obj\Debug\IKAVA Systembehandler.exe
 D:\code\IKAVA Systembehandler\IKAVA Systembehandler Host\obj\Debug\IKAVA Systembehandler.pdb
+C:\code\IKAVA Systembehandler\Programfiler\settings.xml
+C:\code\IKAVA Systembehandler\Programfiler\IKAVA Systembehandler.exe.config
+C:\code\IKAVA Systembehandler\Programfiler\IKAVA Systembehandler.exe.manifest
+C:\code\IKAVA Systembehandler\Programfiler\IKAVA Systembehandler.application
+C:\code\IKAVA Systembehandler\Programfiler\IKAVA Systembehandler.exe
+C:\code\IKAVA Systembehandler\Programfiler\IKAVA Systembehandler.pdb
+C:\code\IKAVA Systembehandler\IKAVA Systembehandler Host\obj\Debug\IKAVA Systembehandler Host.csprojResolveAssemblyReference.cache
+C:\code\IKAVA Systembehandler\IKAVA Systembehandler Host\obj\Debug\IKAVA_Systembehandler.AboutBox1.resources
+C:\code\IKAVA Systembehandler\IKAVA Systembehandler Host\obj\Debug\IKAVA_Systembehandler.Form1.resources
+C:\code\IKAVA Systembehandler\IKAVA Systembehandler Host\obj\Debug\IKAVA_Systembehandler.Properties.Resources.resources
+C:\code\IKAVA Systembehandler\IKAVA Systembehandler Host\obj\Debug\IKAVA Systembehandler Host.csproj.GenerateResource.Cache
+C:\code\IKAVA Systembehandler\IKAVA Systembehandler Host\obj\Debug\IKAVA Systembehandler.TrustInfo.xml
+C:\code\IKAVA Systembehandler\IKAVA Systembehandler Host\obj\Debug\IKAVA Systembehandler.exe.manifest
+C:\code\IKAVA Systembehandler\IKAVA Systembehandler Host\obj\Debug\IKAVA Systembehandler.application
+C:\code\IKAVA Systembehandler\IKAVA Systembehandler Host\obj\Debug\IKAVA Systembehandler.exe
+C:\code\IKAVA Systembehandler\IKAVA Systembehandler Host\obj\Debug\IKAVA Systembehandler.pdb

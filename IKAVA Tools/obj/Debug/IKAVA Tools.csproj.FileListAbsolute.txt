@@ -14,3 +14,9 @@ D:\code\IKAVA Systembehandler\IKAVA Tools\obj\Debug\IKAVA Tools.dll
 D:\code\IKAVA Systembehandler\IKAVA Tools\obj\Debug\IKAVA Tools.pdb
 D:\code\IKAVA Systembehandler\Programfiler\IKAVA Tools.dll
 D:\code\IKAVA Systembehandler\Programfiler\IKAVA Tools.pdb
+C:\code\IKAVA Systembehandler\Programfiler\IKAVA Tools.dll
+C:\code\IKAVA Systembehandler\Programfiler\IKAVA Tools.pdb
+C:\code\IKAVA Systembehandler\IKAVA Tools\obj\Debug\IKAVA_Systembehandler.Logg.resources
+C:\code\IKAVA Systembehandler\IKAVA Tools\obj\Debug\IKAVA Tools.csproj.GenerateResource.Cache
+C:\code\IKAVA Systembehandler\IKAVA Tools\obj\Debug\IKAVA Tools.dll
+C:\code\IKAVA Systembehandler\IKAVA Tools\obj\Debug\IKAVA Tools.pdb

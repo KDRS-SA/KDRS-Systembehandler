@@ -22,3 +22,11 @@ D:\code\IKAVA Systembehandler\IKAVA Tabelleksport\obj\Debug\IKAVA_Systembehandle
 D:\code\IKAVA Systembehandler\IKAVA Tabelleksport\obj\Debug\IKAVA_Systembehandler.DB.TableFunctionsControl.resources
 D:\code\IKAVA Systembehandler\Programfiler\Plugins\IKAVA Tabelleksport.dll
 D:\code\IKAVA Systembehandler\Programfiler\Plugins\IKAVA Tabelleksport.pdb
+C:\code\IKAVA Systembehandler\Programfiler\Plugins\IKAVA Tabelleksport.dll
+C:\code\IKAVA Systembehandler\Programfiler\Plugins\IKAVA Tabelleksport.pdb
+C:\code\IKAVA Systembehandler\IKAVA Tabelleksport\obj\Debug\IKAVA Tabelleksport.csprojResolveAssemblyReference.cache
+C:\code\IKAVA Systembehandler\IKAVA Tabelleksport\obj\Debug\IKAVA_Systembehandler.DB.TableFunctionsControl.resources
+C:\code\IKAVA Systembehandler\IKAVA Tabelleksport\obj\Debug\IKAVA_Systembehandler.Plugins.TabellEksport.resources
+C:\code\IKAVA Systembehandler\IKAVA Tabelleksport\obj\Debug\IKAVA Tabelleksport.csproj.GenerateResource.Cache
+C:\code\IKAVA Systembehandler\IKAVA Tabelleksport\obj\Debug\IKAVA Tabelleksport.dll
+C:\code\IKAVA Systembehandler\IKAVA Tabelleksport\obj\Debug\IKAVA Tabelleksport.pdb

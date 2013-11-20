@@ -495,7 +495,6 @@ namespace IKAVA_Systembehandler.Plugins
 
                         foreach (Subdocument s in wordDocument.Subdocuments)
                         {
-                            int retryCounter = 0;
 retry:
                             if (!File.Exists(s.Name))
                             {

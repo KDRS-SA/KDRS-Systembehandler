@@ -6,3 +6,11 @@ D:\code\IKAVA Systembehandler\IKAVA Unique\obj\Release\IKAVA_Systembehandler.Plu
 D:\code\IKAVA Systembehandler\IKAVA Unique\obj\Release\IKAVA Unique.csproj.GenerateResource.Cache
 D:\code\IKAVA Systembehandler\IKAVA Unique\obj\Release\IKAVA Unique.dll
 D:\code\IKAVA Systembehandler\IKAVA Unique\obj\Release\IKAVA Unique.pdb
+C:\code\IKAVA Systembehandler\IKAVA Unique\bin\Release\IKAVA Unique.dll
+C:\code\IKAVA Systembehandler\IKAVA Unique\bin\Release\IKAVA Unique.pdb
+C:\code\IKAVA Systembehandler\IKAVA Unique\obj\Release\IKAVA_Unique.Properties.Resources.resources
+C:\code\IKAVA Systembehandler\IKAVA Unique\obj\Release\IKAVA_Systembehandler.Plugins.Unique.resources
+C:\code\IKAVA Systembehandler\IKAVA Unique\obj\Release\IKAVA Unique.csproj.GenerateResource.Cache
+C:\code\IKAVA Systembehandler\IKAVA Unique\obj\Release\IKAVA Unique.dll
+C:\code\IKAVA Systembehandler\IKAVA Unique\obj\Release\IKAVA Unique.pdb
+C:\code\IKAVA Systembehandler\IKAVA Unique\obj\Release\IKAVA Unique.csprojResolveAssemblyReference.cache

@@ -5,3 +5,11 @@ D:\code\IKAVA Systembehandler\IKAVA Tabelleksport\obj\Release\IKAVA_Systembehand
 D:\code\IKAVA Systembehandler\IKAVA Tabelleksport\obj\Release\IKAVA Tabelleksport.csproj.GenerateResource.Cache
 D:\code\IKAVA Systembehandler\IKAVA Tabelleksport\obj\Release\IKAVA Tabelleksport.dll
 D:\code\IKAVA Systembehandler\IKAVA Tabelleksport\obj\Release\IKAVA Tabelleksport.pdb
+C:\code\IKAVA Systembehandler\IKAVA Tabelleksport\bin\Release\IKAVA Tabelleksport.dll
+C:\code\IKAVA Systembehandler\IKAVA Tabelleksport\bin\Release\IKAVA Tabelleksport.pdb
+C:\code\IKAVA Systembehandler\IKAVA Tabelleksport\obj\Release\IKAVA_Systembehandler.DB.TableFunctionsControl.resources
+C:\code\IKAVA Systembehandler\IKAVA Tabelleksport\obj\Release\IKAVA_Systembehandler.Plugins.TabellEksport.resources
+C:\code\IKAVA Systembehandler\IKAVA Tabelleksport\obj\Release\IKAVA Tabelleksport.csproj.GenerateResource.Cache
+C:\code\IKAVA Systembehandler\IKAVA Tabelleksport\obj\Release\IKAVA Tabelleksport.dll
+C:\code\IKAVA Systembehandler\IKAVA Tabelleksport\obj\Release\IKAVA Tabelleksport.pdb
+C:\code\IKAVA Systembehandler\IKAVA Tabelleksport\obj\Release\IKAVA Tabelleksport.csprojResolveAssemblyReference.cache

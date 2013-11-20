@@ -43,6 +43,11 @@
     </dependentAssembly>
   </dependency>
   <dependency>
+    <dependentAssembly dependencyType="preRequisite" allowDelayedBinding="true">
+      <assemblyIdentity name="MySql.Data" version="6.1.6.0" publicKeyToken="C5687FC88969C44D" language="neutral" processorArchitecture="msil" />
+    </dependentAssembly>
+  </dependency>
+  <dependency>
     <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="IKAVA DBConnectionHandler.dll" size="26112">
       <assemblyIdentity name="IKAVA DBConnectionHandler" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
       <hash>
@@ -50,19 +55,19 @@
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
-        <dsig:DigestValue>l8AotGtS1Kn7mKKZBLsx1+TSmEw=</dsig:DigestValue>
+        <dsig:DigestValue>dOipnzAFHYyE1fzuSYlSEvS8cEM=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
   <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="IKAVA MSSql.dll" size="10240">
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="IKAVA MSSql.dll" size="9728">
       <assemblyIdentity name="IKAVA MSSql" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
-        <dsig:DigestValue>ujOErivrrMqUFppUu1c2lRt1iYY=</dsig:DigestValue>
+        <dsig:DigestValue>j5i30p10khXKUTKSs1mggHseJCc=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
@@ -74,19 +79,19 @@
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
-        <dsig:DigestValue>Ns5gofKbD1oF+2Lrnb+ze4Bcf/g=</dsig:DigestValue>
+        <dsig:DigestValue>4JMN85d0D9WoNKs+PZ2TIKUMjng=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
   <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="IKAVA Systembehandler.exe" size="38400">
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="IKAVA Systembehandler.exe" size="37888">
       <assemblyIdentity name="IKAVA Systembehandler" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
-        <dsig:DigestValue>qeIIdlJGtYrnNGCH7FMloiX/lYo=</dsig:DigestValue>
+        <dsig:DigestValue>/jB2gggo+SAycg0C/mRS0YWJrDA=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
@@ -98,19 +103,7 @@
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
-        <dsig:DigestValue>BNM4X5EYT9ZCcWr4/HE6JP/MHgQ=</dsig:DigestValue>
-      </hash>
-    </dependentAssembly>
-  </dependency>
-  <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="MySql.Data.dll" size="348160">
-      <assemblyIdentity name="MySql.Data" version="6.1.6.0" publicKeyToken="C5687FC88969C44D" language="neutral" processorArchitecture="msil" />
-      <hash>
-        <dsig:Transforms>
-          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
-        </dsig:Transforms>
-        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
-        <dsig:DigestValue>YOKmBlQndIXPNwzyB0tKoA7hmRQ=</dsig:DigestValue>
+        <dsig:DigestValue>KUSpZ6Q/tGHlPL+FmQwZ6/vjpqI=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
