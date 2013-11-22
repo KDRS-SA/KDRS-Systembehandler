@@ -15,3 +15,4 @@ D:\code\IKAVA Systembehandler\IKAVA MySql\obj\Debug\IKAVA MySql.dll
 D:\code\IKAVA Systembehandler\IKAVA MySql\obj\Debug\IKAVA MySql.pdb
 D:\code\IKAVA Systembehandler\Programfiler\IKAVA MySql.dll
 D:\code\IKAVA Systembehandler\Programfiler\IKAVA MySql.pdb
+D:\code\IKAVA Systembehandler\IKAVA MySql\obj\Debug\IKAVA MySql.csprojResolveAssemblyReference.cache
