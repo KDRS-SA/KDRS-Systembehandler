@@ -58,6 +58,7 @@ namespace IKAVA_Systembehandler.DB
             
             List<string> tables = conn.GetListOfTables();
             Cursor = Cursors.WaitCursor;
+            bool ok = false;
 
             if (!File.Exists(Path.Combine(MySqlInstallationPath, "MySqlDump.exe")))
             {
@@ -92,10 +93,12 @@ namespace IKAVA_Systembehandler.DB
                     {
                         process1 = CreateProcess(process1, Path.Combine(MySqlInstallationPath, "MySqlDump.exe"), table);
                         process1.Start();
+                        ok = true;
                     }
                     catch
                     {
                         Cursor = Cursors.Default;
+                        ok = false;
                         return;
                     }
                     while (!process1.StandardOutput.EndOfStream)

@@ -17,11 +17,3 @@ D:\code\IKAVA Systembehandler\IKAVA Systembehandler\bin\Debug\IKAVA DBConnection
 D:\code\IKAVA Systembehandler\Programfiler\IKAVA DBConnectionHandler.dll
 D:\code\IKAVA Systembehandler\Programfiler\IKAVA DBConnectionHandler.pdb
 D:\code\IKAVA Systembehandler\IKAVA DBConnectionHandler\obj\Debug\IKAVA DBConnectionHandler.csprojResolveAssemblyReference.cache
-C:\code\IKAVA Systembehandler\Programfiler\IKAVA DBConnectionHandler.dll
-C:\code\IKAVA Systembehandler\Programfiler\IKAVA DBConnectionHandler.pdb
-C:\code\IKAVA Systembehandler\IKAVA DBConnectionHandler\obj\Debug\IKAVA DBConnectionHandler.csprojResolveAssemblyReference.cache
-C:\code\IKAVA Systembehandler\IKAVA DBConnectionHandler\obj\Debug\IKAVA_Systembehandler.DB.DBConnectionControl.resources
-C:\code\IKAVA Systembehandler\IKAVA DBConnectionHandler\obj\Debug\IKAVA_DBConnectionHandler.Properties.Resources.resources
-C:\code\IKAVA Systembehandler\IKAVA DBConnectionHandler\obj\Debug\IKAVA DBConnectionHandler.csproj.GenerateResource.Cache
-C:\code\IKAVA Systembehandler\IKAVA DBConnectionHandler\obj\Debug\IKAVA DBConnectionHandler.dll
-C:\code\IKAVA Systembehandler\IKAVA DBConnectionHandler\obj\Debug\IKAVA DBConnectionHandler.pdb

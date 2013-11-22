@@ -6,11 +6,3 @@ D:\code\IKAVA Systembehandler\IKAVA PDFConverter\obj\Release\IKAVA_PDFConverter.
 D:\code\IKAVA Systembehandler\IKAVA PDFConverter\obj\Release\IKAVA PDFConverter.csproj.GenerateResource.Cache
 D:\code\IKAVA Systembehandler\IKAVA PDFConverter\obj\Release\IKAVA PDFConverter.dll
 D:\code\IKAVA Systembehandler\IKAVA PDFConverter\obj\Release\IKAVA PDFConverter.pdb
-C:\code\IKAVA Systembehandler\IKAVA PDFConverter\bin\Release\IKAVA PDFConverter.dll
-C:\code\IKAVA Systembehandler\IKAVA PDFConverter\bin\Release\IKAVA PDFConverter.pdb
-C:\code\IKAVA Systembehandler\IKAVA PDFConverter\obj\Release\IKAVA PDFConverter.csprojResolveAssemblyReference.cache
-C:\code\IKAVA Systembehandler\IKAVA PDFConverter\obj\Release\IKAVA_Systembehandler.Plugins.PDFConverter.resources
-C:\code\IKAVA Systembehandler\IKAVA PDFConverter\obj\Release\IKAVA_PDFConverter.Properties.Resources.resources
-C:\code\IKAVA Systembehandler\IKAVA PDFConverter\obj\Release\IKAVA PDFConverter.csproj.GenerateResource.Cache
-C:\code\IKAVA Systembehandler\IKAVA PDFConverter\obj\Release\IKAVA PDFConverter.dll
-C:\code\IKAVA Systembehandler\IKAVA PDFConverter\obj\Release\IKAVA PDFConverter.pdb

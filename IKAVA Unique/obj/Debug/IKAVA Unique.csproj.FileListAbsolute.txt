@@ -14,11 +14,3 @@ D:\code\IKAVA Systembehandler\IKAVA Systembehandler\bin\Debug\plugins\IKAVA Uniq
 D:\code\IKAVA Systembehandler\IKAVA Unique\obj\Debug\IKAVA_Unique.Properties.Resources.resources
 D:\code\IKAVA Systembehandler\Programfiler\Plugins\IKAVA Unique.dll
 D:\code\IKAVA Systembehandler\Programfiler\Plugins\IKAVA Unique.pdb
-C:\code\IKAVA Systembehandler\Programfiler\Plugins\IKAVA Unique.dll
-C:\code\IKAVA Systembehandler\Programfiler\Plugins\IKAVA Unique.pdb
-C:\code\IKAVA Systembehandler\IKAVA Unique\obj\Debug\IKAVA Unique.csprojResolveAssemblyReference.cache
-C:\code\IKAVA Systembehandler\IKAVA Unique\obj\Debug\IKAVA_Unique.Properties.Resources.resources
-C:\code\IKAVA Systembehandler\IKAVA Unique\obj\Debug\IKAVA_Systembehandler.Plugins.Unique.resources
-C:\code\IKAVA Systembehandler\IKAVA Unique\obj\Debug\IKAVA Unique.csproj.GenerateResource.Cache
-C:\code\IKAVA Systembehandler\IKAVA Unique\obj\Debug\IKAVA Unique.dll
-C:\code\IKAVA Systembehandler\IKAVA Unique\obj\Debug\IKAVA Unique.pdb

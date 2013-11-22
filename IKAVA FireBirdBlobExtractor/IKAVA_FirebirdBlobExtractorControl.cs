@@ -89,8 +89,8 @@ namespace IKAVA_Systembehandler.Plugins
 
                     using (FbDataReader r = cmd.ExecuteReader())
                     {
-                        if (!Directory.Exists(txtSavePath.Text + t.tableName))
-                            Directory.CreateDirectory(txtSavePath.Text + t.tableName);
+                        if (!Directory.Exists(Path.Combine(txtSavePath.Text, t.tableName)))
+                            Directory.CreateDirectory(Path.Combine(txtSavePath.Text, t.tableName));
 
                         while (r.Read())
                         {
@@ -140,8 +140,8 @@ namespace IKAVA_Systembehandler.Plugins
 
                     using (FbDataReader r = cmd.ExecuteReader())
                     {
-                        if (!Directory.Exists(txtSavePath.Text + @"\" + t.tableName))
-                            Directory.CreateDirectory(txtSavePath.Text + @"\" + t.tableName);
+                        if (!Directory.Exists(Path.Combine(txtSavePath.Text, t.tableName)))
+                            Directory.CreateDirectory(Path.Combine(txtSavePath.Text, t.tableName));
 
                         while (r.Read())
                         {

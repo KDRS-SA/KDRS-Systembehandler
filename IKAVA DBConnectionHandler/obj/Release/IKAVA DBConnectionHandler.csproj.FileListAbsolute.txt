@@ -14,17 +14,3 @@ D:\code\IKAVA Systembehandler\IKAVA DBConnectionHandler\obj\Release\IKAVA_DBConn
 D:\code\IKAVA Systembehandler\IKAVA DBConnectionHandler\obj\Release\IKAVA DBConnectionHandler.csproj.GenerateResource.Cache
 D:\code\IKAVA Systembehandler\IKAVA DBConnectionHandler\obj\Release\IKAVA DBConnectionHandler.dll
 D:\code\IKAVA Systembehandler\IKAVA DBConnectionHandler\obj\Release\IKAVA DBConnectionHandler.pdb
-C:\code\IKAVA Systembehandler\IKAVA DBConnectionHandler\bin\Release\IKAVA DBConnectionHandler.dll
-C:\code\IKAVA Systembehandler\IKAVA DBConnectionHandler\bin\Release\IKAVA DBConnectionHandler.pdb
-C:\code\IKAVA Systembehandler\IKAVA DBConnectionHandler\bin\Release\IKAVA MSSql.dll
-C:\code\IKAVA Systembehandler\IKAVA DBConnectionHandler\bin\Release\IKAVA MySql.dll
-C:\code\IKAVA Systembehandler\IKAVA DBConnectionHandler\bin\Release\IKAVA Tools.dll
-C:\code\IKAVA Systembehandler\IKAVA DBConnectionHandler\bin\Release\IKAVA MSSql.pdb
-C:\code\IKAVA Systembehandler\IKAVA DBConnectionHandler\bin\Release\IKAVA MySql.pdb
-C:\code\IKAVA Systembehandler\IKAVA DBConnectionHandler\bin\Release\IKAVA Tools.pdb
-C:\code\IKAVA Systembehandler\IKAVA DBConnectionHandler\obj\Release\IKAVA DBConnectionHandler.csprojResolveAssemblyReference.cache
-C:\code\IKAVA Systembehandler\IKAVA DBConnectionHandler\obj\Release\IKAVA_Systembehandler.DB.DBConnectionControl.resources
-C:\code\IKAVA Systembehandler\IKAVA DBConnectionHandler\obj\Release\IKAVA_DBConnectionHandler.Properties.Resources.resources
-C:\code\IKAVA Systembehandler\IKAVA DBConnectionHandler\obj\Release\IKAVA DBConnectionHandler.csproj.GenerateResource.Cache
-C:\code\IKAVA Systembehandler\IKAVA DBConnectionHandler\obj\Release\IKAVA DBConnectionHandler.dll
-C:\code\IKAVA Systembehandler\IKAVA DBConnectionHandler\obj\Release\IKAVA DBConnectionHandler.pdb
