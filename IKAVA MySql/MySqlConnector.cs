@@ -18,7 +18,7 @@ namespace IKAVA_Systembehandler.DB
         public static string Database { get; set; }
         public static string Table { get; set; }
 
-        public MySqlConnection connection;
+        public static MySqlConnection connection;
         public MySqlCommand cmd;
         public MySqlDataReader reader;
 

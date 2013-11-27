@@ -9,8 +9,8 @@ namespace IKAVA_Systembehandler.DB
 {
     public class ConnectionHandler
     {
-        MySqlConnector mysqlConnector;
-        MSSqlConnector mssqlConnector;
+        public MySqlConnector mysqlConnector;
+        public MSSqlConnector mssqlConnector;
 
         public static string Server { get; set; }
         public static string Username { get; set; }

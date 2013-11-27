@@ -1,0 +1,7 @@
+D:\code\IKAVA Systembehandler\Programfiler\Plugins\IKAVA ISTExtens Manager.dll
+D:\code\IKAVA Systembehandler\Programfiler\Plugins\IKAVA ISTExtens Manager.pdb
+D:\code\IKAVA Systembehandler\IKAVA ISTExtens Manager\obj\Debug\IKAVA ISTExtens Manager.csprojResolveAssemblyReference.cache
+D:\code\IKAVA Systembehandler\IKAVA ISTExtens Manager\obj\Debug\IKAVA_ISTExtens_Manager.IKAVA_ISTExtens_Manager.resources
+D:\code\IKAVA Systembehandler\IKAVA ISTExtens Manager\obj\Debug\IKAVA ISTExtens Manager.csproj.GenerateResource.Cache
+D:\code\IKAVA Systembehandler\IKAVA ISTExtens Manager\obj\Debug\IKAVA ISTExtens Manager.dll
+D:\code\IKAVA Systembehandler\IKAVA ISTExtens Manager\obj\Debug\IKAVA ISTExtens Manager.pdb

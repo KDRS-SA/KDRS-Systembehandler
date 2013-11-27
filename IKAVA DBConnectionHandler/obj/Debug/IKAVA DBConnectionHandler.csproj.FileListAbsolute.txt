@@ -16,3 +16,4 @@ D:\code\IKAVA Systembehandler\IKAVA Systembehandler\bin\Debug\IKAVA DBConnection
 D:\code\IKAVA Systembehandler\IKAVA Systembehandler\bin\Debug\IKAVA DBConnectionHandler.pdb
 D:\code\IKAVA Systembehandler\Programfiler\IKAVA DBConnectionHandler.dll
 D:\code\IKAVA Systembehandler\Programfiler\IKAVA DBConnectionHandler.pdb
+D:\code\IKAVA Systembehandler\IKAVA DBConnectionHandler\obj\Debug\IKAVA DBConnectionHandler.csprojResolveAssemblyReference.cache

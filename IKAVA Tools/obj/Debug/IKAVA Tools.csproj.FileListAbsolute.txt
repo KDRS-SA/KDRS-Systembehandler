@@ -7,7 +7,6 @@ D:\code\IKAVA Systembehandler\IKAVA_Tools\obj\Debug\IKAVA_Tools.pdb
 D:\code\IKAVA Systembehandler\IKAVA_Tools\obj\Debug\IKAVA Tools.csprojResolveAssemblyReference.cache
 D:\code\IKAVA Systembehandler\IKAVA Systembehandler\bin\Debug\IKAVA Tools.dll
 D:\code\IKAVA Systembehandler\IKAVA Systembehandler\bin\Debug\IKAVA Tools.pdb
-D:\code\IKAVA Systembehandler\IKAVA Tools\obj\Debug\IKAVA Tools.csprojResolveAssemblyReference.cache
 D:\code\IKAVA Systembehandler\IKAVA Tools\obj\Debug\IKAVA_Systembehandler.Logg.resources
 D:\code\IKAVA Systembehandler\IKAVA Tools\obj\Debug\IKAVA Tools.csproj.GenerateResource.Cache
 D:\code\IKAVA Systembehandler\IKAVA Tools\obj\Debug\IKAVA Tools.dll
