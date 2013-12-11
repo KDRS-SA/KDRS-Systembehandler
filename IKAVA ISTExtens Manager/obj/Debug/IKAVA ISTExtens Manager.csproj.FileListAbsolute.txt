@@ -5,3 +5,4 @@ D:\code\IKAVA Systembehandler\IKAVA ISTExtens Manager\obj\Debug\IKAVA_ISTExtens_
 D:\code\IKAVA Systembehandler\IKAVA ISTExtens Manager\obj\Debug\IKAVA ISTExtens Manager.csproj.GenerateResource.Cache
 D:\code\IKAVA Systembehandler\IKAVA ISTExtens Manager\obj\Debug\IKAVA ISTExtens Manager.dll
 D:\code\IKAVA Systembehandler\IKAVA ISTExtens Manager\obj\Debug\IKAVA ISTExtens Manager.pdb
+D:\code\IKAVA Systembehandler\Programfiler\Plugins\templates\Karakterutskrift.rtf

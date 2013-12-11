@@ -109,6 +109,7 @@
             this.txtTemplate.Name = "txtTemplate";
             this.txtTemplate.Size = new System.Drawing.Size(261, 20);
             this.txtTemplate.TabIndex = 17;
+            this.txtTemplate.Text = ".\\plugins\\templates\\karakterutskrift.rtf";
             // 
             // btnStart
             // 

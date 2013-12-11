@@ -141,7 +141,7 @@ namespace IKAVA_ISTExtens_Manager
                 last = reader.GetString(1);
                 if (sw != null)
                 {
-                    logg1.Log("Skrevet vitnemål for " + reader.GetString(0) + Environment.NewLine, Logg.LogType.Info);
+                    logg1.Log("Skrevet karakterutskrift for " + reader.GetString(0) + Environment.NewLine, Logg.LogType.Info);
                     sw.Close();
                 }
                 string filename = Path.Combine(txtSavePath.Text, reader.GetString(0) + "-" + reader.GetString(1) + ".rtf");
