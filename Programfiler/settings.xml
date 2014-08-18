@@ -4,5 +4,5 @@
   <server>localhost</server>
   <user>root</user>
   <pass>root</pass>
-  <MySqlInstallationPath>c:\program files\mysqls\mysql server 5.6\bin</MySqlInstallationPath>
+  <MySqlInstallationPath>D:\xampp\mysql\bin</MySqlInstallationPath>
 </settings>

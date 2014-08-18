@@ -29,6 +29,9 @@
         private void InitializeComponent()
         {
             this.groupBox2 = new System.Windows.Forms.GroupBox();
+            this.btnFDBFil = new System.Windows.Forms.Button();
+            this.lblFDBFil = new System.Windows.Forms.Label();
+            this.txtFDBFil = new System.Windows.Forms.TextBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.cbRememberSettings = new System.Windows.Forms.CheckBox();
             this.cbServerType = new System.Windows.Forms.ComboBox();
@@ -40,7 +43,7 @@
             this.label5 = new System.Windows.Forms.Label();
             this.txtServer = new System.Windows.Forms.TextBox();
             this.label4 = new System.Windows.Forms.Label();
-            this.label11 = new System.Windows.Forms.Label();
+            this.lblServer = new System.Windows.Forms.Label();
             this.button1 = new System.Windows.Forms.Button();
             this.groupBox2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -48,6 +51,9 @@
             // 
             // groupBox2
             // 
+            this.groupBox2.Controls.Add(this.btnFDBFil);
+            this.groupBox2.Controls.Add(this.lblFDBFil);
+            this.groupBox2.Controls.Add(this.txtFDBFil);
             this.groupBox2.Controls.Add(this.pictureBox1);
             this.groupBox2.Controls.Add(this.cbRememberSettings);
             this.groupBox2.Controls.Add(this.cbServerType);
@@ -59,7 +65,7 @@
             this.groupBox2.Controls.Add(this.label5);
             this.groupBox2.Controls.Add(this.txtServer);
             this.groupBox2.Controls.Add(this.label4);
-            this.groupBox2.Controls.Add(this.label11);
+            this.groupBox2.Controls.Add(this.lblServer);
             this.groupBox2.Controls.Add(this.button1);
             this.groupBox2.Dock = System.Windows.Forms.DockStyle.Fill;
             this.groupBox2.Location = new System.Drawing.Point(0, 0);
@@ -68,6 +74,40 @@
             this.groupBox2.TabIndex = 18;
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Databaseinnstillinger";
+            // 
+            // btnFDBFil
+            // 
+            this.btnFDBFil.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnFDBFil.Image = global::IKAVA_DBConnectionHandler.Properties.Resources.folder;
+            this.btnFDBFil.Location = new System.Drawing.Point(231, 39);
+            this.btnFDBFil.Name = "btnFDBFil";
+            this.btnFDBFil.Size = new System.Drawing.Size(25, 26);
+            this.btnFDBFil.TabIndex = 17;
+            this.btnFDBFil.UseVisualStyleBackColor = true;
+            this.btnFDBFil.Visible = false;
+            this.btnFDBFil.Click += new System.EventHandler(this.btnFDBFil_Click);
+            // 
+            // lblFDBFil
+            // 
+            this.lblFDBFil.AutoSize = true;
+            this.lblFDBFil.Location = new System.Drawing.Point(10, 44);
+            this.lblFDBFil.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lblFDBFil.Name = "lblFDBFil";
+            this.lblFDBFil.Size = new System.Drawing.Size(38, 13);
+            this.lblFDBFil.TabIndex = 16;
+            this.lblFDBFil.Text = "FDB-fil";
+            this.lblFDBFil.Visible = false;
+            // 
+            // txtFDBFil
+            // 
+            this.txtFDBFil.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.txtFDBFil.Location = new System.Drawing.Point(85, 42);
+            this.txtFDBFil.Margin = new System.Windows.Forms.Padding(2);
+            this.txtFDBFil.Name = "txtFDBFil";
+            this.txtFDBFil.Size = new System.Drawing.Size(144, 20);
+            this.txtFDBFil.TabIndex = 15;
+            this.txtFDBFil.Visible = false;
             // 
             // pictureBox1
             // 
@@ -92,6 +132,7 @@
             this.cbRememberSettings.TabIndex = 12;
             this.cbRememberSettings.Text = "Husk verdier";
             this.cbRememberSettings.UseVisualStyleBackColor = true;
+            this.cbRememberSettings.Visible = false;
             this.cbRememberSettings.CheckedChanged += new System.EventHandler(this.cbRememberSettings_CheckedChanged);
             // 
             // cbServerType
@@ -101,13 +142,16 @@
             this.cbServerType.FormattingEnabled = true;
             this.cbServerType.Items.AddRange(new object[] {
             "MySql",
-            "SqlServer"});
+            "SqlServer",
+            "FireBird"});
             this.cbServerType.Location = new System.Drawing.Point(85, 18);
             this.cbServerType.Margin = new System.Windows.Forms.Padding(2);
             this.cbServerType.Name = "cbServerType";
             this.cbServerType.Size = new System.Drawing.Size(170, 21);
             this.cbServerType.TabIndex = 6;
             this.cbServerType.Text = "MySql";
+            this.cbServerType.SelectedIndexChanged += new System.EventHandler(this.cbServerType_SelectedIndexChanged);
+            this.cbServerType.SelectedValueChanged += new System.EventHandler(this.cbServerType_SelectedValueChanged);
             // 
             // label3
             // 
@@ -196,15 +240,15 @@
             this.label4.TabIndex = 7;
             this.label4.Text = "Servertype";
             // 
-            // label11
+            // lblServer
             // 
-            this.label11.AutoSize = true;
-            this.label11.Location = new System.Drawing.Point(10, 44);
-            this.label11.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(38, 13);
-            this.label11.TabIndex = 0;
-            this.label11.Text = "Server";
+            this.lblServer.AutoSize = true;
+            this.lblServer.Location = new System.Drawing.Point(10, 44);
+            this.lblServer.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lblServer.Name = "lblServer";
+            this.lblServer.Size = new System.Drawing.Size(38, 13);
+            this.lblServer.TabIndex = 0;
+            this.lblServer.Text = "Server";
             // 
             // button1
             // 
@@ -247,7 +291,10 @@
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.TextBox txtServer;
         private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.Label label11;
+        private System.Windows.Forms.Label lblServer;
         private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Label lblFDBFil;
+        private System.Windows.Forms.TextBox txtFDBFil;
+        private System.Windows.Forms.Button btnFDBFil;
     }
 }

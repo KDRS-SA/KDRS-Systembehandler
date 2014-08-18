@@ -54,6 +54,8 @@
             this.chkRecursive = new System.Windows.Forms.CheckBox();
             this.chkOverwrite = new System.Windows.Forms.CheckBox();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
+            this.rbSeparator3 = new System.Windows.Forms.RadioButton();
+            this.rbSeparator2 = new System.Windows.Forms.RadioButton();
             this.rbSeparator1 = new System.Windows.Forms.RadioButton();
             this.label8 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
@@ -76,8 +78,6 @@
             this.folderBrowserDialog1 = new System.Windows.Forms.FolderBrowserDialog();
             this.openFileDialog1 = new System.Windows.Forms.OpenFileDialog();
             this.backgroundWorker1 = new System.ComponentModel.BackgroundWorker();
-            this.rbSeparator2 = new System.Windows.Forms.RadioButton();
-            this.rbSeparator3 = new System.Windows.Forms.RadioButton();
             this.groupBox1.SuspendLayout();
             this.groupBox5.SuspendLayout();
             this.groupBox4.SuspendLayout();
@@ -109,6 +109,7 @@
             this.groupBox1.Controls.Add(this.txtInPath);
             this.groupBox1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.groupBox1.Location = new System.Drawing.Point(0, 0);
+            this.groupBox1.MinimumSize = new System.Drawing.Size(904, 579);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Size = new System.Drawing.Size(904, 579);
             this.groupBox1.TabIndex = 0;
@@ -140,6 +141,7 @@
             // 
             // logg1
             // 
+            this.logg1.HTMLEnabled = false;
             this.logg1.Location = new System.Drawing.Point(10, 402);
             this.logg1.Name = "logg1";
             this.logg1.Size = new System.Drawing.Size(887, 171);
@@ -368,6 +370,26 @@
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Passordhåndtering";
             // 
+            // rbSeparator3
+            // 
+            this.rbSeparator3.AutoSize = true;
+            this.rbSeparator3.Location = new System.Drawing.Point(71, 101);
+            this.rbSeparator3.Name = "rbSeparator3";
+            this.rbSeparator3.Size = new System.Drawing.Size(44, 17);
+            this.rbSeparator3.TabIndex = 32;
+            this.rbSeparator3.Text = "Tab";
+            this.rbSeparator3.UseVisualStyleBackColor = true;
+            // 
+            // rbSeparator2
+            // 
+            this.rbSeparator2.AutoSize = true;
+            this.rbSeparator2.Location = new System.Drawing.Point(134, 84);
+            this.rbSeparator2.Name = "rbSeparator2";
+            this.rbSeparator2.Size = new System.Drawing.Size(74, 17);
+            this.rbSeparator2.TabIndex = 31;
+            this.rbSeparator2.Text = "Semikolon";
+            this.rbSeparator2.UseVisualStyleBackColor = true;
+            // 
             // rbSeparator1
             // 
             this.rbSeparator1.AutoSize = true;
@@ -565,26 +587,6 @@
             this.backgroundWorker1.DoWork += new System.ComponentModel.DoWorkEventHandler(this.bw_DoWork);
             this.backgroundWorker1.ProgressChanged += new System.ComponentModel.ProgressChangedEventHandler(this.backgroundWorker1_ProgressChanged);
             this.backgroundWorker1.RunWorkerCompleted += new System.ComponentModel.RunWorkerCompletedEventHandler(this.bw_RunWorkerCompleted);
-            // 
-            // rbSeparator2
-            // 
-            this.rbSeparator2.AutoSize = true;
-            this.rbSeparator2.Location = new System.Drawing.Point(134, 84);
-            this.rbSeparator2.Name = "rbSeparator2";
-            this.rbSeparator2.Size = new System.Drawing.Size(74, 17);
-            this.rbSeparator2.TabIndex = 31;
-            this.rbSeparator2.Text = "Semikolon";
-            this.rbSeparator2.UseVisualStyleBackColor = true;
-            // 
-            // rbSeparator3
-            // 
-            this.rbSeparator3.AutoSize = true;
-            this.rbSeparator3.Location = new System.Drawing.Point(71, 101);
-            this.rbSeparator3.Name = "rbSeparator3";
-            this.rbSeparator3.Size = new System.Drawing.Size(44, 17);
-            this.rbSeparator3.TabIndex = 32;
-            this.rbSeparator3.Text = "Tab";
-            this.rbSeparator3.UseVisualStyleBackColor = true;
             // 
             // PDFConverter
             // 

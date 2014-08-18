@@ -29,6 +29,7 @@
         private void InitializeComponent()
         {
             this.groupBox5 = new System.Windows.Forms.GroupBox();
+            this.txtDatabaseName = new System.Windows.Forms.TextBox();
             this.label13 = new System.Windows.Forms.Label();
             this.button6 = new System.Windows.Forms.Button();
             this.button5 = new System.Windows.Forms.Button();
@@ -36,9 +37,9 @@
             this.txtLoadPath = new System.Windows.Forms.TextBox();
             this.openFileDialog1 = new System.Windows.Forms.OpenFileDialog();
             this.logg1 = new IKAVA_Systembehandler.Logg();
-            this.txtDatabaseName = new System.Windows.Forms.TextBox();
             this.folderBrowserDialog1 = new System.Windows.Forms.FolderBrowserDialog();
             this.dbConnectionControl1 = new IKAVA_Systembehandler.DB.DBConnectionControl();
+            this.label1 = new System.Windows.Forms.Label();
             this.groupBox5.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -59,6 +60,17 @@
             this.groupBox5.TabIndex = 19;
             this.groupBox5.TabStop = false;
             this.groupBox5.Text = "Legg til ny";
+            this.groupBox5.EnabledChanged += new System.EventHandler(this.groupBox5_EnabledChanged);
+            // 
+            // txtDatabaseName
+            // 
+            this.txtDatabaseName.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.txtDatabaseName.Location = new System.Drawing.Point(65, 66);
+            this.txtDatabaseName.Name = "txtDatabaseName";
+            this.txtDatabaseName.Size = new System.Drawing.Size(137, 20);
+            this.txtDatabaseName.TabIndex = 15;
+            this.txtDatabaseName.Leave += new System.EventHandler(this.txtDatabaseName_Leave);
             // 
             // label13
             // 
@@ -118,21 +130,11 @@
             this.logg1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
+            this.logg1.HTMLEnabled = false;
             this.logg1.Location = new System.Drawing.Point(0, 184);
             this.logg1.Name = "logg1";
             this.logg1.Size = new System.Drawing.Size(577, 102);
             this.logg1.TabIndex = 20;
-            // 
-            // txtDatabaseName
-            // 
-            this.txtDatabaseName.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.txtDatabaseName.Enabled = false;
-            this.txtDatabaseName.Location = new System.Drawing.Point(65, 66);
-            this.txtDatabaseName.Name = "txtDatabaseName";
-            this.txtDatabaseName.Size = new System.Drawing.Size(137, 20);
-            this.txtDatabaseName.TabIndex = 15;
-            this.txtDatabaseName.Leave += new System.EventHandler(this.txtDatabaseName_Leave);
             // 
             // dbConnectionControl1
             // 
@@ -146,10 +148,21 @@
             this.dbConnectionControl1.TabIndex = 0;
             this.dbConnectionControl1.OnDatabaseConnected += new IKAVA_Systembehandler.DB.DBConnectionControl.DatabaseConnectedEventHandler(this.dbConnectionControl1_OnDatabaseConnected);
             // 
+            // label1
+            // 
+            this.label1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(12, 264);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(35, 13);
+            this.label1.TabIndex = 21;
+            this.label1.Text = "label1";
+            // 
             // OpprettDatabase_MySql
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.Controls.Add(this.label1);
             this.Controls.Add(this.logg1);
             this.Controls.Add(this.groupBox5);
             this.Controls.Add(this.dbConnectionControl1);
@@ -159,6 +172,7 @@
             this.groupBox5.ResumeLayout(false);
             this.groupBox5.PerformLayout();
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
@@ -175,5 +189,6 @@
         private Logg logg1;
         private System.Windows.Forms.TextBox txtDatabaseName;
         private System.Windows.Forms.FolderBrowserDialog folderBrowserDialog1;
+        private System.Windows.Forms.Label label1;
     }
 }

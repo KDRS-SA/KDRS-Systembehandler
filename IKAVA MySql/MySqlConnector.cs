@@ -304,5 +304,74 @@ namespace IKAVA_Systembehandler.DB
             }
             return true;
         }
+
+        public bool DumpToCSVFile(string table, string filename, string separator)
+        {
+            string query = "SELECT * FROM " + table;
+            cmd = new MySqlCommand(query, connection);
+            if (!reader.IsClosed)
+                reader.Close();
+            reader = cmd.ExecuteReader();
+
+            List<string> row = new List<string>();
+            List<object> rows = new List<object>();
+
+            using (StreamWriter writer = new StreamWriter(filename, false))
+            {
+                if (!reader.HasRows)
+                {
+                    writer.Write("Tabellen var tom ved eksport.");
+                    writer.Close();
+                    return false;
+                }
+                bool firstTime = true;
+                while (reader.Read())
+                {
+                    if (firstTime)
+                    {
+                        for (int a = 0; a < reader.FieldCount; a++)
+                        {
+                            writer.Write(reader.GetName(a).ToString());
+                            if (a + 1 < reader.FieldCount)
+                                writer.Write(separator);
+                        }
+                        writer.Write(Environment.NewLine);
+                        firstTime = false;
+                    }
+
+                    for (int a = 0; a < reader.FieldCount; a++)
+                    {
+                        try
+                        {
+                            writer.Write(reader.GetValue(a).ToString());
+                        }
+                        catch
+                        {
+                            writer.Write("null");
+                        }
+                        if (a + 1 < reader.FieldCount)
+                            writer.Write(separator);
+                    }
+                    writer.WriteLine();
+                }
+            }
+            return true;
+        }
+
+        public bool DropDatabase(string p)
+        {
+            string query = "DROP DATABASE " + p;
+            cmd = new MySqlCommand(query, connection);
+            cmd.CommandTimeout = 3000;
+            try
+            {
+                int b = cmd.ExecuteNonQuery();
+            }
+            catch
+            {
+                return false;
+            }
+            return true;
+        }
     }
 }

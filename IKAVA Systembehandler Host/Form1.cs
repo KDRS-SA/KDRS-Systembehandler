@@ -17,6 +17,8 @@ namespace IKAVA_Systembehandler
         ICollection<Assembly> assemblies;
         ICollection<Type> pluginTypes = new List<Type>();
 
+        public string FileToLoad = string.Empty;
+
         // type plugins
         class PluginType
         {
@@ -143,6 +145,58 @@ namespace IKAVA_Systembehandler
                 else
                 {
                     continue;
+                }
+            }
+        }
+
+        private void Form1_DragEnter(object sender, DragEventArgs e)
+        {
+            if (e.Data.GetDataPresent(DataFormats.FileDrop))
+            {
+                string[] files = (string[])e.Data.GetData(DataFormats.FileDrop);
+                bool allow = false;
+                foreach (string file in files)
+                {
+                    if (Path.GetExtension(file) == ".sql")
+                    {
+                        allow = true;
+                        break;
+                    }
+                }
+                e.Effect = (allow ? DragDropEffects.Copy : DragDropEffects.None);
+            }
+        }
+
+        private void Form1_DragDrop(object sender, DragEventArgs e)
+        {
+            if (e.Data.GetDataPresent(DataFormats.FileDrop))
+            {
+                string[] files = (string[])e.Data.GetData(DataFormats.FileDrop);
+                if (files.Length > 1)
+                    MessageBox.Show("Støtter bare lasting av én (1) sql-fil av gangen");
+                else
+                {
+                    if (Path.GetExtension(files[0]) == ".sql") // If sql file invoke OpprettDatabase_MySql-component;
+                    {
+                        panel1.Controls.Clear();
+                        var pluginType = pluginTypes.Single(thing => thing.Name == "OpprettDatabase_MySql");
+                        var ctor = pluginType.GetConstructor(new Type[] { });
+                        var integration = ctor.Invoke(new object[] { }) as IIKAVA_Systembehandler_Plugin;
+
+                        UserControl uc = integration as UserControl;
+                        panel1.Controls.Add(uc);
+                        uc.Dock = DockStyle.Fill;
+                        if (!uc.MinimumSize.IsEmpty)
+                            this.Size = uc.MinimumSize;
+
+                        this.Width += 20;
+
+                        iCustomParams ucontrol = uc as iCustomParams;
+                        if (ucontrol != null)
+                        {
+                            ucontrol.FileToLoad = files[0];
+                        }
+                    }
                 }
             }
         }

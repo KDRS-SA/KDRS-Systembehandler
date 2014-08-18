@@ -109,6 +109,7 @@ namespace IKAVA_Systembehandler
 
             switch (GetInstalledOfficeVersion(officeComponent))
             {
+                case 15: version = "MS Office 2013 - "; break;
                 case 14: version = "MS Office 2010 - "; break;
                 case 12: version = "MS Office 2007 - "; break;
                 case 11: version = "MS Office 2003 - "; break;
@@ -116,7 +117,7 @@ namespace IKAVA_Systembehandler
                 case 9: version = "MS Office 2000 - "; break;
                 case 8: version = "MS Office 97 - "; break;
                 case 7: version = "MS Office 95 - "; break;
-                default: version = "Ikke installert, eller nyere enn Office 2010"; break;
+                default: version = "ikke installert office, eller en nyere versjon enn Office 2013."; break;
             }
             return version + officeComponent.ToString();
         }

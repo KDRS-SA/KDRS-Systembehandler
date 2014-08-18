@@ -16,3 +16,4 @@ D:\code\IKAVA Systembehandler\IKAVA Logger\obj\Debug\IKAVA Logger.dll
 D:\code\IKAVA Systembehandler\IKAVA Logger\obj\Debug\IKAVA Logger.pdb
 D:\code\IKAVA Systembehandler\Programfiler\IKAVA Logger.dll
 D:\code\IKAVA Systembehandler\Programfiler\IKAVA Logger.pdb
+D:\code\IKAVA Systembehandler\IKAVA Logger\obj\Debug\IKAVA Logger.csprojResolveAssemblyReference.cache

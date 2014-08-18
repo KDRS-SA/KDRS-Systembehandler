@@ -55,6 +55,7 @@
             this.dbConnectionControl2.Size = new System.Drawing.Size(274, 175);
             this.dbConnectionControl2.TabIndex = 3;
             this.dbConnectionControl2.OnDatabaseConnected += new IKAVA_Systembehandler.DB.DBConnectionControl.DatabaseConnectedEventHandler(this.dbConnectionControl2_OnDatabaseConnected);
+            this.dbConnectionControl2.OnFDBFileConnected += new IKAVA_Systembehandler.DB.DBConnectionControl.FDBFileConnectedEventHandler(this.dbConnectionControl2_OnFDBFileConnected);
             // 
             // tableFunctionsControl1
             // 
@@ -67,8 +68,12 @@
             this.tableFunctionsControl1.MinimumSize = new System.Drawing.Size(184, 175);
             this.tableFunctionsControl1.MySqlInstallationPath = null;
             this.tableFunctionsControl1.Name = "tableFunctionsControl1";
+            this.tableFunctionsControl1.ShowADDML = false;
+            this.tableFunctionsControl1.ShowCSV = true;
+            this.tableFunctionsControl1.ShowXML = true;
             this.tableFunctionsControl1.Size = new System.Drawing.Size(325, 175);
             this.tableFunctionsControl1.TabIndex = 4;
+            this.tableFunctionsControl1.Load += new System.EventHandler(this.tableFunctionsControl1_Load);
             // 
             // TabellEksport
             // 

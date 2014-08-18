@@ -29,6 +29,7 @@ namespace IKAVA_Systembehandler.DB
         public TableFunctionsControl()
         {
             InitializeComponent();
+
         }
 
         public void FillTableList()
@@ -45,7 +46,6 @@ namespace IKAVA_Systembehandler.DB
 
         private void btnDumpToXml_Click(object sender, EventArgs e)
         {
-            
             string outFolder = "";
             DialogResult dr = folderBrowserDialog1.ShowDialog();
             if (dr == DialogResult.OK)
@@ -55,6 +55,7 @@ namespace IKAVA_Systembehandler.DB
 
             fileSystemWatcher1.Path = outFolder;
             fileSystemWatcher1.Created += fileSystemWatcher1_Created;
+            fileSystemWatcher1.Changed += fileSystemWatcher1_Changed;
             
             List<string> tables = conn.GetListOfTables();
             Cursor = Cursors.WaitCursor;
@@ -118,6 +119,11 @@ namespace IKAVA_Systembehandler.DB
             logg1.Log("Opprettet filen " + e.FullPath + Environment.NewLine, Logg.LogType.Info);
         }
 
+        void fileSystemWatcher1_Changed(object sender, FileSystemEventArgs e)
+        {
+            logg1.Log("Overskrev filen " + e.FullPath + Environment.NewLine, Logg.LogType.Info);
+        }
+
         private Process CreateProcess(Process process1, string filename, string table)
         {
             process1.StartInfo.RedirectStandardInput = false;
@@ -136,9 +142,56 @@ namespace IKAVA_Systembehandler.DB
             return process1;
         }
 
+        private void btnDumpToCSV_Click(object sender, EventArgs e)
+        {
+            string outFolder = "";
+            DialogResult dr = folderBrowserDialog1.ShowDialog();
+            if (dr == DialogResult.OK)
+                outFolder = folderBrowserDialog1.SelectedPath;
+            else
+                return;
+
+            fileSystemWatcher1.Path = outFolder;
+            fileSystemWatcher1.Created += fileSystemWatcher1_Created;
+            fileSystemWatcher1.Changed += fileSystemWatcher1_Changed;
+
+            List<string> tables = conn.GetListOfTables();
+            Cursor = Cursors.WaitCursor;
+
+            logg1.Log("Skriver tabell(er) til CSV-fil(er). Et øyeblikk..." + Environment.NewLine, Logg.LogType.Info);
+            Cursor = Cursors.WaitCursor;
+
+            foreach (string table in tables)
+            {
+                //logg1.Log("Dumper " + table + " til CSV-fil"+Environment.NewLine);
+                string filnavn = outFolder + "\\" + table.Trim() + ".csv";
+                conn.DumpToCSVFile(table, filnavn, txtDumpToCSV.Text);
+                Application.DoEvents();
+            }
+
+            Cursor = Cursors.Default;
+        }
+
         private void button1_Click(object sender, EventArgs e)
         {
+            MessageBox.Show("Ikke implementert");
+        }
 
+        public bool ShowXML { 
+            get { return btnDumpToXml.Enabled; }
+            set { btnDumpToXml.Enabled = value; } 
+        }
+
+        public bool ShowCSV
+        {
+            get { return btnDumpToCSV.Enabled; }
+            set { btnDumpToCSV.Enabled = value; lblDumpToCSV.Enabled = true; txtDumpToCSV.Enabled = true; }
+        }
+
+        public bool ShowADDML
+        {
+            get { return button1.Enabled; }
+            set { button1.Enabled = value; }
         }
     }
 }

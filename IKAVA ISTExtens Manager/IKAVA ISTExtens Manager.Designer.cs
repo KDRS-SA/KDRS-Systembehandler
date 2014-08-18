@@ -87,7 +87,7 @@
             this.tabPage1.Padding = new System.Windows.Forms.Padding(3);
             this.tabPage1.Size = new System.Drawing.Size(399, 260);
             this.tabPage1.TabIndex = 0;
-            this.tabPage1.Text = "Vitnemål";
+            this.tabPage1.Text = "Karakterutskrifter";
             this.tabPage1.UseVisualStyleBackColor = true;
             // 
             // button1

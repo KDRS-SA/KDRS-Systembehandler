@@ -27,12 +27,12 @@ namespace IKAVA_Systembehandler.Plugins
 
         public string Systemnavn
         {
-            get { return "Tabelleksport (XML-Dump. KUN MySql!) MT"; }
+            get { return "Tabelleksport til fil eller XML (kun FireBird og MySql)"; }
         }
 
         public string Versjon
         {
-            get { return "v1.1"; }
+            get { return "v1.2"; }
         }
 
         public ControlType type
@@ -64,8 +64,6 @@ namespace IKAVA_Systembehandler.Plugins
 
         private void TabellEksport_Load(object sender, EventArgs e)
         {
-            dbConnectionControl2.logg1 = tableFunctionsControl1.logg1 = logg1;
-            
         }
 
         private void dbConnectionControl2_OnDatabaseConnected()
@@ -76,6 +74,32 @@ namespace IKAVA_Systembehandler.Plugins
             tableFunctionsControl1.MySqlInstallationPath = MySqlInstallationPath;
             tableFunctionsControl1.Enabled = true;
             tableFunctionsControl1.FillTableList();
+
+            tableFunctionsControl1.ShowADDML = false;
+            tableFunctionsControl1.ShowCSV = false;
+            tableFunctionsControl1.ShowXML = false;
+
+            switch (dbConnectionControl2.ServerTypeSelected)
+            {
+                case "FireBird":
+                    tableFunctionsControl1.ShowCSV = true; break;
+                case "MySql":
+                    tableFunctionsControl1.ShowCSV = true; 
+                    tableFunctionsControl1.ShowXML = true; 
+                    break;
+            }
         }
+
+        private void dbConnectionControl2_OnFDBFileConnected()
+        {
+            // do something with fdb-file.
+            //dbConnectionControl2
+        }
+
+        private void tableFunctionsControl1_Load(object sender, EventArgs e)
+        {
+
+        }
+
     }
 }

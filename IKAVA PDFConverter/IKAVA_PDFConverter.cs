@@ -219,7 +219,15 @@ namespace IKAVA_Systembehandler.Plugins
                 else
                 {
                     // Hvis ingen passordfil er oppgitt, kjøres det kun mot eksisterende filer.
-                    filer = Directory.GetFiles(inn_sti, "*." + filtype, (chkRecursive.Checked ? SearchOption.AllDirectories : SearchOption.TopDirectoryOnly)).ToList<string>();
+                    try
+                    {
+                        filer = Directory.GetFiles(inn_sti, "*." + filtype, (chkRecursive.Checked ? SearchOption.AllDirectories : SearchOption.TopDirectoryOnly)).ToList<string>();
+                    }
+                    catch (UnauthorizedAccessException ex)
+                    {
+                        LogFromThread(progress, "Du har ikke lesetilgang til en eller flere mapper i InnSti (" + inn_sti + ")" + Environment.NewLine + "Vennligst kontroller tilgang og prøv igjen. Feilmelding var :" + Environment.NewLine + ex.Message + Environment.NewLine);
+                        MessageBox.Show("Du har ikke lesetilgang til en eller flere mapper i InnSti (" + inn_sti + ")" + Environment.NewLine + "Vennligst kontroller tilgang og prøv igjen. Feilmelding var :" + Environment.NewLine + ex.Message + Environment.NewLine);
+                    }
                 }
 
                 LogFromThread(progress, filer.Count + " funnet..." + Environment.NewLine);
@@ -231,16 +239,19 @@ namespace IKAVA_Systembehandler.Plugins
             LogFromThread(progress, "Finner filer som ikke skal være med... Dette kan ta en del tid.. " + Environment.NewLine);
 
             int tmpcnt = 0;
-            LogFromThread(progress, "Finner temporære word-filer (inneholder ~)" + Environment.NewLine);
-            foreach (string fil in filer)
+            if (rbFileType.Checked) // Kun nødvendig å kjøre sjekk mot word-filer.
             {
-                if (fil.Contains("~"))
+                LogFromThread(progress, "Finner temporære word-filer (inneholder ~)" + Environment.NewLine);
+                foreach (string fil in filer)
                 {
-                    filersomskalfjernes.Add(fil); // fjern word-temp-filer
-                    continue;
+                    if (fil.Contains("~"))
+                    {
+                        filersomskalfjernes.Add(fil); // fjern word-temp-filer
+                        continue;
+                    }
                 }
+                tmpcnt = 0;
             }
-            tmpcnt = 0;
             if (!chkOverwrite.Checked)
             {
                 LogFromThread(0, "Finner allerede konverterte filer (PDF-versjon eksisterer)" + Environment.NewLine);
@@ -257,30 +268,36 @@ namespace IKAVA_Systembehandler.Plugins
                 }
             }
             tmpcnt = 0;
-            if (filtype.Contains("doc"))
+            /* Ikke nødvendig, for hvis man har krysset av for doc, vil ingen rtf-filer ligge i filer-array.
+             * Har man krysset av for rtf eller txt, er ikke dette en aktuell sjekk å kjøre.
+            if (rbFileType.Checked) // Kun nødvendig å kjøre sjekk mot word-filer.
             {
-                LogFromThread(0, "Finner duplikater (doc/rtf-par som er flettedatafil-par)..." + Environment.NewLine);
-                foreach (string fil in filer)
+                if (filtype.Contains("doc"))
                 {
-                    tmpcnt++;
-                    if (tmpcnt % 1000 == 0)
-                        LogFromThread(0, tmpcnt + " kontrollert.." + Environment.NewLine);
-
-                    if (Debugger.IsAttached)
+                    LogFromThread(0, "Finner duplikater (doc/rtf-par som er flettedatafil-par)..." + Environment.NewLine);
+                    foreach (string fil in filer)
                     {
-                        if (tmpcnt > 2000)
-                            break;
-                    }
+                        tmpcnt++;
+                        if (tmpcnt % 1000 == 0)
+                            LogFromThread(0, tmpcnt + " kontrollert.." + Environment.NewLine);
 
-                    string filetosearchfor = Path.GetFileNameWithoutExtension(fil);
-                    List<string> hits = filer.FindAll(file => Path.GetFileNameWithoutExtension(file) == filetosearchfor);
-                    if (hits.Count > 1)
-                    {
-                        if (!filersomskalfjernes.Contains(Path.ChangeExtension(fil, "RTF")))
-                            filersomskalfjernes.Add(Path.ChangeExtension(fil, "RTF"));
+                        //if (Debugger.IsAttached)
+                        //{
+                        //    if (tmpcnt > 2000)
+                        //        break;
+                        //}
+
+                        string filetosearchfor = Path.GetFileNameWithoutExtension(fil);
+                        List<string> hits = filer.FindAll(file => Path.GetFileNameWithoutExtension(file) == filetosearchfor);
+                        if (hits.Count > 1)
+                        {
+                            if (!filersomskalfjernes.Contains(Path.ChangeExtension(fil, "RTF")))
+                                filersomskalfjernes.Add(Path.ChangeExtension(fil, "RTF"));
+                        }
                     }
                 }
             }
+            */
 
             LogFromThread(0, "Funnet " + filersomskalfjernes.Count + " filer som ikke skal konverteres" + Environment.NewLine);
             foreach (string fil in filersomskalfjernes)
@@ -365,7 +382,7 @@ namespace IKAVA_Systembehandler.Plugins
             DateTime start = DateTime.Now;
             try
             {
-                LogFromThread(progress, "(" + cnt + " av " + filer.Count + ") ..." + filename.Substring(filename.Length - 15) + " - ");
+                LogFromThread(progress, "(" + cnt+1 + " av " + filer.Count + ") ..." + filename.Substring(filename.Length - 15) + " - ");
 
                 #region Sjekk på tom fil
                 if (new FileInfo(filename).Length == 0) // empty file -> continue..
@@ -495,7 +512,7 @@ namespace IKAVA_Systembehandler.Plugins
 
                         foreach (Subdocument s in wordDocument.Subdocuments)
                         {
-                            int retryCounter = 0;
+                            //int retryCounter = 0;
 retry:
                             if (!File.Exists(s.Name))
                             {
@@ -779,9 +796,9 @@ retry:
                 lblWarning.Text += " Denne moduler er kodet for bruk med Office 2003 og 2007. Vennligst oppgrader Office.";
                 lblWarning.Visible = true;
             }
-            else if (intOfficeVersion > 12)
+            else if (intOfficeVersion > 15)
             {
-                lblWarning.Text += "Denne moduler er kodet for Office 2003 og 2007. Du har " + strOfficeVersion + ". Det kan godt være dette vil fungere likevel, men vær ekstra OBS på eventuelle feil!";
+                lblWarning.Text += "Denne modulen er testet med Office 2003 til 2013. Du har " + strOfficeVersion + ". Ved feil kan det være du mangler Office Interop Assemblies installert.";
                 lblWarning.Visible = true;
             }
         }

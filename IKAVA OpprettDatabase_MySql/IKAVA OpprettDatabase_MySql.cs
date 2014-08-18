@@ -14,11 +14,16 @@ using System.Text.RegularExpressions;
 using System.Collections;
 using System.Diagnostics;
 using System.Threading;
+using System.Reflection;
 
 namespace IKAVA_Systembehandler.Plugins
 {
-    public partial class OpprettDatabase_MySql : UserControl, IIKAVA_Systembehandler_Plugin
+    public partial class OpprettDatabase_MySql : UserControl, IIKAVA_Systembehandler_Plugin, iCustomParams
     {
+        public string[] AcceptFileTypes {
+            get { return new string[] {".sql"}; } 
+        }
+
         string MySqlInstallationPath = ""; // Path to MySqlDump.exe-file.
         DB.ConnectionHandler conn;
         Hashtable settings = new Hashtable();
@@ -26,7 +31,6 @@ namespace IKAVA_Systembehandler.Plugins
         public OpprettDatabase_MySql()
         {
             InitializeComponent();
-
             try
             {
                 settings = Tools.LoadSettings("settings.xml", new string[] { "server", "user", "pass", "MySqlInstallationPath" });
@@ -40,11 +44,14 @@ namespace IKAVA_Systembehandler.Plugins
             {
                 MessageBox.Show("Ingen settings.xml-fil..");
             }
+
+            
         }
 
         private void IKAVA_OpprettDatabase_MySql_Load(object sender, EventArgs e)
         {
             dbConnectionControl1.logg1 = logg1;
+            label1.Text = this.Versjon;
         }
 
         private void button6_Click(object sender, EventArgs e)
@@ -59,6 +66,18 @@ namespace IKAVA_Systembehandler.Plugins
             else
             {
                 logg1.Log("Databasen '" + txtDatabaseName.Text + "' ble ikke opprettet. Det kan hende databasen allerede finnes." + Environment.NewLine, Logg.LogType.Error);
+                DialogResult dr = MessageBox.Show("Databasen ble ikke opprettet pga. av at den sannsynligvis finnes fra før. " + Environment.NewLine + "Ønsker du å endre navn, trykk Avbryt/Cancel og endre navn i tekstfeltet." + Environment.NewLine + "Ønsker du å kjøre DROP DATABASE " + txtDatabaseName.Text + " mot server " + ConnectionHandler.Server + ", trykk OK", "Feil oppstått ved opprettelse av database", MessageBoxButtons.OKCancel);
+                if (dr == DialogResult.Cancel)
+                {
+                    return;
+                }
+                else
+                {
+                    if (conn.DropDatabase(txtDatabaseName.Text))
+                        logg1.Log("Databasen '" + txtDatabaseName.Text + "' ble droppet fra " + ConnectionHandler.Server, Logg.LogType.Info);
+                    else
+                        logg1.Log("En feil oppstod. Databasen '" + txtDatabaseName.Text + "' ble ikke droppet fra " + ConnectionHandler.Server, Logg.LogType.Info);
+                }
             }
 
             //Start scripting of mysql-import.
@@ -96,7 +115,7 @@ retrymysql:
                 process1.StartInfo.Arguments += " -h " + ConnectionHandler.Server;
                 process1.StartInfo.Arguments += " --default-character-set=utf8 ";
                 process1.StartInfo.Arguments += " " + ConnectionHandler.Database + " ";
-                process1.StartInfo.Arguments += " < \"" + openFileDialog1.FileName + "\" "; 
+                process1.StartInfo.Arguments += " < \"" + txtLoadPath.Text + "\" "; 
                 process1.Start();
             }
             catch (Exception ex)
@@ -131,7 +150,7 @@ retrymysql:
 
         public string Versjon
         {
-            get { return "v1.0"; }
+            get { return "v1.1"; }
         }
 
         public ControlType type
@@ -157,11 +176,14 @@ retrymysql:
                 Cursor = Cursors.Default;
                 return;
             }
-            Cursor = Cursors.Hand;
             txtLoadPath.Text = openFileDialog1.FileName;
+            LoadSql();
+        }
 
+        private void LoadSql()
+        {
+            Cursor = Cursors.Hand;
             StreamReader sr = new StreamReader(txtLoadPath.Text);
-            
 
             // DROP DATABASE IF EXISTS `man_oskar`;
             // CREATE DATABASE `man_oskar`;
@@ -179,13 +201,12 @@ retrymysql:
                     break;
                 }
             }
-            
+
             txtDatabaseName.Text = ConnectionHandler.Database = DatabaseName;
 
             if (DatabaseName == "")
             {
                 logg1.Log("Databasenavn ble ikke funnet i filen (Ingen Create database-statement)" + Environment.NewLine, Logg.LogType.Warning);
-                txtDatabaseName.Enabled = true;
                 txtDatabaseName.Text = "<oppgi databasenavn>";
             }
             else
@@ -198,6 +219,22 @@ retrymysql:
         private void txtDatabaseName_Leave(object sender, EventArgs e)
         {
             txtDatabaseName.Text = txtDatabaseName.Text.ToLower();
+        }
+
+        #region iCustomParams Members
+
+        string iCustomParams.FileToLoad
+        {
+            get { return txtLoadPath.Text; }
+            set { txtLoadPath.Text = value; }
+        }
+
+        #endregion
+
+        private void groupBox5_EnabledChanged(object sender, EventArgs e)
+        {
+            if (txtLoadPath.Text != "")
+                LoadSql();
         }
     }
 }

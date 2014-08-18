@@ -17,6 +17,11 @@ namespace IKAVA_Systembehandler
     {
         string Systemnavn { get; }
         string Versjon { get; }
-        ControlType type { get; } 
+        ControlType type { get; }
+    }
+
+    public interface iCustomParams
+    {
+        string FileToLoad { get; set; }
     }
 }

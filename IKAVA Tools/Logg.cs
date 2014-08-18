@@ -31,7 +31,7 @@ namespace IKAVA_Systembehandler
             InitializeComponent();
         }
 
-        public void Log(string LogText, LogType type)
+        public void Log(string LogText, LogType type = LogType.Info)
         {
             if (HTMLEnabled)
             {
