@@ -382,7 +382,7 @@ namespace IKAVA_Systembehandler.Plugins
             DateTime start = DateTime.Now;
             try
             {
-                LogFromThread(progress, "(" + cnt+1 + " av " + filer.Count + ") ..." + filename.Substring(filename.Length - 15) + " - ");
+                LogFromThread(progress, "(" + (cnt+1).ToString() + " av " + filer.Count + ") ..." + filename.Substring(filename.Length - 15) + " - ");
 
                 #region Sjekk på tom fil
                 if (new FileInfo(filename).Length == 0) // empty file -> continue..
