@@ -99,13 +99,6 @@ namespace IKAVA_ISTExtens_Manager
             {
                 logg1.Log("Du må velge en IST EXTENS database i dropdown til venstre", Logg.LogType.Info); return;
             }
-            // søk
-            // select * from aktivitet where personid = xxxxxx xxxxx
-            // select * from vitnemal
-            // select * from vitnemalkurs
-            // SELECT vi.elevnamn, v.fodelsenr, v.vitnemalsnr, v.faglinjenr, v.fagkode, v.valgfagtekst, v.standpunkt, v.eksamenskarakter, v.proveform, v.eksamensar FROM vitnemalkurs v left join vitnemal vi on vi.fodelsenr = v.fodelsenr
-
-            //string sql = "SELECT vi.elevnamn, v.fodelsenr, v.vitnemalsnr, v.faglinjenr, v.fagkode, v.valgfagtekst, v.standpunkt, v.eksamenskarakter, v.proveform, v.eksamensar, v.eksamensmanad, vi.orden, vi.adferd, vi.rektornavn, vi.utstedersted, vi.utstedelsedato FROM vitnemalkurs v left join vitnemal vi on vi.fodelsenr = v.fodelsenr";
             
             string sql = "SELECT fodelsenr, vitnemalsnr, elevnamn, avgangsar, orden, "; 
                   sql += "utstedersted, utstedelsedato, rektornavn, enhet, adferd from vitnemal";
@@ -135,13 +128,13 @@ namespace IKAVA_ISTExtens_Manager
             sr = File.OpenText(txtTemplate.Text);
             originalTemplateText = sr.ReadToEnd();
             sr.Close();
-
+            int cnt = 1;
             while (reader.Read())
             {
                 last = reader.GetString(1);
                 if (sw != null)
                 {
-                    logg1.Log("Skrevet karakterutskrift for " + reader.GetString(0) + Environment.NewLine, Logg.LogType.Info);
+                    logg1.Log(cnt.ToString().PadLeft(5,Char.Parse("0")) + ". Karakterutskrift for " + reader.GetString(0) + Environment.NewLine, Logg.LogType.Info);
                     sw.Close();
                 }
                 string filename = Path.Combine(txtSavePath.Text, reader.GetString(0) + "-" + reader.GetString(1) + ".rtf");
@@ -192,7 +185,10 @@ namespace IKAVA_ISTExtens_Manager
                 sw.Write(documentText.ToString());
                 sw.Flush();
                 sw.Close();
+                cnt++;
             }
+
+            logg1.Log("Ferdig med å skrive " + cnt.ToString() + " karakterutskrifter." + Environment.NewLine, Logg.LogType.Info);
             reader.Close();
         }
 
@@ -218,6 +214,129 @@ namespace IKAVA_ISTExtens_Manager
             {
                 txtTemplate.Text = openFileDialog1.FileName;
             }
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            string filename = "x" + new Random(10000000);
+            string filetext = string.Empty;
+            string persId = string.Empty;
+
+            if (ConnectionHandler.Database == "")
+            {
+                logg1.Log("Du må velge en IST EXTENS database i dropdown til venstre", Logg.LogType.Info); return;
+            }
+
+            logg1.Log("Kjører spørring mot databasen. Kan ta litt tid ved større mengder elever.", Logg.LogType.Info);
+
+            Cursor.Current = Cursors.WaitCursor;
+
+            string sql = "select e.personid, p.fornamn, p.efternamn, p.adr, p.postnr, p.ort, e.enhet, en.namn, e.startdatum, e.anttimmar, e.antdagar "
+            + "from elevfranv e, enhet en, person p "
+            + "where e.enhet = en.enhet and p.personid = e.personid "
+            + "order by e.personid, e.startdatum;";
+
+            MySqlCommand cmd = new MySqlCommand(sql, MySqlConnector.connection);
+            MySqlDataReader reader = cmd.ExecuteReader();
+
+            bool first = true;
+            int cnt = 0;
+            try
+            {
+                while (reader.Read())
+                {
+                    if ((reader.IsDBNull(0) ? "0" : reader.GetString(0)) == persId)
+                    {
+                        first = false;
+                        cnt++;
+                    }
+                    else
+                    {
+                        if (filetext != string.Empty)
+                        {
+                            string currentFilename = Path.Combine(txtReportSavePath.Text, filename);
+                            if (!File.Exists(currentFilename))
+                            {
+                                StreamWriter sw = File.CreateText(currentFilename);
+                                logg1.Log("Skriver rapport for '" + persId + "'" + Environment.NewLine, Logg.LogType.Info);
+                                sw.Write(filetext);
+                                sw.Flush();
+                                sw.Close();
+                            }
+                            else
+                            {
+                                if (chkOverwrite.Checked)
+                                {
+                                    File.Delete(currentFilename);
+                                    StreamWriter sw = File.CreateText(currentFilename);
+                                    logg1.Log("Skriver rapport for '" + persId + "'" + Environment.NewLine, Logg.LogType.Info);
+                                    sw.Write(filetext);
+                                    sw.Flush();
+                                    sw.Close();
+                                }
+                                else
+                                {
+                                    logg1.Log("Fil for '" + persId + "' finnes. Skriver ikke over." + Environment.NewLine, Logg.LogType.Info);
+                                }
+                            }
+                        }
+
+                        persId = (reader.IsDBNull(0) ? "" : reader.GetString(0));
+                        filename = persId + ".txt";
+                        first = true;
+                        filetext = string.Empty;
+                    }
+
+                    if (first)
+                        filetext += "Fraværsrapport for " + (reader.IsDBNull(1) ? "" : reader.GetString(1)) + " " + (reader.IsDBNull(2) ? "" : reader.GetString(2)) + " (" + (reader.IsDBNull(0) ? "" : reader.GetString(0)) + ")" + Environment.NewLine + Environment.NewLine;
+                    //else
+                    filetext += "Fraværets start : " + (reader.IsDBNull(8) ? "" : reader.GetString(8)).Substring(0,10) + " - Fraværslengde : " + (reader.IsDBNull(10) ? "0" : reader.GetString(10)) + " dager og " + (reader.IsDBNull(9) ? "0" : reader.GetString(9)) + " timer." + Environment.NewLine;
+                }
+
+                if (filetext != string.Empty)
+                {
+                    string currentFilename = Path.Combine(txtReportSavePath.Text, filename);
+                    if (!File.Exists(currentFilename))
+                    {
+                        StreamWriter sw = File.CreateText(currentFilename);
+                        logg1.Log("Skriver rapport for '" + persId + "'" + Environment.NewLine, Logg.LogType.Info);
+                        sw.Write(filetext);
+                        sw.Flush();
+                        sw.Close();
+                    }
+                    else
+                    {
+                        if (chkOverwrite.Checked)
+                        {
+                            File.Delete(currentFilename);
+                            StreamWriter sw = File.CreateText(currentFilename);
+                            logg1.Log("Skriver rapport for '" + persId + "'" + Environment.NewLine, Logg.LogType.Info);
+                            sw.Write(filetext);
+                            sw.Flush();
+                            sw.Close();
+                        }
+                        else
+                        {
+                            logg1.Log("Fil for '" + persId + "' finnes. Skriver ikke over." + Environment.NewLine, Logg.LogType.Info);
+                        }
+                    }
+                }
+
+            }
+            catch (Exception ex)
+            {
+                filetext += ex.Message;
+            }
+            reader.Close();
+            logg1.Log("Totalt "+cnt+" rapportfiler skrevet." + Environment.NewLine, Logg.LogType.Info);
+            Cursor.Current = DefaultCursor;
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            DialogResult dr = folderBrowserDialog1.ShowDialog();
+            if (dr == DialogResult.OK)
+                txtReportSavePath.Text = folderBrowserDialog1.SelectedPath;
         }
     }
 }

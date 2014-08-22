@@ -70,10 +70,12 @@
     <ProjectReference Include="..\IKAVA DBConnectionHandler\IKAVA DBConnectionHandler.csproj">
       <Project>{49a48f47-13b9-48ef-b765-66bbd2da87bf}</Project>
       <Name>IKAVA DBConnectionHandler</Name>
+      <Private>False</Private>
     </ProjectReference>
     <ProjectReference Include="..\IKAVA Logger\IKAVA Logger.csproj">
       <Project>{4bacc5cd-05e8-4f26-b059-297c1b19ac3b}</Project>
       <Name>IKAVA Logger</Name>
+      <Private>False</Private>
     </ProjectReference>
     <ProjectReference Include="..\IKAVA Systembehandler Host\IKAVA Systembehandler Host.csproj">
       <Project>{f1e22eaf-194a-438b-ad12-5ced66205109}</Project>
