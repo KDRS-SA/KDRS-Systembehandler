@@ -188,6 +188,8 @@ namespace IKAVA_Systembehandler.Plugins
                     if (!passwordList.ContainsKey(passordStringArray[0].ToLower()))
                         passwordList.Add(passordStringArray[0].ToLower(), passordStringArray[1]);
                 }
+
+                LogFromThread(progress, "Lest passordfil med totalt " + passwordList.Count + " passord" + Environment.NewLine);
             }
 
             if (inn_fil != string.Empty)
@@ -199,6 +201,9 @@ namespace IKAVA_Systembehandler.Plugins
 
                 while (!sr.EndOfStream)
                     filer.Add(sr.ReadLine());
+
+                LogFromThread(progress, "Ferdig med å lese inn_fil med totalt " + filer.Count + " filer" + Environment.NewLine);
+
             }
             else
             {
@@ -512,8 +517,7 @@ namespace IKAVA_Systembehandler.Plugins
 
                         foreach (Subdocument s in wordDocument.Subdocuments)
                         {
-                            //int retryCounter = 0;
-retry:
+retry: //stygt.. men dog..
                             if (!File.Exists(s.Name))
                             {
                                 string p = Directory.GetParent(Path.GetDirectoryName(s.Name)).ToString();
@@ -543,7 +547,7 @@ retry:
                         if (!missingFiles)
                         {
                             int retryCounter = 0;
-retry:
+retry: //stygt.. men dog..
                             try
                             {
                                 retryCounter++;
@@ -600,8 +604,6 @@ retry:
                     string mergefil = Path.ChangeExtension(filename.ToLower(), "rtf");
 
                     mm.OpenDataSource(mergefil, ref paramMissing, false, true, ref paramMissing, false, currentPassword, currentPassword);
-                    //mm.OpenDataSource(mergefil, WdOpenFormat.wdOpenFormatRTF, false, true, ref paramMissing, false, currentPassword, ref paramMissing, ref paramMissing, ref paramMissing, ref paramMissing, ref paramMissing, ref paramMissing, ref paramMissing, ref paramMissing, WdMergeSubType.wdMergeSubTypeOther);
-                    //Thread.Sleep(1000);
 
                     mm.Destination = WdMailMergeDestination.wdSendToNewDocument;
                     mm.Execute();
@@ -679,7 +681,6 @@ retry:
                 {
                     wordApplication.Quit(false, ref paramMissing, ref paramMissing);
                     wordApplication = null;
-                    //Marshal.ReleaseComObject(wordApplication);
                 }
             }
             catch (Exception ex)
@@ -693,7 +694,7 @@ retry:
         {
             int numRetries = 10;
             int retries = 0;
-retry:
+retry:  //stygt.. men dog..
 
             try
             {
@@ -707,8 +708,6 @@ retry:
 
                 if (wordApplication.Documents.Count > 0)
                     wordApplication.Documents.Close(false, ref paramMissing, ref paramMissing);
-
-                // Marshal.ReleaseComObject(wordDocument);
             }
             catch (Exception ex)
             {
@@ -806,7 +805,6 @@ retry:
         private void button3_Click(object sender, EventArgs e)
         {
             backgroundWorker1.CancelAsync();
-            //stopp = true;
         }
 
         private void backgroundWorker1_ProgressChanged(object sender, ProgressChangedEventArgs e)

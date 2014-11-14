@@ -5,6 +5,7 @@ using System.Diagnostics;
 using System.IO;
 using System.Linq;
 using System.Net.NetworkInformation;
+using System.Net.Sockets;
 using System.Text;
 using System.Threading.Tasks;
 using System.Xml;
@@ -83,9 +84,46 @@ namespace IKAVA_Systembehandler
                 }
             }
             catch { }
-            Message = "'" + Server + "' svarer ikke på ping.";
+            Message = "'" + Server + "' svarer ikke på ping." + Environment.NewLine;
             return false;
         }
+
+        public static bool TcpConnect(string Server, string Port, out string Message)
+        {
+            string retVal = string.Empty;
+            string ServerToPing = Server;
+            if (Server.Contains("\\"))
+            {
+                ServerToPing = Server.Substring(0, Server.IndexOf("\\"));
+            }
+            if (PingServer(ServerToPing, out retVal))
+            {
+                TcpClient tcpClient = new TcpClient();
+                try
+                {
+                    tcpClient.Connect(Server, int.Parse(Port));
+                    if (tcpClient.Connected)
+                    {
+                        Message = "'" + Server + "' er tilgjengelig på nett, og svarer på port '" + Port + "'" + Environment.NewLine;
+                        return true;
+                    }
+                    Message = "'" + Server + "' svarer ikke på ping." + Environment.NewLine;
+                    return false;
+                }
+                catch (Exception ex)
+                {
+                    Message = "Tilkobling til '" + Server + "' på port '" + Port + "' gav følgende feilmelding:" + Environment.NewLine + ex.Message + Environment.NewLine;
+                    return false;
+                }
+            }
+            else
+            {
+                retVal = "'" + Server + "' svarer ikke på ping." + Environment.NewLine;
+            }
+            Message = retVal;
+            return false;
+        }
+
         #endregion
 
         #region Office Detection

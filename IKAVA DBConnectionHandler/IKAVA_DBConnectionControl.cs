@@ -63,18 +63,37 @@ namespace IKAVA_Systembehandler.DB
 
         private void txtServer_Leave(object sender, EventArgs e)
         {
+            button1.Enabled = true;
+            ConnectionHandler.Server = txtServer.Text;
+            return;
+            /*
             string Message = "";
             pictureBox1.Image = Resources.error;
 
-            if (Tools.PingServer(txtServer.Text, out Message))
-                pictureBox1.Image = Resources.ok;
-
+            switch (ServerTypeSelected)
+            {
+                case "MySql" :
+                case "Firebird":
+                    {
+                        if (Tools.PingServer(txtServer.Text, out Message))
+                            pictureBox1.Image = Resources.ok;
+                        break;
+                    }
+                case "SqlServer":
+                    {
+                        if (Tools.TcpConnect(txtServer.Text, "1433", out Message))
+                            pictureBox1.Image = Resources.ok;
+                        break;
+                    }
+            }
             logg1.Log(Message, Logg.LogType.Info);
             pictureBox1.Visible = true;
 
-            button1.Enabled = true;
+            if (pictureBox1.Image == Resources.ok)
+                button1.Enabled = true;
 
             ConnectionHandler.Server = txtServer.Text;
+             * */
         }
 
         private void button1_Click(object sender, EventArgs e)
@@ -152,7 +171,7 @@ namespace IKAVA_Systembehandler.DB
             Cursor = Cursors.WaitCursor;
             try
             {
-                conn = new ConnectionHandler(ConnectionHandler.enDatabaseType.MySql);
+                conn = new ConnectionHandler((ServerTypeSelected=="MySql"?ConnectionHandler.enDatabaseType.MySql: (ServerTypeSelected=="SqlServer"?ConnectionHandler.enDatabaseType.MSSql:ConnectionHandler.enDatabaseType.FireBird)));
                 cbDatabase.Items.AddRange(conn.GetListOfDatabases().ToArray());
                 button1.Enabled = true;
             }

@@ -1,0 +1,87 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{572F353B-89CC-4700-B238-291A12E34EEB}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>IKAVA_BVPro</RootNamespace>
+    <AssemblyName>IKAVA BVPro</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>..\Programfiler\Plugins\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <StartupObject />
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="IKAVA_BVPro.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="IKAVA_BVPro.Designer.cs">
+      <DependentUpon>IKAVA_BVPro.cs</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="IKAVA_BVPro.resx">
+      <DependentUpon>IKAVA_BVPro.cs</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\IKAVA DBConnectionHandler\IKAVA DBConnectionHandler.csproj">
+      <Project>{49a48f47-13b9-48ef-b765-66bbd2da87bf}</Project>
+      <Name>IKAVA DBConnectionHandler</Name>
+      <Private>False</Private>
+    </ProjectReference>
+    <ProjectReference Include="..\IKAVA Logger\IKAVA Logger.csproj">
+      <Project>{4bacc5cd-05e8-4f26-b059-297c1b19ac3b}</Project>
+      <Name>IKAVA Logger</Name>
+      <Private>False</Private>
+    </ProjectReference>
+    <ProjectReference Include="..\IKAVA Systembehandler Host\IKAVA Systembehandler Host.csproj">
+      <Project>{f1e22eaf-194a-438b-ad12-5ced66205109}</Project>
+      <Name>IKAVA Systembehandler Host</Name>
+      <Private>False</Private>
+    </ProjectReference>
+    <ProjectReference Include="..\IKAVA Tools\IKAVA Tools.csproj">
+      <Project>{d4752f25-6049-4dfb-b979-79eb10a75e92}</Project>
+      <Name>IKAVA Tools</Name>
+      <Private>False</Private>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

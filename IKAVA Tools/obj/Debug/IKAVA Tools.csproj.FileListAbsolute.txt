@@ -13,4 +13,3 @@ D:\code\IKAVA Systembehandler\IKAVA Tools\obj\Debug\IKAVA Tools.dll
 D:\code\IKAVA Systembehandler\IKAVA Tools\obj\Debug\IKAVA Tools.pdb
 D:\code\IKAVA Systembehandler\Programfiler\IKAVA Tools.dll
 D:\code\IKAVA Systembehandler\Programfiler\IKAVA Tools.pdb
-D:\code\IKAVA Systembehandler\IKAVA Tools\obj\Debug\IKAVA Tools.csprojResolveAssemblyReference.cache

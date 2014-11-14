@@ -79,7 +79,10 @@ namespace IKAVA_Systembehandler.DB
         public bool CreateConnection()
         {
             string connectionString;
-            connectionString = "SERVER=" + Server + ";" + "DATABASE=" + (Database == null ? "" : Database).ToString() + ";" + "UID=" + Username + ";" + "PASSWORD=" + Password + ";";
+            if (Username == "")
+                connectionString = "SERVER=" + Server + ";" + "DATABASE=" + (Database == null ? "" : Database).ToString() + ";Integrated Security=True;";
+            else
+                connectionString = "SERVER=" + Server + ";" + "DATABASE=" + (Database == null ? "" : Database).ToString() + ";" + "UID=" + Username + ";" + "PASSWORD=" + Password + ";";
             connection = new SqlConnection(connectionString + ";Connect Timeout=300");
             try
             {

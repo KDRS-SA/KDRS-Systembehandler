@@ -81,6 +81,7 @@ namespace IKAVA_Systembehandler.DB
             logg1.Log("Skriver tabeller til fil. Et øyeblikk..." + Environment.NewLine, Logg.LogType.Info);
             Cursor = Cursors.WaitCursor;
 
+            this.Enabled = false;
             Parallel.ForEach(tables, table =>
             {
                 string filnavn = outFolder + "\\" + table + ".xml";
@@ -110,7 +111,7 @@ namespace IKAVA_Systembehandler.DB
                 ostrm.Close();
                 
             });
-
+            this.Enabled = true;
             Cursor = Cursors.Default;
         }
 

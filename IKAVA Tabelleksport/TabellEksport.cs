@@ -32,7 +32,7 @@ namespace IKAVA_Systembehandler.Plugins
 
         public string Versjon
         {
-            get { return "v1.2"; }
+            get { return "v1.3"; }
         }
 
         public ControlType type
@@ -100,6 +100,6 @@ namespace IKAVA_Systembehandler.Plugins
         {
 
         }
-
+                       
     }
 }

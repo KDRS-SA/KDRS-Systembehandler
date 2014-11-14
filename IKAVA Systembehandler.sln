@@ -27,6 +27,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IKAVA FireBird", "IKAVA Fir
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IKAVA DBConnectionHandler", "IKAVA DBConnectionHandler\IKAVA DBConnectionHandler.csproj", "{49A48F47-13B9-48EF-B765-66BBD2DA87BF}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IKAVA Unique", "IKAVA Unique\IKAVA Unique.csproj", "{561C9A7A-8198-41B0-BF4A-462847D6BEB9}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IKAVA BVPro", "IKAVA BVPro\IKAVA BVPro.csproj", "{572F353B-89CC-4700-B238-291A12E34EEB}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -178,6 +182,26 @@ Global
 		{49A48F47-13B9-48EF-B765-66BBD2DA87BF}.Release|Mixed Platforms.ActiveCfg = Release|Any CPU
 		{49A48F47-13B9-48EF-B765-66BBD2DA87BF}.Release|Mixed Platforms.Build.0 = Release|Any CPU
 		{49A48F47-13B9-48EF-B765-66BBD2DA87BF}.Release|x86.ActiveCfg = Release|Any CPU
+		{561C9A7A-8198-41B0-BF4A-462847D6BEB9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{561C9A7A-8198-41B0-BF4A-462847D6BEB9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{561C9A7A-8198-41B0-BF4A-462847D6BEB9}.Debug|Mixed Platforms.ActiveCfg = Debug|Any CPU
+		{561C9A7A-8198-41B0-BF4A-462847D6BEB9}.Debug|Mixed Platforms.Build.0 = Debug|Any CPU
+		{561C9A7A-8198-41B0-BF4A-462847D6BEB9}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{561C9A7A-8198-41B0-BF4A-462847D6BEB9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{561C9A7A-8198-41B0-BF4A-462847D6BEB9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{561C9A7A-8198-41B0-BF4A-462847D6BEB9}.Release|Mixed Platforms.ActiveCfg = Release|Any CPU
+		{561C9A7A-8198-41B0-BF4A-462847D6BEB9}.Release|Mixed Platforms.Build.0 = Release|Any CPU
+		{561C9A7A-8198-41B0-BF4A-462847D6BEB9}.Release|x86.ActiveCfg = Release|Any CPU
+		{572F353B-89CC-4700-B238-291A12E34EEB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{572F353B-89CC-4700-B238-291A12E34EEB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{572F353B-89CC-4700-B238-291A12E34EEB}.Debug|Mixed Platforms.ActiveCfg = Debug|Any CPU
+		{572F353B-89CC-4700-B238-291A12E34EEB}.Debug|Mixed Platforms.Build.0 = Debug|Any CPU
+		{572F353B-89CC-4700-B238-291A12E34EEB}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{572F353B-89CC-4700-B238-291A12E34EEB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{572F353B-89CC-4700-B238-291A12E34EEB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{572F353B-89CC-4700-B238-291A12E34EEB}.Release|Mixed Platforms.ActiveCfg = Release|Any CPU
+		{572F353B-89CC-4700-B238-291A12E34EEB}.Release|Mixed Platforms.Build.0 = Release|Any CPU
+		{572F353B-89CC-4700-B238-291A12E34EEB}.Release|x86.ActiveCfg = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

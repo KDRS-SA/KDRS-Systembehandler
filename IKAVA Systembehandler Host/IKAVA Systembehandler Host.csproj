@@ -26,7 +26,7 @@
     <InstallUrl>http://212.4.57.194/tools/</InstallUrl>
     <PublisherName>IKAVA</PublisherName>
     <SuiteName>IKAVA Systembehandler</SuiteName>
-    <ApplicationRevision>6</ApplicationRevision>
+    <ApplicationRevision>8</ApplicationRevision>
     <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
     <UseApplicationTrust>false</UseApplicationTrust>
     <CreateDesktopShortcut>true</CreateDesktopShortcut>
@@ -60,10 +60,10 @@
     <ApplicationIcon>IKAVA_logo.ico</ApplicationIcon>
   </PropertyGroup>
   <PropertyGroup>
-    <ManifestCertificateThumbprint>B65385D8F499B39C90E186E8175761CA06968A24</ManifestCertificateThumbprint>
+    <ManifestCertificateThumbprint>CA690F755EF9FD2739C51BFB3ADD18EF08CAA94F</ManifestCertificateThumbprint>
   </PropertyGroup>
   <PropertyGroup>
-    <ManifestKeyFile>IKAVA Systembehandler_TemporaryKey.pfx</ManifestKeyFile>
+    <ManifestKeyFile>IKAVA Systembehandler Host_TemporaryKey.pfx</ManifestKeyFile>
   </PropertyGroup>
   <PropertyGroup>
     <GenerateManifests>true</GenerateManifests>
@@ -125,6 +125,7 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
+    <None Include="IKAVA Systembehandler Host_TemporaryKey.pfx" />
     <None Include="IKAVA Systembehandler_TemporaryKey.pfx" />
     <None Include="Properties\app.manifest" />
     <None Include="Properties\Settings.settings">
@@ -183,6 +184,28 @@
       <Project>{d4752f25-6049-4dfb-b979-79eb10a75e92}</Project>
       <Name>IKAVA Tools</Name>
     </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <PublishFile Include="FirebirdSql.Data.FirebirdClient">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+    <PublishFile Include="MySql.Data">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Assembly</FileType>
+    </PublishFile>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
