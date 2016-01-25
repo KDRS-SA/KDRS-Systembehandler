@@ -55,7 +55,6 @@
             this.dbConnectionControl2.Size = new System.Drawing.Size(274, 175);
             this.dbConnectionControl2.TabIndex = 3;
             this.dbConnectionControl2.OnDatabaseConnected += new IKAVA_Systembehandler.DB.DBConnectionControl.DatabaseConnectedEventHandler(this.dbConnectionControl2_OnDatabaseConnected);
-            this.dbConnectionControl2.OnFDBFileConnected += new IKAVA_Systembehandler.DB.DBConnectionControl.FDBFileConnectedEventHandler(this.dbConnectionControl2_OnFDBFileConnected);
             // 
             // tableFunctionsControl1
             // 
@@ -85,7 +84,6 @@
             this.Controls.Add(this.logg1);
             this.Name = "TabellEksport";
             this.Size = new System.Drawing.Size(611, 410);
-            this.Load += new System.EventHandler(this.TabellEksport_Load);
             this.ResumeLayout(false);
 
         }

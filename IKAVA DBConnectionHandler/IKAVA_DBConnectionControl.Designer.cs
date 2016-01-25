@@ -69,8 +69,10 @@
             this.groupBox2.Controls.Add(this.button1);
             this.groupBox2.Dock = System.Windows.Forms.DockStyle.Fill;
             this.groupBox2.Location = new System.Drawing.Point(0, 0);
+            this.groupBox2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Size = new System.Drawing.Size(260, 175);
+            this.groupBox2.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.groupBox2.Size = new System.Drawing.Size(347, 215);
             this.groupBox2.TabIndex = 18;
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Databaseinnstillinger";
@@ -79,9 +81,10 @@
             // 
             this.btnFDBFil.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.btnFDBFil.Image = global::IKAVA_DBConnectionHandler.Properties.Resources.folder;
-            this.btnFDBFil.Location = new System.Drawing.Point(231, 39);
+            this.btnFDBFil.Location = new System.Drawing.Point(308, 48);
+            this.btnFDBFil.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnFDBFil.Name = "btnFDBFil";
-            this.btnFDBFil.Size = new System.Drawing.Size(25, 26);
+            this.btnFDBFil.Size = new System.Drawing.Size(33, 32);
             this.btnFDBFil.TabIndex = 17;
             this.btnFDBFil.UseVisualStyleBackColor = true;
             this.btnFDBFil.Visible = false;
@@ -90,10 +93,9 @@
             // lblFDBFil
             // 
             this.lblFDBFil.AutoSize = true;
-            this.lblFDBFil.Location = new System.Drawing.Point(10, 44);
-            this.lblFDBFil.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lblFDBFil.Location = new System.Drawing.Point(13, 54);
             this.lblFDBFil.Name = "lblFDBFil";
-            this.lblFDBFil.Size = new System.Drawing.Size(38, 13);
+            this.lblFDBFil.Size = new System.Drawing.Size(50, 17);
             this.lblFDBFil.TabIndex = 16;
             this.lblFDBFil.Text = "FDB-fil";
             this.lblFDBFil.Visible = false;
@@ -102,19 +104,20 @@
             // 
             this.txtFDBFil.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.txtFDBFil.Location = new System.Drawing.Point(85, 42);
-            this.txtFDBFil.Margin = new System.Windows.Forms.Padding(2);
+            this.txtFDBFil.Location = new System.Drawing.Point(113, 52);
+            this.txtFDBFil.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtFDBFil.Name = "txtFDBFil";
-            this.txtFDBFil.Size = new System.Drawing.Size(144, 20);
+            this.txtFDBFil.Size = new System.Drawing.Size(191, 22);
             this.txtFDBFil.TabIndex = 15;
             this.txtFDBFil.Visible = false;
             // 
             // pictureBox1
             // 
             this.pictureBox1.Image = global::IKAVA_DBConnectionHandler.Properties.Resources.error;
-            this.pictureBox1.Location = new System.Drawing.Point(60, 40);
+            this.pictureBox1.Location = new System.Drawing.Point(80, 49);
+            this.pictureBox1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(22, 23);
+            this.pictureBox1.Size = new System.Drawing.Size(29, 28);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox1.TabIndex = 14;
             this.pictureBox1.TabStop = false;
@@ -126,9 +129,10 @@
             this.cbRememberSettings.AutoSize = true;
             this.cbRememberSettings.Checked = true;
             this.cbRememberSettings.CheckState = System.Windows.Forms.CheckState.Checked;
-            this.cbRememberSettings.Location = new System.Drawing.Point(12, 147);
+            this.cbRememberSettings.Location = new System.Drawing.Point(21, 181);
+            this.cbRememberSettings.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.cbRememberSettings.Name = "cbRememberSettings";
-            this.cbRememberSettings.Size = new System.Drawing.Size(86, 17);
+            this.cbRememberSettings.Size = new System.Drawing.Size(110, 21);
             this.cbRememberSettings.TabIndex = 12;
             this.cbRememberSettings.Text = "Husk verdier";
             this.cbRememberSettings.UseVisualStyleBackColor = true;
@@ -144,10 +148,10 @@
             "MySql",
             "SqlServer",
             "FireBird"});
-            this.cbServerType.Location = new System.Drawing.Point(85, 18);
-            this.cbServerType.Margin = new System.Windows.Forms.Padding(2);
+            this.cbServerType.Location = new System.Drawing.Point(113, 22);
+            this.cbServerType.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.cbServerType.Name = "cbServerType";
-            this.cbServerType.Size = new System.Drawing.Size(170, 21);
+            this.cbServerType.Size = new System.Drawing.Size(225, 24);
             this.cbServerType.TabIndex = 6;
             this.cbServerType.Text = "MySql";
             this.cbServerType.SelectedIndexChanged += new System.EventHandler(this.cbServerType_SelectedIndexChanged);
@@ -156,10 +160,9 @@
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(10, 90);
-            this.label3.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label3.Location = new System.Drawing.Point(13, 111);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(45, 13);
+            this.label3.Size = new System.Drawing.Size(60, 17);
             this.label3.TabIndex = 4;
             this.label3.Text = "Passord";
             // 
@@ -167,10 +170,10 @@
             // 
             this.txtUser.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.txtUser.Location = new System.Drawing.Point(85, 65);
-            this.txtUser.Margin = new System.Windows.Forms.Padding(2);
+            this.txtUser.Location = new System.Drawing.Point(113, 80);
+            this.txtUser.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtUser.Name = "txtUser";
-            this.txtUser.Size = new System.Drawing.Size(170, 20);
+            this.txtUser.Size = new System.Drawing.Size(225, 22);
             this.txtUser.TabIndex = 3;
             this.txtUser.Leave += new System.EventHandler(this.txtUser_Leave);
             // 
@@ -178,11 +181,11 @@
             // 
             this.txtPassword.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.txtPassword.Location = new System.Drawing.Point(85, 88);
-            this.txtPassword.Margin = new System.Windows.Forms.Padding(2);
+            this.txtPassword.Location = new System.Drawing.Point(113, 108);
+            this.txtPassword.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtPassword.Name = "txtPassword";
             this.txtPassword.PasswordChar = '*';
-            this.txtPassword.Size = new System.Drawing.Size(170, 20);
+            this.txtPassword.Size = new System.Drawing.Size(225, 22);
             this.txtPassword.TabIndex = 5;
             this.txtPassword.Leave += new System.EventHandler(this.txtPassword_Leave);
             // 
@@ -191,9 +194,10 @@
             this.cbDatabase.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.cbDatabase.FormattingEnabled = true;
-            this.cbDatabase.Location = new System.Drawing.Point(85, 111);
+            this.cbDatabase.Location = new System.Drawing.Point(113, 137);
+            this.cbDatabase.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.cbDatabase.Name = "cbDatabase";
-            this.cbDatabase.Size = new System.Drawing.Size(170, 21);
+            this.cbDatabase.Size = new System.Drawing.Size(225, 24);
             this.cbDatabase.TabIndex = 11;
             this.cbDatabase.DropDown += new System.EventHandler(this.cbDatabase_DropDown);
             this.cbDatabase.SelectedIndexChanged += new System.EventHandler(this.cbDatabase_SelectedIndexChanged);
@@ -201,20 +205,18 @@
             // lblUser
             // 
             this.lblUser.AutoSize = true;
-            this.lblUser.Location = new System.Drawing.Point(10, 67);
-            this.lblUser.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lblUser.Location = new System.Drawing.Point(13, 82);
             this.lblUser.Name = "lblUser";
-            this.lblUser.Size = new System.Drawing.Size(38, 13);
+            this.lblUser.Size = new System.Drawing.Size(50, 17);
             this.lblUser.TabIndex = 2;
             this.lblUser.Text = "Bruker";
             // 
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(10, 114);
-            this.label5.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label5.Location = new System.Drawing.Point(13, 140);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(53, 13);
+            this.label5.Size = new System.Drawing.Size(69, 17);
             this.label5.TabIndex = 9;
             this.label5.Text = "Database";
             // 
@@ -222,10 +224,10 @@
             // 
             this.txtServer.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.txtServer.Location = new System.Drawing.Point(85, 42);
-            this.txtServer.Margin = new System.Windows.Forms.Padding(2);
+            this.txtServer.Location = new System.Drawing.Point(113, 52);
+            this.txtServer.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtServer.Name = "txtServer";
-            this.txtServer.Size = new System.Drawing.Size(170, 20);
+            this.txtServer.Size = new System.Drawing.Size(225, 22);
             this.txtServer.TabIndex = 1;
             this.txtServer.TextChanged += new System.EventHandler(this.txtServer_TextChanged);
             this.txtServer.Leave += new System.EventHandler(this.txtServer_Leave);
@@ -233,30 +235,28 @@
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(10, 20);
-            this.label4.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label4.Location = new System.Drawing.Point(13, 25);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(58, 13);
+            this.label4.Size = new System.Drawing.Size(77, 17);
             this.label4.TabIndex = 7;
             this.label4.Text = "Servertype";
             // 
             // lblServer
             // 
             this.lblServer.AutoSize = true;
-            this.lblServer.Location = new System.Drawing.Point(10, 44);
-            this.lblServer.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lblServer.Location = new System.Drawing.Point(13, 54);
             this.lblServer.Name = "lblServer";
-            this.lblServer.Size = new System.Drawing.Size(38, 13);
+            this.lblServer.Size = new System.Drawing.Size(50, 17);
             this.lblServer.TabIndex = 0;
             this.lblServer.Text = "Server";
             // 
             // button1
             // 
             this.button1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.button1.Location = new System.Drawing.Point(154, 141);
-            this.button1.Margin = new System.Windows.Forms.Padding(2);
+            this.button1.Location = new System.Drawing.Point(205, 174);
+            this.button1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(101, 27);
+            this.button1.Size = new System.Drawing.Size(135, 33);
             this.button1.TabIndex = 8;
             this.button1.Text = "Test kobling";
             this.button1.UseVisualStyleBackColor = true;
@@ -264,12 +264,13 @@
             // 
             // DBConnectionControl
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.Controls.Add(this.groupBox2);
-            this.MinimumSize = new System.Drawing.Size(260, 175);
+            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.MinimumSize = new System.Drawing.Size(347, 215);
             this.Name = "DBConnectionControl";
-            this.Size = new System.Drawing.Size(260, 175);
+            this.Size = new System.Drawing.Size(347, 215);
             this.groupBox2.ResumeLayout(false);
             this.groupBox2.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();

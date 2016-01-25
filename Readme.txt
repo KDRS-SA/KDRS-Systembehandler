@@ -4,4 +4,4 @@ Systembehandleren er tiltenkt å være en hjelp ved uttrekk av dokumenter fra data
 
 For å opprette egne plugins, opprett referanse til IKAVA Systembehandler.exe, og benytt interfaces som finnes der.
 
-Ved spørsmål, ta kontakt med Tormod Engebu ved IKAVA (engebu@ikava.va.no).
+Ved spørsmål, ta kontakt med Tormod Engebu ved IKAVA (engebu@ikava.no).

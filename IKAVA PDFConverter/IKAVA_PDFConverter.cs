@@ -1,14 +1,9 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.ComponentModel;
-using System.Drawing;
 using System.Data;
 using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
-using IKAVA_Systembehandler;
-using IKAVA_Systembehandler.Properties;
 using System.Diagnostics;
 using System.IO;
 using System.Threading;
@@ -158,6 +153,8 @@ namespace IKAVA_Systembehandler.Plugins
 
         private void DoConversion()
         {
+            filer.Clear();
+
             inn_sti = txtInPath.Text;
             ut_sti = txtOutPath.Text;
 

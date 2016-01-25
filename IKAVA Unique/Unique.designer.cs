@@ -352,7 +352,7 @@
             this.logg1.HTMLEnabled = false;
             this.logg1.Location = new System.Drawing.Point(3, 275);
             this.logg1.Name = "logg1";
-            this.logg1.Size = new System.Drawing.Size(790, 129);
+            this.logg1.Size = new System.Drawing.Size(790, 177);
             this.logg1.TabIndex = 26;
             // 
             // Unique
@@ -364,7 +364,7 @@
             this.Controls.Add(this.groupBox3);
             this.Controls.Add(this.groupBox2);
             this.Name = "Unique";
-            this.Size = new System.Drawing.Size(798, 407);
+            this.Size = new System.Drawing.Size(798, 455);
             this.Load += new System.EventHandler(this.Unique_Load);
             this.groupBox2.ResumeLayout(false);
             this.groupBox3.ResumeLayout(false);

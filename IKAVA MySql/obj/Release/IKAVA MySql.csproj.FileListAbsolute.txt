@@ -10,3 +10,9 @@ D:\code\IKAVA Systembehandler\IKAVA_MySql\bin\Release\MySql.Data.dll
 D:\code\IKAVA Systembehandler\IKAVA_MySql\obj\Release\IKAVA MySql.csprojResolveAssemblyReference.cache
 D:\code\IKAVA Systembehandler\IKAVA_MySql\obj\Release\IKAVA_MySql.dll
 D:\code\IKAVA Systembehandler\IKAVA_MySql\obj\Release\IKAVA_MySql.pdb
+C:\Users\Tormod.IKAVA\Jottacloud\code\IKAVA Systembehandler\IKAVA MySql\bin\Release\IKAVA MySql.dll
+C:\Users\Tormod.IKAVA\Jottacloud\code\IKAVA Systembehandler\IKAVA MySql\bin\Release\IKAVA MySql.pdb
+C:\Users\Tormod.IKAVA\Jottacloud\code\IKAVA Systembehandler\IKAVA MySql\bin\Release\MySql.Data.dll
+C:\Users\Tormod.IKAVA\Jottacloud\code\IKAVA Systembehandler\IKAVA MySql\obj\Release\IKAVA MySql.csprojResolveAssemblyReference.cache
+C:\Users\Tormod.IKAVA\Jottacloud\code\IKAVA Systembehandler\IKAVA MySql\obj\Release\IKAVA MySql.dll
+C:\Users\Tormod.IKAVA\Jottacloud\code\IKAVA Systembehandler\IKAVA MySql\obj\Release\IKAVA MySql.pdb

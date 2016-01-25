@@ -6,3 +6,19 @@ D:\code\IKAVA Systembehandler\IKAVA ISTExtens Manager\obj\Debug\IKAVA ISTExtens 
 D:\code\IKAVA Systembehandler\IKAVA ISTExtens Manager\obj\Debug\IKAVA ISTExtens Manager.dll
 D:\code\IKAVA Systembehandler\IKAVA ISTExtens Manager\obj\Debug\IKAVA ISTExtens Manager.pdb
 D:\code\IKAVA Systembehandler\Programfiler\Plugins\templates\Karakterutskrift.rtf
+C:\Users\Tormod\Jottacloud\code\IKAVA Systembehandler\Programfiler\Plugins\templates\Karakterutskrift.rtf
+C:\Users\Tormod\Jottacloud\code\IKAVA Systembehandler\Programfiler\Plugins\IKAVA ISTExtens Manager.dll
+C:\Users\Tormod\Jottacloud\code\IKAVA Systembehandler\Programfiler\Plugins\IKAVA ISTExtens Manager.pdb
+C:\Users\Tormod\Jottacloud\code\IKAVA Systembehandler\IKAVA ISTExtens Manager\obj\Debug\IKAVA ISTExtens Manager.csprojResolveAssemblyReference.cache
+C:\Users\Tormod\Jottacloud\code\IKAVA Systembehandler\IKAVA ISTExtens Manager\obj\Debug\IKAVA_ISTExtens_Manager.IKAVA_ISTExtens_Manager.resources
+C:\Users\Tormod\Jottacloud\code\IKAVA Systembehandler\IKAVA ISTExtens Manager\obj\Debug\IKAVA ISTExtens Manager.csproj.GenerateResource.Cache
+C:\Users\Tormod\Jottacloud\code\IKAVA Systembehandler\IKAVA ISTExtens Manager\obj\Debug\IKAVA ISTExtens Manager.dll
+C:\Users\Tormod\Jottacloud\code\IKAVA Systembehandler\IKAVA ISTExtens Manager\obj\Debug\IKAVA ISTExtens Manager.pdb
+C:\Users\Tormod.IKAVA\Jottacloud\code\IKAVA Systembehandler\Programfiler\Plugins\templates\Karakterutskrift.rtf
+C:\Users\Tormod.IKAVA\Jottacloud\code\IKAVA Systembehandler\Programfiler\Plugins\IKAVA ISTExtens Manager.dll
+C:\Users\Tormod.IKAVA\Jottacloud\code\IKAVA Systembehandler\Programfiler\Plugins\IKAVA ISTExtens Manager.pdb
+C:\Users\Tormod.IKAVA\Jottacloud\code\IKAVA Systembehandler\IKAVA ISTExtens Manager\obj\Debug\IKAVA ISTExtens Manager.csprojResolveAssemblyReference.cache
+C:\Users\Tormod.IKAVA\Jottacloud\code\IKAVA Systembehandler\IKAVA ISTExtens Manager\obj\Debug\IKAVA_ISTExtens_Manager.IKAVA_ISTExtens_Manager.resources
+C:\Users\Tormod.IKAVA\Jottacloud\code\IKAVA Systembehandler\IKAVA ISTExtens Manager\obj\Debug\IKAVA ISTExtens Manager.csproj.GenerateResource.Cache
+C:\Users\Tormod.IKAVA\Jottacloud\code\IKAVA Systembehandler\IKAVA ISTExtens Manager\obj\Debug\IKAVA ISTExtens Manager.dll
+C:\Users\Tormod.IKAVA\Jottacloud\code\IKAVA Systembehandler\IKAVA ISTExtens Manager\obj\Debug\IKAVA ISTExtens Manager.pdb

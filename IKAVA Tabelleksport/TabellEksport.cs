@@ -62,10 +62,6 @@ namespace IKAVA_Systembehandler.Plugins
             }
         }
 
-        private void TabellEksport_Load(object sender, EventArgs e)
-        {
-        }
-
         private void dbConnectionControl2_OnDatabaseConnected()
         {
             // do something on db-connection.
@@ -90,16 +86,9 @@ namespace IKAVA_Systembehandler.Plugins
             }
         }
 
-        private void dbConnectionControl2_OnFDBFileConnected()
-        {
-            // do something with fdb-file.
-            //dbConnectionControl2
-        }
-
         private void tableFunctionsControl1_Load(object sender, EventArgs e)
         {
 
         }
-                       
     }
 }

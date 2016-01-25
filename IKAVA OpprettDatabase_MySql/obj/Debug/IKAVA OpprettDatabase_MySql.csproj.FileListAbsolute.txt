@@ -21,3 +21,17 @@ D:\code\IKAVA Systembehandler\IKAVA Systembehandler\bin\Debug\plugins\IKAVA Oppr
 D:\code\IKAVA Systembehandler\IKAVA Systembehandler\bin\Debug\plugins\IKAVA OpprettDatabase_MySql.pdb
 D:\code\IKAVA Systembehandler\Programfiler\Plugins\IKAVA OpprettDatabase_MySql.dll
 D:\code\IKAVA Systembehandler\Programfiler\Plugins\IKAVA OpprettDatabase_MySql.pdb
+C:\Users\Tormod\Jottacloud\code\IKAVA Systembehandler\Programfiler\Plugins\IKAVA OpprettDatabase_MySql.dll
+C:\Users\Tormod\Jottacloud\code\IKAVA Systembehandler\Programfiler\Plugins\IKAVA OpprettDatabase_MySql.pdb
+C:\Users\Tormod\Jottacloud\code\IKAVA Systembehandler\IKAVA OpprettDatabase_MySql\obj\Debug\IKAVA OpprettDatabase_MySql.csprojResolveAssemblyReference.cache
+C:\Users\Tormod\Jottacloud\code\IKAVA Systembehandler\IKAVA OpprettDatabase_MySql\obj\Debug\IKAVA_Systembehandler.Plugins.OpprettDatabase_MySql.resources
+C:\Users\Tormod\Jottacloud\code\IKAVA Systembehandler\IKAVA OpprettDatabase_MySql\obj\Debug\IKAVA OpprettDatabase_MySql.csproj.GenerateResource.Cache
+C:\Users\Tormod\Jottacloud\code\IKAVA Systembehandler\IKAVA OpprettDatabase_MySql\obj\Debug\IKAVA OpprettDatabase_MySql.dll
+C:\Users\Tormod\Jottacloud\code\IKAVA Systembehandler\IKAVA OpprettDatabase_MySql\obj\Debug\IKAVA OpprettDatabase_MySql.pdb
+C:\Users\Tormod.IKAVA\Jottacloud\code\IKAVA Systembehandler\Programfiler\Plugins\IKAVA OpprettDatabase_MySql.dll
+C:\Users\Tormod.IKAVA\Jottacloud\code\IKAVA Systembehandler\Programfiler\Plugins\IKAVA OpprettDatabase_MySql.pdb
+C:\Users\Tormod.IKAVA\Jottacloud\code\IKAVA Systembehandler\IKAVA OpprettDatabase_MySql\obj\Debug\IKAVA OpprettDatabase_MySql.csprojResolveAssemblyReference.cache
+C:\Users\Tormod.IKAVA\Jottacloud\code\IKAVA Systembehandler\IKAVA OpprettDatabase_MySql\obj\Debug\IKAVA_Systembehandler.Plugins.OpprettDatabase_MySql.resources
+C:\Users\Tormod.IKAVA\Jottacloud\code\IKAVA Systembehandler\IKAVA OpprettDatabase_MySql\obj\Debug\IKAVA OpprettDatabase_MySql.csproj.GenerateResource.Cache
+C:\Users\Tormod.IKAVA\Jottacloud\code\IKAVA Systembehandler\IKAVA OpprettDatabase_MySql\obj\Debug\IKAVA OpprettDatabase_MySql.dll
+C:\Users\Tormod.IKAVA\Jottacloud\code\IKAVA Systembehandler\IKAVA OpprettDatabase_MySql\obj\Debug\IKAVA OpprettDatabase_MySql.pdb

@@ -10,7 +10,7 @@ using System.Windows.Forms;
 using System.Collections;
 using IKAVA_DBConnectionHandler.Properties;
 using IKAVA_Systembehandler;
-using FirebirdSql.Data.FirebirdClient;
+//using FirebirdSql.Data.FirebirdClient;
 
 namespace IKAVA_Systembehandler.DB
 {

@@ -3,3 +3,8 @@ O:\Code\IKAVA Dokumentuthenter\IKAVA_MSSql\bin\Release\IKAVA_MSSql.pdb
 O:\Code\IKAVA Dokumentuthenter\IKAVA_MSSql\obj\Release\IKAVA MSSql.csprojResolveAssemblyReference.cache
 O:\Code\IKAVA Dokumentuthenter\IKAVA_MSSql\obj\Release\IKAVA_MSSql.dll
 O:\Code\IKAVA Dokumentuthenter\IKAVA_MSSql\obj\Release\IKAVA_MSSql.pdb
+C:\Users\Tormod.IKAVA\Jottacloud\code\IKAVA Systembehandler\IKAVA MSSql\bin\Release\IKAVA MSSql.dll
+C:\Users\Tormod.IKAVA\Jottacloud\code\IKAVA Systembehandler\IKAVA MSSql\bin\Release\IKAVA MSSql.pdb
+C:\Users\Tormod.IKAVA\Jottacloud\code\IKAVA Systembehandler\IKAVA MSSql\obj\Release\IKAVA MSSql.csprojResolveAssemblyReference.cache
+C:\Users\Tormod.IKAVA\Jottacloud\code\IKAVA Systembehandler\IKAVA MSSql\obj\Release\IKAVA MSSql.dll
+C:\Users\Tormod.IKAVA\Jottacloud\code\IKAVA Systembehandler\IKAVA MSSql\obj\Release\IKAVA MSSql.pdb

@@ -98,8 +98,10 @@ namespace IKAVA_Systembehandler.DB
                         throw new Exception("Kan ikke koble til server. Endre innstillinger og prøv igjen.");
                     case 1045:
                         throw new Exception("Feil brukernavn/passord-kombinasjon. Prøv igjen!");
+                    default:
+                        throw new Exception("Feil oppstått:" + ex.Message);
                 }
-                return false;
+                //return false;
             }
         }
 

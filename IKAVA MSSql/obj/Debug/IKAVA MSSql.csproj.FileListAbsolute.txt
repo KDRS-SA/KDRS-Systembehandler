@@ -14,3 +14,11 @@ D:\code\IKAVA Systembehandler\Programfiler\IKAVA MSSql.dll
 D:\code\IKAVA Systembehandler\Programfiler\IKAVA MSSql.pdb
 D:\code\IKAVA Systembehandler\IKAVA MSSql\obj\Debug\IKAVA MSSql.dll
 D:\code\IKAVA Systembehandler\IKAVA MSSql\obj\Debug\IKAVA MSSql.pdb
+C:\Users\Tormod\Jottacloud\code\IKAVA Systembehandler\Programfiler\IKAVA MSSql.dll
+C:\Users\Tormod\Jottacloud\code\IKAVA Systembehandler\Programfiler\IKAVA MSSql.pdb
+C:\Users\Tormod\Jottacloud\code\IKAVA Systembehandler\IKAVA MSSql\obj\Debug\IKAVA MSSql.dll
+C:\Users\Tormod\Jottacloud\code\IKAVA Systembehandler\IKAVA MSSql\obj\Debug\IKAVA MSSql.pdb
+C:\Users\Tormod.IKAVA\Jottacloud\code\IKAVA Systembehandler\Programfiler\IKAVA MSSql.dll
+C:\Users\Tormod.IKAVA\Jottacloud\code\IKAVA Systembehandler\Programfiler\IKAVA MSSql.pdb
+C:\Users\Tormod.IKAVA\Jottacloud\code\IKAVA Systembehandler\IKAVA MSSql\obj\Debug\IKAVA MSSql.dll
+C:\Users\Tormod.IKAVA\Jottacloud\code\IKAVA Systembehandler\IKAVA MSSql\obj\Debug\IKAVA MSSql.pdb

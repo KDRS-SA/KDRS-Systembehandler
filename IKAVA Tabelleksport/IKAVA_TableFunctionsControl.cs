@@ -122,7 +122,7 @@ namespace IKAVA_Systembehandler.DB
 
         void fileSystemWatcher1_Changed(object sender, FileSystemEventArgs e)
         {
-            logg1.Log("Overskrev filen " + e.FullPath + Environment.NewLine, Logg.LogType.Info);
+            logg1.Log("Innhold endret i " + e.FullPath + Environment.NewLine, Logg.LogType.Info);
         }
 
         private Process CreateProcess(Process process1, string filename, string table)

@@ -14,3 +14,21 @@ D:\code\IKAVA Systembehandler\IKAVA DBConnectionHandler\obj\Release\IKAVA_DBConn
 D:\code\IKAVA Systembehandler\IKAVA DBConnectionHandler\obj\Release\IKAVA DBConnectionHandler.csproj.GenerateResource.Cache
 D:\code\IKAVA Systembehandler\IKAVA DBConnectionHandler\obj\Release\IKAVA DBConnectionHandler.dll
 D:\code\IKAVA Systembehandler\IKAVA DBConnectionHandler\obj\Release\IKAVA DBConnectionHandler.pdb
+C:\Users\Tormod.IKAVA\Jottacloud\code\IKAVA Systembehandler\IKAVA DBConnectionHandler\bin\Release\IKAVA DBConnectionHandler.dll
+C:\Users\Tormod.IKAVA\Jottacloud\code\IKAVA Systembehandler\IKAVA DBConnectionHandler\bin\Release\IKAVA DBConnectionHandler.pdb
+C:\Users\Tormod.IKAVA\Jottacloud\code\IKAVA Systembehandler\IKAVA DBConnectionHandler\bin\Release\FirebirdSql.Data.FirebirdClient.dll
+C:\Users\Tormod.IKAVA\Jottacloud\code\IKAVA Systembehandler\IKAVA DBConnectionHandler\bin\Release\IKAVA FireBird.dll
+C:\Users\Tormod.IKAVA\Jottacloud\code\IKAVA Systembehandler\IKAVA DBConnectionHandler\bin\Release\IKAVA MSSql.dll
+C:\Users\Tormod.IKAVA\Jottacloud\code\IKAVA Systembehandler\IKAVA DBConnectionHandler\bin\Release\IKAVA MySql.dll
+C:\Users\Tormod.IKAVA\Jottacloud\code\IKAVA Systembehandler\IKAVA DBConnectionHandler\bin\Release\IKAVA Tools.dll
+C:\Users\Tormod.IKAVA\Jottacloud\code\IKAVA Systembehandler\IKAVA DBConnectionHandler\bin\Release\IKAVA FireBird.pdb
+C:\Users\Tormod.IKAVA\Jottacloud\code\IKAVA Systembehandler\IKAVA DBConnectionHandler\bin\Release\IKAVA MSSql.pdb
+C:\Users\Tormod.IKAVA\Jottacloud\code\IKAVA Systembehandler\IKAVA DBConnectionHandler\bin\Release\IKAVA MySql.pdb
+C:\Users\Tormod.IKAVA\Jottacloud\code\IKAVA Systembehandler\IKAVA DBConnectionHandler\bin\Release\IKAVA Tools.pdb
+C:\Users\Tormod.IKAVA\Jottacloud\code\IKAVA Systembehandler\IKAVA DBConnectionHandler\bin\Release\FirebirdSql.Data.FirebirdClient.pdb
+C:\Users\Tormod.IKAVA\Jottacloud\code\IKAVA Systembehandler\IKAVA DBConnectionHandler\obj\Release\IKAVA DBConnectionHandler.csprojResolveAssemblyReference.cache
+C:\Users\Tormod.IKAVA\Jottacloud\code\IKAVA Systembehandler\IKAVA DBConnectionHandler\obj\Release\IKAVA_Systembehandler.DB.DBConnectionControl.resources
+C:\Users\Tormod.IKAVA\Jottacloud\code\IKAVA Systembehandler\IKAVA DBConnectionHandler\obj\Release\IKAVA_DBConnectionHandler.Properties.Resources.resources
+C:\Users\Tormod.IKAVA\Jottacloud\code\IKAVA Systembehandler\IKAVA DBConnectionHandler\obj\Release\IKAVA DBConnectionHandler.csproj.GenerateResource.Cache
+C:\Users\Tormod.IKAVA\Jottacloud\code\IKAVA Systembehandler\IKAVA DBConnectionHandler\obj\Release\IKAVA DBConnectionHandler.dll
+C:\Users\Tormod.IKAVA\Jottacloud\code\IKAVA Systembehandler\IKAVA DBConnectionHandler\obj\Release\IKAVA DBConnectionHandler.pdb

@@ -4,3 +4,11 @@ D:\code\IKAVA Systembehandler\IKAVA_Tools\obj\Release\IKAVA_Systembehandler.Logg
 D:\code\IKAVA Systembehandler\IKAVA_Tools\obj\Release\IKAVA Tools.csproj.GenerateResource.Cache
 D:\code\IKAVA Systembehandler\IKAVA_Tools\obj\Release\IKAVA_Tools.dll
 D:\code\IKAVA Systembehandler\IKAVA_Tools\obj\Release\IKAVA_Tools.pdb
+C:\Users\Tormod.IKAVA\Jottacloud\code\IKAVA Systembehandler\IKAVA Tools\bin\Release\IKAVA Tools.dll
+C:\Users\Tormod.IKAVA\Jottacloud\code\IKAVA Systembehandler\IKAVA Tools\bin\Release\IKAVA Tools.pdb
+C:\Users\Tormod.IKAVA\Jottacloud\code\IKAVA Systembehandler\IKAVA Tools\obj\Release\IKAVA_Systembehandler.Logg.resources
+C:\Users\Tormod.IKAVA\Jottacloud\code\IKAVA Systembehandler\IKAVA Tools\obj\Release\IKAVA_Tools.Properties.Resources.resources
+C:\Users\Tormod.IKAVA\Jottacloud\code\IKAVA Systembehandler\IKAVA Tools\obj\Release\IKAVA_Tools.SelectDestinationFolder.resources
+C:\Users\Tormod.IKAVA\Jottacloud\code\IKAVA Systembehandler\IKAVA Tools\obj\Release\IKAVA Tools.csproj.GenerateResource.Cache
+C:\Users\Tormod.IKAVA\Jottacloud\code\IKAVA Systembehandler\IKAVA Tools\obj\Release\IKAVA Tools.dll
+C:\Users\Tormod.IKAVA\Jottacloud\code\IKAVA Systembehandler\IKAVA Tools\obj\Release\IKAVA Tools.pdb

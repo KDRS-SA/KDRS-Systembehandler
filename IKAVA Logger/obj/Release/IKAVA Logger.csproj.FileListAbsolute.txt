@@ -2,3 +2,7 @@ D:\code\IKAVA Systembehandler\IKAVA_AnyDoc2PDFAConverter\IKAVA_Logger\bin\Releas
 D:\code\IKAVA Systembehandler\IKAVA_AnyDoc2PDFAConverter\IKAVA_Logger\bin\Release\IKAVA_Logger.pdb
 D:\code\IKAVA Systembehandler\IKAVA_AnyDoc2PDFAConverter\IKAVA_Logger\obj\Release\IKAVA_Logger.dll
 D:\code\IKAVA Systembehandler\IKAVA_AnyDoc2PDFAConverter\IKAVA_Logger\obj\Release\IKAVA_Logger.pdb
+C:\Users\Tormod.IKAVA\Jottacloud\code\IKAVA Systembehandler\IKAVA Logger\bin\Release\IKAVA Logger.dll
+C:\Users\Tormod.IKAVA\Jottacloud\code\IKAVA Systembehandler\IKAVA Logger\bin\Release\IKAVA Logger.pdb
+C:\Users\Tormod.IKAVA\Jottacloud\code\IKAVA Systembehandler\IKAVA Logger\obj\Release\IKAVA Logger.dll
+C:\Users\Tormod.IKAVA\Jottacloud\code\IKAVA Systembehandler\IKAVA Logger\obj\Release\IKAVA Logger.pdb

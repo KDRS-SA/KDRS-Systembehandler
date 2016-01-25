@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Data;
-using FirebirdSql.Data.FirebirdClient;
+//using FirebirdSql.Data.FirebirdClient;
 
 namespace IKAVA_Systembehandler.DB
 {

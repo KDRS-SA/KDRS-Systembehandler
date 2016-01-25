@@ -1,20 +1,11 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Drawing;
-using System.Data;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
-using IKAVA_Systembehandler;
 using IKAVA_Systembehandler.DB;
 using System.IO;
 using System.Text.RegularExpressions;
 using System.Collections;
 using System.Diagnostics;
 using System.Threading;
-using System.Reflection;
 
 namespace IKAVA_Systembehandler.Plugins
 {
@@ -235,6 +226,12 @@ retrymysql:
         {
             if (txtLoadPath.Text != "")
                 LoadSql();
+        }
+
+        private void dbConnectionControl1_OnDatabaseConnected2()
+        {
+            conn = dbConnectionControl1.conn;
+            groupBox5.Enabled = true;
         }
     }
 }
