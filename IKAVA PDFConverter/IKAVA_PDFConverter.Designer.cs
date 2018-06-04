@@ -78,6 +78,7 @@
             this.folderBrowserDialog1 = new System.Windows.Forms.FolderBrowserDialog();
             this.openFileDialog1 = new System.Windows.Forms.OpenFileDialog();
             this.backgroundWorker1 = new System.ComponentModel.BackgroundWorker();
+            this.rbFileType3 = new System.Windows.Forms.RadioButton();
             this.groupBox1.SuspendLayout();
             this.groupBox5.SuspendLayout();
             this.groupBox4.SuspendLayout();
@@ -111,10 +112,11 @@
             this.groupBox1.Location = new System.Drawing.Point(0, 0);
             this.groupBox1.MinimumSize = new System.Drawing.Size(904, 579);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(904, 579);
+            this.groupBox1.Size = new System.Drawing.Size(904, 632);
             this.groupBox1.TabIndex = 0;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "IKAVA PDFConverter";
+            this.groupBox1.Enter += new System.EventHandler(this.groupBox1_Enter);
             // 
             // button3
             // 
@@ -130,11 +132,11 @@
             // 
             // lblWarning
             // 
-            this.lblWarning.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblWarning.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblWarning.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
             this.lblWarning.Location = new System.Drawing.Point(21, 130);
             this.lblWarning.Name = "lblWarning";
-            this.lblWarning.Size = new System.Drawing.Size(530, 48);
+            this.lblWarning.Size = new System.Drawing.Size(530, 22);
             this.lblWarning.TabIndex = 38;
             this.lblWarning.Text = "Advarsel:";
             this.lblWarning.Visible = false;
@@ -149,13 +151,14 @@
             // 
             // groupBox5
             // 
+            this.groupBox5.Controls.Add(this.rbFileType3);
             this.groupBox5.Controls.Add(this.label17);
             this.groupBox5.Controls.Add(this.rbFileType2);
             this.groupBox5.Controls.Add(this.rbFileType1);
             this.groupBox5.Controls.Add(this.rbFileType);
-            this.groupBox5.Location = new System.Drawing.Point(283, 183);
+            this.groupBox5.Location = new System.Drawing.Point(283, 156);
             this.groupBox5.Name = "groupBox5";
-            this.groupBox5.Size = new System.Drawing.Size(167, 83);
+            this.groupBox5.Size = new System.Drawing.Size(167, 110);
             this.groupBox5.TabIndex = 36;
             this.groupBox5.TabStop = false;
             this.groupBox5.Text = "Filtype";
@@ -171,7 +174,7 @@
             // rbFileType2
             // 
             this.rbFileType2.AutoSize = true;
-            this.rbFileType2.Location = new System.Drawing.Point(125, 55);
+            this.rbFileType2.Location = new System.Drawing.Point(15, 78);
             this.rbFileType2.Name = "rbFileType2";
             this.rbFileType2.Size = new System.Drawing.Size(36, 17);
             this.rbFileType2.TabIndex = 30;
@@ -199,6 +202,7 @@
             this.rbFileType.TabStop = true;
             this.rbFileType.Text = "doc/docx";
             this.rbFileType.UseVisualStyleBackColor = true;
+            this.rbFileType.CheckedChanged += new System.EventHandler(this.rbFileType_CheckedChanged);
             // 
             // button2
             // 
@@ -315,7 +319,7 @@
             this.groupBox3.Controls.Add(this.chkPDFA);
             this.groupBox3.Controls.Add(this.chkRecursive);
             this.groupBox3.Controls.Add(this.chkOverwrite);
-            this.groupBox3.Location = new System.Drawing.Point(10, 183);
+            this.groupBox3.Location = new System.Drawing.Point(10, 156);
             this.groupBox3.Name = "groupBox3";
             this.groupBox3.Size = new System.Drawing.Size(269, 83);
             this.groupBox3.TabIndex = 33;
@@ -588,14 +592,25 @@
             this.backgroundWorker1.ProgressChanged += new System.ComponentModel.ProgressChangedEventHandler(this.backgroundWorker1_ProgressChanged);
             this.backgroundWorker1.RunWorkerCompleted += new System.ComponentModel.RunWorkerCompletedEventHandler(this.bw_RunWorkerCompleted);
             // 
+            // rbFileType3
+            // 
+            this.rbFileType3.AutoSize = true;
+            this.rbFileType3.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F);
+            this.rbFileType3.Location = new System.Drawing.Point(90, 78);
+            this.rbFileType3.Name = "rbFileType3";
+            this.rbFileType3.Size = new System.Drawing.Size(46, 17);
+            this.rbFileType3.TabIndex = 40;
+            this.rbFileType3.Text = "PDF";
+            this.rbFileType3.UseVisualStyleBackColor = true;
+            // 
             // PDFConverter
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.Controls.Add(this.groupBox1);
-            this.MinimumSize = new System.Drawing.Size(904, 579);
+            this.MinimumSize = new System.Drawing.Size(904, 580);
             this.Name = "PDFConverter";
-            this.Size = new System.Drawing.Size(904, 579);
+            this.Size = new System.Drawing.Size(904, 632);
             this.Load += new System.EventHandler(this.PDFConverter_Load);
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
@@ -662,5 +677,6 @@
         private System.Windows.Forms.RadioButton rbSeparator1;
         private System.Windows.Forms.RadioButton rbSeparator3;
         private System.Windows.Forms.RadioButton rbSeparator2;
+        private System.Windows.Forms.RadioButton rbFileType3;
     }
 }

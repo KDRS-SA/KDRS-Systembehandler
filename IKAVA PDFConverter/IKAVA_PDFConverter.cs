@@ -82,7 +82,7 @@ namespace IKAVA_Systembehandler.Plugins
 
         public string Versjon
         {
-            get { return "v1.0"; }
+            get { return "v1.2"; }
         }
 
         public ControlType type
@@ -164,9 +164,11 @@ namespace IKAVA_Systembehandler.Plugins
                 filtype="rtf";
             if (rbFileType2.Checked)
                 filtype="txt";
+            if (rbFileType3.Checked)
+                filtype = "pdf";
 
-            if (log_sti == string.Empty)
-                log_sti = inn_sti;
+            //if (log_sti == string.Empty) // fjernet for å oppdatere loggmappa hver gang ved gjentatte kjøringer..
+            log_sti = inn_sti;
 
             //Init log
             log = new FileLog(log_sti);
@@ -254,7 +256,7 @@ namespace IKAVA_Systembehandler.Plugins
                 }
                 tmpcnt = 0;
             }
-            if (!chkOverwrite.Checked)
+            if (!chkOverwrite.Checked && !rbFileType3.Checked) // kun sjekk hvis ikke pdf -> pdfa konvertering
             {
                 LogFromThread(0, "Finner allerede konverterte filer (PDF-versjon eksisterer)" + Environment.NewLine);
                 foreach (string fil in filer)
@@ -270,36 +272,7 @@ namespace IKAVA_Systembehandler.Plugins
                 }
             }
             tmpcnt = 0;
-            /* Ikke nødvendig, for hvis man har krysset av for doc, vil ingen rtf-filer ligge i filer-array.
-             * Har man krysset av for rtf eller txt, er ikke dette en aktuell sjekk å kjøre.
-            if (rbFileType.Checked) // Kun nødvendig å kjøre sjekk mot word-filer.
-            {
-                if (filtype.Contains("doc"))
-                {
-                    LogFromThread(0, "Finner duplikater (doc/rtf-par som er flettedatafil-par)..." + Environment.NewLine);
-                    foreach (string fil in filer)
-                    {
-                        tmpcnt++;
-                        if (tmpcnt % 1000 == 0)
-                            LogFromThread(0, tmpcnt + " kontrollert.." + Environment.NewLine);
-
-                        //if (Debugger.IsAttached)
-                        //{
-                        //    if (tmpcnt > 2000)
-                        //        break;
-                        //}
-
-                        string filetosearchfor = Path.GetFileNameWithoutExtension(fil);
-                        List<string> hits = filer.FindAll(file => Path.GetFileNameWithoutExtension(file) == filetosearchfor);
-                        if (hits.Count > 1)
-                        {
-                            if (!filersomskalfjernes.Contains(Path.ChangeExtension(fil, "RTF")))
-                                filersomskalfjernes.Add(Path.ChangeExtension(fil, "RTF"));
-                        }
-                    }
-                }
-            }
-            */
+            
 
             LogFromThread(0, "Funnet " + filersomskalfjernes.Count + " filer som ikke skal konverteres" + Environment.NewLine);
             foreach (string fil in filersomskalfjernes)
@@ -789,14 +762,10 @@ retry:  //stygt.. men dog..
             lblWarning.Visible = false;
             if (intOfficeVersion < 11)
             {
-                lblWarning.Text += " Denne moduler er kodet for bruk med Office 2003 og 2007. Vennligst oppgrader Office.";
+                lblWarning.Text += " Denne moduler er kodet for bruk med Office 2003 eller nyere. Vennligst oppgrader Office.";
                 lblWarning.Visible = true;
             }
-            else if (intOfficeVersion > 15)
-            {
-                lblWarning.Text += "Denne modulen er testet med Office 2003 til 2013. Du har " + strOfficeVersion + ". Ved feil kan det være du mangler Office Interop Assemblies installert.";
-                lblWarning.Visible = true;
-            }
+            
         }
 
         private void button3_Click(object sender, EventArgs e)
@@ -809,5 +778,14 @@ retry:  //stygt.. men dog..
             logg1.Log(e.UserState.ToString(), Logg.LogType.Info);
         }
 
+        private void groupBox1_Enter(object sender, EventArgs e)
+        {
+
+        }
+
+        private void rbFileType_CheckedChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }

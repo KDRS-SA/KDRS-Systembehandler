@@ -140,7 +140,8 @@ namespace IKAVA_Systembehandler
                     if (!uc.MinimumSize.IsEmpty)
                         this.Size = uc.MinimumSize;
 
-                    this.Width += 20;
+                    this.Width += 10;
+                    this.Height += 40;
                 }
                 else
                 {
@@ -201,5 +202,9 @@ namespace IKAVA_Systembehandler
             }
         }
 
+        private void verktøyToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
