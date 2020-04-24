@@ -130,6 +130,7 @@
             // 
             this.groupBox7.Controls.Add(this.chkMulticore);
             this.groupBox7.Controls.Add(this.lblMultiCore);
+            this.groupBox7.Enabled = false;
             this.groupBox7.Location = new System.Drawing.Point(456, 400);
             this.groupBox7.Name = "groupBox7";
             this.groupBox7.Size = new System.Drawing.Size(442, 49);
@@ -659,7 +660,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.Controls.Add(this.groupBox1);
-            this.MinimumSize = new System.Drawing.Size(904, 580);
+            this.MinimumSize = new System.Drawing.Size(904, 632);
             this.Name = "PDFConverter";
             this.Size = new System.Drawing.Size(904, 632);
             this.Load += new System.EventHandler(this.PDFConverter_Load);

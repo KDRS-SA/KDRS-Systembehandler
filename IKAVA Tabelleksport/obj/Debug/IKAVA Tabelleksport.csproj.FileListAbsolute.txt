@@ -24,7 +24,6 @@ D:\code\IKAVA Systembehandler\Programfiler\Plugins\IKAVA Tabelleksport.dll
 D:\code\IKAVA Systembehandler\Programfiler\Plugins\IKAVA Tabelleksport.pdb
 C:\Users\Tormod\Jottacloud\code\IKAVA Systembehandler\Programfiler\Plugins\IKAVA Tabelleksport.dll
 C:\Users\Tormod\Jottacloud\code\IKAVA Systembehandler\Programfiler\Plugins\IKAVA Tabelleksport.pdb
-C:\Users\Tormod\Jottacloud\code\IKAVA Systembehandler\IKAVA Tabelleksport\obj\Debug\IKAVA Tabelleksport.csprojResolveAssemblyReference.cache
 C:\Users\Tormod\Jottacloud\code\IKAVA Systembehandler\IKAVA Tabelleksport\obj\Debug\IKAVA_Systembehandler.DB.TableFunctionsControl.resources
 C:\Users\Tormod\Jottacloud\code\IKAVA Systembehandler\IKAVA Tabelleksport\obj\Debug\IKAVA_Systembehandler.Plugins.TabellEksport.resources
 C:\Users\Tormod\Jottacloud\code\IKAVA Systembehandler\IKAVA Tabelleksport\obj\Debug\IKAVA Tabelleksport.csproj.GenerateResource.Cache
@@ -57,3 +56,5 @@ D:\Jottacloud\code\IKAVA Systembehandler\IKAVA Tabelleksport\obj\Debug\IKAVA Tab
 D:\Jottacloud\code\IKAVA Systembehandler\IKAVA Tabelleksport\obj\Debug\IKAVA Tabelleksport.csproj.CoreCompileInputs.cache
 D:\Jottacloud\code\IKAVA Systembehandler\IKAVA Tabelleksport\obj\Debug\IKAVA Tabelleksport.dll
 D:\Jottacloud\code\IKAVA Systembehandler\IKAVA Tabelleksport\obj\Debug\IKAVA Tabelleksport.pdb
+C:\Users\Tormod\Jottacloud\code\IKAVA Systembehandler\IKAVA Tabelleksport\obj\Debug\IKAVA Tabelleksport.csprojAssemblyReference.cache
+C:\Users\Tormod\Jottacloud\code\IKAVA Systembehandler\IKAVA Tabelleksport\obj\Debug\IKAVA Tabelleksport.csproj.CoreCompileInputs.cache

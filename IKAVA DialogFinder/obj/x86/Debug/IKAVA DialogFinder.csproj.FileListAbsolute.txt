@@ -41,3 +41,5 @@ D:\Jottacloud\code\IKAVA Systembehandler\IKAVA DialogFinder\obj\x86\Debug\IKAVA 
 D:\Jottacloud\code\IKAVA Systembehandler\IKAVA DialogFinder\obj\x86\Debug\IKAVA DialogFinder.csproj.CoreCompileInputs.cache
 D:\Jottacloud\code\IKAVA Systembehandler\IKAVA DialogFinder\obj\x86\Debug\IKAVA DialogFinder.dll
 D:\Jottacloud\code\IKAVA Systembehandler\IKAVA DialogFinder\obj\x86\Debug\IKAVA DialogFinder.pdb
+C:\Users\Tormod\Jottacloud\code\IKAVA Systembehandler\IKAVA DialogFinder\obj\x86\Debug\IKAVA DialogFinder.csprojAssemblyReference.cache
+C:\Users\Tormod\Jottacloud\code\IKAVA Systembehandler\IKAVA DialogFinder\obj\x86\Debug\IKAVA DialogFinder.csproj.CoreCompileInputs.cache
