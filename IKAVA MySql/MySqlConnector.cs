@@ -218,10 +218,21 @@ namespace IKAVA_Systembehandler.DB
         public string Unique_GetStringFromSequenceForDocId(string table, string id)
         {
             string retString = string.Empty;
-            string query = "SELECT * FROM " + Database + "." + table + " WHERE ID = " + id + " order by seq";
-            cmd = new MySqlCommand(query, connection);
-            MySqlDataReader reader = cmd.ExecuteReader();
-            
+            string query = "";
+            MySqlDataReader reader = null;
+            try
+            {
+                query = "SELECT * FROM " + Database + "." + table + " WHERE ID = " + id + " order by seq";
+                cmd = new MySqlCommand(query, connection);
+                reader = cmd.ExecuteReader();
+            }
+            catch
+            {
+                Console.WriteLine("ver2");
+                query = "SELECT * FROM `" + table + "` WHERE ID = " + id + " order by seq";
+                cmd = new MySqlCommand(query, connection);
+                reader = cmd.ExecuteReader();
+            }
             while (reader.Read())
             {
                 string Block1 = (reader.IsDBNull(2) ? "" : reader.GetString(2)); //BLOCK1
@@ -237,8 +248,16 @@ namespace IKAVA_Systembehandler.DB
         {
             List<string> idList = new List<string>();
 
-            cmd = new MySqlCommand("SELECT distinct(id) FROM " + Database + "." + table, connection);
-            reader = cmd.ExecuteReader();
+            try
+            {
+                cmd = new MySqlCommand("SELECT distinct(id) FROM " + Database + "." + table, connection);
+                reader = cmd.ExecuteReader();
+            }
+            catch {
+                cmd = new MySqlCommand("SELECT distinct(id) FROM `" + table + "`", connection);
+                reader = cmd.ExecuteReader();
+            }
+
             while (reader.Read())
             {
                 idList.Add(reader.GetDouble(0).ToString());
@@ -250,9 +269,19 @@ namespace IKAVA_Systembehandler.DB
 
         public int GetRowCountOfTable(string table)
         {
-            string query = "SELECT count(*) FROM " + Database + "." + table;
-            cmd = new MySqlCommand(query, connection);
-            reader = cmd.ExecuteReader();
+            string query = "";
+            try
+            {
+                query = "SELECT count(*) FROM " + Database + "." + table;
+                cmd = new MySqlCommand(query, connection);
+                reader = cmd.ExecuteReader();
+            }
+            catch
+            {
+                query = "SELECT count(*) FROM `" + table + "`";
+                cmd = new MySqlCommand(query, connection);
+                reader = cmd.ExecuteReader();
+            }
             reader.Read();
             int cnt = reader.GetInt32(0);
             reader.Close();

@@ -30,8 +30,25 @@ C:\Users\Tormod\Jottacloud\code\IKAVA Systembehandler\IKAVA OpprettDatabase_MySq
 C:\Users\Tormod\Jottacloud\code\IKAVA Systembehandler\IKAVA OpprettDatabase_MySql\obj\Debug\IKAVA OpprettDatabase_MySql.pdb
 C:\Users\Tormod.IKAVA\Jottacloud\code\IKAVA Systembehandler\Programfiler\Plugins\IKAVA OpprettDatabase_MySql.dll
 C:\Users\Tormod.IKAVA\Jottacloud\code\IKAVA Systembehandler\Programfiler\Plugins\IKAVA OpprettDatabase_MySql.pdb
-C:\Users\Tormod.IKAVA\Jottacloud\code\IKAVA Systembehandler\IKAVA OpprettDatabase_MySql\obj\Debug\IKAVA OpprettDatabase_MySql.csprojResolveAssemblyReference.cache
 C:\Users\Tormod.IKAVA\Jottacloud\code\IKAVA Systembehandler\IKAVA OpprettDatabase_MySql\obj\Debug\IKAVA_Systembehandler.Plugins.OpprettDatabase_MySql.resources
 C:\Users\Tormod.IKAVA\Jottacloud\code\IKAVA Systembehandler\IKAVA OpprettDatabase_MySql\obj\Debug\IKAVA OpprettDatabase_MySql.csproj.GenerateResource.Cache
 C:\Users\Tormod.IKAVA\Jottacloud\code\IKAVA Systembehandler\IKAVA OpprettDatabase_MySql\obj\Debug\IKAVA OpprettDatabase_MySql.dll
 C:\Users\Tormod.IKAVA\Jottacloud\code\IKAVA Systembehandler\IKAVA OpprettDatabase_MySql\obj\Debug\IKAVA OpprettDatabase_MySql.pdb
+C:\Users\Tormod.IKAVA\Jottacloud\code\IKAVA Systembehandler\IKAVA OpprettDatabase_MySql\obj\Debug\IKAVA OpprettDatabase_MySql.csprojAssemblyReference.cache
+C:\Users\Tormod.IKAVA\Jottacloud\code\IKAVA Systembehandler\IKAVA OpprettDatabase_MySql\obj\Debug\IKAVA OpprettDatabase_MySql.csproj.CoreCompileInputs.cache
+G:\Jottacloud\code\IKAVA Systembehandler\Programfiler\Plugins\IKAVA OpprettDatabase_MySql.dll
+G:\Jottacloud\code\IKAVA Systembehandler\Programfiler\Plugins\IKAVA OpprettDatabase_MySql.pdb
+G:\Jottacloud\code\IKAVA Systembehandler\IKAVA OpprettDatabase_MySql\obj\Debug\IKAVA OpprettDatabase_MySql.csprojAssemblyReference.cache
+G:\Jottacloud\code\IKAVA Systembehandler\IKAVA OpprettDatabase_MySql\obj\Debug\IKAVA_Systembehandler.Plugins.OpprettDatabase_MySql.resources
+G:\Jottacloud\code\IKAVA Systembehandler\IKAVA OpprettDatabase_MySql\obj\Debug\IKAVA OpprettDatabase_MySql.csproj.GenerateResource.cache
+G:\Jottacloud\code\IKAVA Systembehandler\IKAVA OpprettDatabase_MySql\obj\Debug\IKAVA OpprettDatabase_MySql.csproj.CoreCompileInputs.cache
+G:\Jottacloud\code\IKAVA Systembehandler\IKAVA OpprettDatabase_MySql\obj\Debug\IKAVA OpprettDatabase_MySql.dll
+G:\Jottacloud\code\IKAVA Systembehandler\IKAVA OpprettDatabase_MySql\obj\Debug\IKAVA OpprettDatabase_MySql.pdb
+D:\Jottacloud\code\IKAVA Systembehandler\Programfiler\Plugins\IKAVA OpprettDatabase_MySql.dll
+D:\Jottacloud\code\IKAVA Systembehandler\Programfiler\Plugins\IKAVA OpprettDatabase_MySql.pdb
+D:\Jottacloud\code\IKAVA Systembehandler\IKAVA OpprettDatabase_MySql\obj\Debug\IKAVA OpprettDatabase_MySql.csprojAssemblyReference.cache
+D:\Jottacloud\code\IKAVA Systembehandler\IKAVA OpprettDatabase_MySql\obj\Debug\IKAVA_Systembehandler.Plugins.OpprettDatabase_MySql.resources
+D:\Jottacloud\code\IKAVA Systembehandler\IKAVA OpprettDatabase_MySql\obj\Debug\IKAVA OpprettDatabase_MySql.csproj.GenerateResource.cache
+D:\Jottacloud\code\IKAVA Systembehandler\IKAVA OpprettDatabase_MySql\obj\Debug\IKAVA OpprettDatabase_MySql.csproj.CoreCompileInputs.cache
+D:\Jottacloud\code\IKAVA Systembehandler\IKAVA OpprettDatabase_MySql\obj\Debug\IKAVA OpprettDatabase_MySql.dll
+D:\Jottacloud\code\IKAVA Systembehandler\IKAVA OpprettDatabase_MySql\obj\Debug\IKAVA OpprettDatabase_MySql.pdb

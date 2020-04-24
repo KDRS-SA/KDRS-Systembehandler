@@ -9,6 +9,7 @@ using System.IO;
 using System.Threading;
 using Microsoft.Office.Interop.Word;
 using System.Collections;
+using System.Threading.Tasks;
 
 namespace IKAVA_Systembehandler.Plugins
 {
@@ -65,12 +66,35 @@ namespace IKAVA_Systembehandler.Plugins
         int intOfficeVersion = 0;
         Tools t = new Tools();
 
+        public int numProcessors = 0;
+        int numCores = 0;
+        int numLogProcessors = 0;
+
         public PDFConverter()
         {
             InitializeComponent();
 
             strOfficeVersion = t.GetInstalledVersionOfficeAsText(Tools.OfficeComponent.Word);
             intOfficeVersion = t.GetInstalledOfficeVersion(Tools.OfficeComponent.Word);
+
+            lblOfficeVersion.Text = "(Fant " + strOfficeVersion + ")";
+
+            foreach (var item in new System.Management.ManagementObjectSearcher("Select * from Win32_ComputerSystem").Get())
+            {
+                numProcessors += int.Parse(item["NumberOfProcessors"].ToString()); 
+            }
+
+            foreach (var item in new System.Management.ManagementObjectSearcher("Select * from Win32_Processor").Get())
+            {
+                numCores += int.Parse(item["NumberOfCores"].ToString());
+            }
+
+            foreach (var item in new System.Management.ManagementObjectSearcher("Select * from Win32_ComputerSystem").Get())
+            {
+                numLogProcessors += int.Parse(item["NumberOfLogicalProcessors"].ToString());
+            }
+
+            lblMultiCore.Text = numProcessors+" cpu ("+numCores+" kjerner og "+numLogProcessors+" logiske prosessorer) detektert";
         }
 
         #region IIKAVA_Systembehandler_Plugin Members
@@ -125,7 +149,25 @@ namespace IKAVA_Systembehandler.Plugins
 
         private void button2_Click(object sender, EventArgs e)
         {
+            inn_sti = txtInPath.Text;
+            if (inn_sti == "")
+            {
+                MessageBox.Show("InnSti må fylles ut med 'operasjonsmappe', dvs. hvis Innfil brukes trenger den også InnSti, da det er her logfilene lagres. Eventuelle filer i InnSti-mappen prosesseres ikke, med mindre de er med i InnFil-lista.");
+                return;
+            }
+            if (lboxFileFormat.CheckedItems.Count == 0)
+            {
+                MessageBox.Show("Du må velge filformat du ønsker å konvertere før du kan starte.");
+                return;
+            }
             inn_fil = txtInFile.Text;
+            filtype = "";
+            foreach (object item in lboxFileFormat.CheckedItems)
+            {
+                filtype += "|" + item.ToString();
+            }
+
+            filtype = filtype.Remove(0, 1);
 
             backgroundWorker1.RunWorkerAsync();
         }
@@ -157,15 +199,6 @@ namespace IKAVA_Systembehandler.Plugins
 
             inn_sti = txtInPath.Text;
             ut_sti = txtOutPath.Text;
-
-            if (rbFileType.Checked)
-                filtype="doc|docx";
-            if (rbFileType1.Checked)
-                filtype="rtf";
-            if (rbFileType2.Checked)
-                filtype="txt";
-            if (rbFileType3.Checked)
-                filtype = "pdf";
 
             //if (log_sti == string.Empty) // fjernet for å oppdatere loggmappa hver gang ved gjentatte kjøringer..
             log_sti = inn_sti;
@@ -219,6 +252,7 @@ namespace IKAVA_Systembehandler.Plugins
                         else
                             filer.AddRange(Directory.GetFiles(inn_sti, "*." + ftype, (chkRecursive.Checked ? SearchOption.AllDirectories : SearchOption.TopDirectoryOnly)).ToList<string>());
                     }
+                    
                 }
                 else
                 {
@@ -243,7 +277,7 @@ namespace IKAVA_Systembehandler.Plugins
             LogFromThread(progress, "Finner filer som ikke skal være med... Dette kan ta en del tid.. " + Environment.NewLine);
 
             int tmpcnt = 0;
-            if (rbFileType.Checked) // Kun nødvendig å kjøre sjekk mot word-filer.
+            if (filtype.Contains("doc")) // Kun nødvendig å kjøre sjekk mot word-filer.
             {
                 LogFromThread(progress, "Finner temporære word-filer (inneholder ~)" + Environment.NewLine);
                 foreach (string fil in filer)
@@ -256,7 +290,7 @@ namespace IKAVA_Systembehandler.Plugins
                 }
                 tmpcnt = 0;
             }
-            if (!chkOverwrite.Checked && !rbFileType3.Checked) // kun sjekk hvis ikke pdf -> pdfa konvertering
+            if (!chkOverwrite.Checked && !filtype.Contains("pdf")) // kun sjekk hvis ikke pdf -> pdfa konvertering
             {
                 LogFromThread(0, "Finner allerede konverterte filer (PDF-versjon eksisterer)" + Environment.NewLine);
                 foreach (string fil in filer)
@@ -289,7 +323,27 @@ namespace IKAVA_Systembehandler.Plugins
                 return;
             }
 
-            for (int a = jumpAhead; a < filer.Count; a++)
+            DateTime start = DateTime.Now;
+            LogFromThread(0, Environment.NewLine + "Startet : " + start.ToLongTimeString() + Environment.NewLine);
+            int a = jumpAhead;
+
+            /*if (chkMulticore.Checked)
+            {
+                Parallel.ForEach(filer, (string i,  ParallelLoopState state) =>
+                {
+                    if (backgroundWorker1.CancellationPending)
+                    {
+                        //LogFromThread((100 / filer.Count) * filer, Environment.NewLine + "Konvertering avbrutt av operatør." + Environment.NewLine);
+                        state.Stop();
+                    }
+                    ProcessFile(i);
+                    LogFromThread(0, "File " + i + " processed by thread " + Thread.CurrentThread.ManagedThreadId);
+                });
+            }
+            else
+            {
+            */
+            for (a = jumpAhead; a < filer.Count; a++)
             {
                 if (backgroundWorker1.CancellationPending)
                 {
@@ -297,10 +351,15 @@ namespace IKAVA_Systembehandler.Plugins
                     break;
                 }
                 ProcessFile(filer[a], a);
-                
             }
-            #endregion
+            //}
 
+            DateTime sluttet = DateTime.Now;
+            LogFromThread(0, Environment.NewLine + "Sluttet : " + sluttet.ToLongTimeString() + Environment.NewLine);
+            TimeSpan span = sluttet.Subtract(start);
+            LogFromThread(0, Environment.NewLine + "Sekunder brukt: " + span.TotalSeconds + Environment.NewLine);
+            
+            #endregion
             // Quit Word and release the ApplicationClass object.
             CloseApplication();
             FileLog.CloseLog();
@@ -325,14 +384,17 @@ namespace IKAVA_Systembehandler.Plugins
 
             #region Kverk word-prosesser som henger..
             // kill prosesser som ikke skal være der...
+            
             Process[] procs = Process.GetProcessesByName("WINWORD");
             if (procs.Length > 1)
                 foreach (Process process in procs)
                 {
                     process.Kill();
                 }
+            
             #endregion
 
+            
             try
             {
                 if (wordApplication.Documents.Count > 0)
@@ -343,6 +405,7 @@ namespace IKAVA_Systembehandler.Plugins
                 }
             }
             catch { }
+            
 
             try
             {
@@ -357,7 +420,7 @@ namespace IKAVA_Systembehandler.Plugins
             DateTime start = DateTime.Now;
             try
             {
-                LogFromThread(progress, "(" + (cnt+1).ToString() + " av " + filer.Count + ") ..." + filename.Substring(filename.Length - 15) + " - ");
+                //LogFromThread(progress, "(" + (cnt+1).ToString() + " av " + filer.Count + ") ..." + filename.Substring(filename.Length - 15) + " - ");
 
                 #region Sjekk på tom fil
                 if (new FileInfo(filename).Length == 0) // empty file -> continue..

@@ -30,14 +30,19 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(PDFConverter));
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.groupBox7 = new System.Windows.Forms.GroupBox();
+            this.chkMulticore = new System.Windows.Forms.CheckBox();
+            this.lblMultiCore = new System.Windows.Forms.Label();
+            this.groupBox6 = new System.Windows.Forms.GroupBox();
+            this.lblOfficeVersion = new System.Windows.Forms.Label();
+            this.rdLO = new System.Windows.Forms.RadioButton();
+            this.rdMSO = new System.Windows.Forms.RadioButton();
             this.button3 = new System.Windows.Forms.Button();
             this.lblWarning = new System.Windows.Forms.Label();
             this.logg1 = new IKAVA_Systembehandler.Logg();
             this.groupBox5 = new System.Windows.Forms.GroupBox();
+            this.lboxFileFormat = new System.Windows.Forms.CheckedListBox();
             this.label17 = new System.Windows.Forms.Label();
-            this.rbFileType2 = new System.Windows.Forms.RadioButton();
-            this.rbFileType1 = new System.Windows.Forms.RadioButton();
-            this.rbFileType = new System.Windows.Forms.RadioButton();
             this.button2 = new System.Windows.Forms.Button();
             this.groupBox4 = new System.Windows.Forms.GroupBox();
             this.label16 = new System.Windows.Forms.Label();
@@ -78,8 +83,9 @@
             this.folderBrowserDialog1 = new System.Windows.Forms.FolderBrowserDialog();
             this.openFileDialog1 = new System.Windows.Forms.OpenFileDialog();
             this.backgroundWorker1 = new System.ComponentModel.BackgroundWorker();
-            this.rbFileType3 = new System.Windows.Forms.RadioButton();
             this.groupBox1.SuspendLayout();
+            this.groupBox7.SuspendLayout();
+            this.groupBox6.SuspendLayout();
             this.groupBox5.SuspendLayout();
             this.groupBox4.SuspendLayout();
             this.groupBox3.SuspendLayout();
@@ -88,6 +94,8 @@
             // 
             // groupBox1
             // 
+            this.groupBox1.Controls.Add(this.groupBox7);
+            this.groupBox1.Controls.Add(this.groupBox6);
             this.groupBox1.Controls.Add(this.button3);
             this.groupBox1.Controls.Add(this.lblWarning);
             this.groupBox1.Controls.Add(this.logg1);
@@ -118,6 +126,80 @@
             this.groupBox1.Text = "IKAVA PDFConverter";
             this.groupBox1.Enter += new System.EventHandler(this.groupBox1_Enter);
             // 
+            // groupBox7
+            // 
+            this.groupBox7.Controls.Add(this.chkMulticore);
+            this.groupBox7.Controls.Add(this.lblMultiCore);
+            this.groupBox7.Location = new System.Drawing.Point(456, 400);
+            this.groupBox7.Name = "groupBox7";
+            this.groupBox7.Size = new System.Drawing.Size(442, 49);
+            this.groupBox7.TabIndex = 41;
+            this.groupBox7.TabStop = false;
+            this.groupBox7.Text = "Flerkjerneopsjoner";
+            // 
+            // chkMulticore
+            // 
+            this.chkMulticore.AutoSize = true;
+            this.chkMulticore.Location = new System.Drawing.Point(6, 22);
+            this.chkMulticore.Name = "chkMulticore";
+            this.chkMulticore.Size = new System.Drawing.Size(95, 17);
+            this.chkMulticore.TabIndex = 1;
+            this.chkMulticore.Text = "Bruk MultiCore";
+            this.chkMulticore.UseVisualStyleBackColor = true;
+            // 
+            // lblMultiCore
+            // 
+            this.lblMultiCore.AutoSize = true;
+            this.lblMultiCore.Location = new System.Drawing.Point(107, 23);
+            this.lblMultiCore.Name = "lblMultiCore";
+            this.lblMultiCore.Size = new System.Drawing.Size(41, 13);
+            this.lblMultiCore.TabIndex = 0;
+            this.lblMultiCore.Text = "label18";
+            // 
+            // groupBox6
+            // 
+            this.groupBox6.Controls.Add(this.lblOfficeVersion);
+            this.groupBox6.Controls.Add(this.rdLO);
+            this.groupBox6.Controls.Add(this.rdMSO);
+            this.groupBox6.Location = new System.Drawing.Point(11, 251);
+            this.groupBox6.Name = "groupBox6";
+            this.groupBox6.Size = new System.Drawing.Size(268, 68);
+            this.groupBox6.TabIndex = 40;
+            this.groupBox6.TabStop = false;
+            this.groupBox6.Text = "Automasjonsvalg";
+            // 
+            // lblOfficeVersion
+            // 
+            this.lblOfficeVersion.AutoSize = true;
+            this.lblOfficeVersion.Location = new System.Drawing.Point(94, 21);
+            this.lblOfficeVersion.Name = "lblOfficeVersion";
+            this.lblOfficeVersion.Size = new System.Drawing.Size(13, 13);
+            this.lblOfficeVersion.TabIndex = 2;
+            this.lblOfficeVersion.Text = "()";
+            // 
+            // rdLO
+            // 
+            this.rdLO.AutoSize = true;
+            this.rdLO.Enabled = false;
+            this.rdLO.Location = new System.Drawing.Point(16, 42);
+            this.rdLO.Name = "rdLO";
+            this.rdLO.Size = new System.Drawing.Size(76, 17);
+            this.rdLO.TabIndex = 1;
+            this.rdLO.Text = "LibreOffice";
+            this.rdLO.UseVisualStyleBackColor = true;
+            // 
+            // rdMSO
+            // 
+            this.rdMSO.AutoSize = true;
+            this.rdMSO.Checked = true;
+            this.rdMSO.Location = new System.Drawing.Point(16, 19);
+            this.rdMSO.Name = "rdMSO";
+            this.rdMSO.Size = new System.Drawing.Size(72, 17);
+            this.rdMSO.TabIndex = 0;
+            this.rdMSO.TabStop = true;
+            this.rdMSO.Text = "MS Office";
+            this.rdMSO.UseVisualStyleBackColor = true;
+            // 
             // button3
             // 
             this.button3.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -144,24 +226,37 @@
             // logg1
             // 
             this.logg1.HTMLEnabled = false;
-            this.logg1.Location = new System.Drawing.Point(10, 402);
+            this.logg1.Location = new System.Drawing.Point(6, 455);
             this.logg1.Name = "logg1";
-            this.logg1.Size = new System.Drawing.Size(887, 171);
+            this.logg1.Size = new System.Drawing.Size(891, 171);
             this.logg1.TabIndex = 37;
             // 
             // groupBox5
             // 
-            this.groupBox5.Controls.Add(this.rbFileType3);
+            this.groupBox5.Controls.Add(this.lboxFileFormat);
             this.groupBox5.Controls.Add(this.label17);
-            this.groupBox5.Controls.Add(this.rbFileType2);
-            this.groupBox5.Controls.Add(this.rbFileType1);
-            this.groupBox5.Controls.Add(this.rbFileType);
             this.groupBox5.Location = new System.Drawing.Point(283, 156);
             this.groupBox5.Name = "groupBox5";
-            this.groupBox5.Size = new System.Drawing.Size(167, 110);
+            this.groupBox5.Size = new System.Drawing.Size(167, 170);
             this.groupBox5.TabIndex = 36;
             this.groupBox5.TabStop = false;
             this.groupBox5.Text = "Filtype";
+            // 
+            // lboxFileFormat
+            // 
+            this.lboxFileFormat.CheckOnClick = true;
+            this.lboxFileFormat.FormattingEnabled = true;
+            this.lboxFileFormat.Items.AddRange(new object[] {
+            "doc",
+            "docx",
+            "rtf",
+            "txt",
+            "pdf",
+            "bin"});
+            this.lboxFileFormat.Location = new System.Drawing.Point(6, 55);
+            this.lboxFileFormat.Name = "lboxFileFormat";
+            this.lboxFileFormat.Size = new System.Drawing.Size(154, 109);
+            this.lboxFileFormat.TabIndex = 42;
             // 
             // label17
             // 
@@ -170,39 +265,6 @@
             this.label17.Size = new System.Drawing.Size(149, 33);
             this.label17.TabIndex = 39;
             this.label17.Text = "Velg filtype som skal konverteres til PDF/PDFA";
-            // 
-            // rbFileType2
-            // 
-            this.rbFileType2.AutoSize = true;
-            this.rbFileType2.Location = new System.Drawing.Point(15, 78);
-            this.rbFileType2.Name = "rbFileType2";
-            this.rbFileType2.Size = new System.Drawing.Size(36, 17);
-            this.rbFileType2.TabIndex = 30;
-            this.rbFileType2.Text = "txt";
-            this.rbFileType2.UseVisualStyleBackColor = true;
-            // 
-            // rbFileType1
-            // 
-            this.rbFileType1.AutoSize = true;
-            this.rbFileType1.Location = new System.Drawing.Point(92, 55);
-            this.rbFileType1.Name = "rbFileType1";
-            this.rbFileType1.Size = new System.Drawing.Size(34, 17);
-            this.rbFileType1.TabIndex = 29;
-            this.rbFileType1.Text = "rtf";
-            this.rbFileType1.UseVisualStyleBackColor = true;
-            // 
-            // rbFileType
-            // 
-            this.rbFileType.AutoSize = true;
-            this.rbFileType.Checked = true;
-            this.rbFileType.Location = new System.Drawing.Point(15, 55);
-            this.rbFileType.Name = "rbFileType";
-            this.rbFileType.Size = new System.Drawing.Size(71, 17);
-            this.rbFileType.TabIndex = 27;
-            this.rbFileType.TabStop = true;
-            this.rbFileType.Text = "doc/docx";
-            this.rbFileType.UseVisualStyleBackColor = true;
-            this.rbFileType.CheckedChanged += new System.EventHandler(this.rbFileType_CheckedChanged);
             // 
             // button2
             // 
@@ -321,7 +383,7 @@
             this.groupBox3.Controls.Add(this.chkOverwrite);
             this.groupBox3.Location = new System.Drawing.Point(10, 156);
             this.groupBox3.Name = "groupBox3";
-            this.groupBox3.Size = new System.Drawing.Size(269, 83);
+            this.groupBox3.Size = new System.Drawing.Size(269, 86);
             this.groupBox3.TabIndex = 33;
             this.groupBox3.TabStop = false;
             this.groupBox3.Text = "Innstillinger";
@@ -367,7 +429,7 @@
             this.groupBox2.Controls.Add(this.btnPassordFile);
             this.groupBox2.Controls.Add(this.label10);
             this.groupBox2.Controls.Add(this.label9);
-            this.groupBox2.Location = new System.Drawing.Point(10, 272);
+            this.groupBox2.Location = new System.Drawing.Point(9, 325);
             this.groupBox2.Name = "groupBox2";
             this.groupBox2.Size = new System.Drawing.Size(440, 124);
             this.groupBox2.TabIndex = 32;
@@ -592,17 +654,6 @@
             this.backgroundWorker1.ProgressChanged += new System.ComponentModel.ProgressChangedEventHandler(this.backgroundWorker1_ProgressChanged);
             this.backgroundWorker1.RunWorkerCompleted += new System.ComponentModel.RunWorkerCompletedEventHandler(this.bw_RunWorkerCompleted);
             // 
-            // rbFileType3
-            // 
-            this.rbFileType3.AutoSize = true;
-            this.rbFileType3.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F);
-            this.rbFileType3.Location = new System.Drawing.Point(90, 78);
-            this.rbFileType3.Name = "rbFileType3";
-            this.rbFileType3.Size = new System.Drawing.Size(46, 17);
-            this.rbFileType3.TabIndex = 40;
-            this.rbFileType3.Text = "PDF";
-            this.rbFileType3.UseVisualStyleBackColor = true;
-            // 
             // PDFConverter
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -614,8 +665,11 @@
             this.Load += new System.EventHandler(this.PDFConverter_Load);
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
+            this.groupBox7.ResumeLayout(false);
+            this.groupBox7.PerformLayout();
+            this.groupBox6.ResumeLayout(false);
+            this.groupBox6.PerformLayout();
             this.groupBox5.ResumeLayout(false);
-            this.groupBox5.PerformLayout();
             this.groupBox4.ResumeLayout(false);
             this.groupBox4.PerformLayout();
             this.groupBox3.ResumeLayout(false);
@@ -660,9 +714,6 @@
         private System.Windows.Forms.GroupBox groupBox3;
         private System.Windows.Forms.GroupBox groupBox5;
         private System.Windows.Forms.Label label17;
-        private System.Windows.Forms.RadioButton rbFileType2;
-        private System.Windows.Forms.RadioButton rbFileType1;
-        private System.Windows.Forms.RadioButton rbFileType;
         private System.Windows.Forms.Label label16;
         private System.Windows.Forms.TextBox txtSkipNumber;
         private System.Windows.Forms.Label label15;
@@ -677,6 +728,13 @@
         private System.Windows.Forms.RadioButton rbSeparator1;
         private System.Windows.Forms.RadioButton rbSeparator3;
         private System.Windows.Forms.RadioButton rbSeparator2;
-        private System.Windows.Forms.RadioButton rbFileType3;
+        private System.Windows.Forms.CheckedListBox lboxFileFormat;
+        private System.Windows.Forms.GroupBox groupBox6;
+        private System.Windows.Forms.RadioButton rdLO;
+        private System.Windows.Forms.RadioButton rdMSO;
+        private System.Windows.Forms.Label lblOfficeVersion;
+        private System.Windows.Forms.GroupBox groupBox7;
+        private System.Windows.Forms.Label lblMultiCore;
+        private System.Windows.Forms.CheckBox chkMulticore;
     }
 }

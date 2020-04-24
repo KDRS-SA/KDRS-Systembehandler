@@ -19,7 +19,6 @@ D:\code\IKAVA Systembehandler\Programfiler\IKAVA DBConnectionHandler.pdb
 D:\code\IKAVA Systembehandler\IKAVA DBConnectionHandler\obj\Debug\IKAVA DBConnectionHandler.csprojResolveAssemblyReference.cache
 C:\Users\Tormod\Jottacloud\code\IKAVA Systembehandler\Programfiler\IKAVA DBConnectionHandler.dll
 C:\Users\Tormod\Jottacloud\code\IKAVA Systembehandler\Programfiler\IKAVA DBConnectionHandler.pdb
-C:\Users\Tormod\Jottacloud\code\IKAVA Systembehandler\IKAVA DBConnectionHandler\obj\Debug\IKAVA DBConnectionHandler.csprojResolveAssemblyReference.cache
 C:\Users\Tormod\Jottacloud\code\IKAVA Systembehandler\IKAVA DBConnectionHandler\obj\Debug\IKAVA_Systembehandler.DB.DBConnectionControl.resources
 C:\Users\Tormod\Jottacloud\code\IKAVA Systembehandler\IKAVA DBConnectionHandler\obj\Debug\IKAVA_DBConnectionHandler.Properties.Resources.resources
 C:\Users\Tormod\Jottacloud\code\IKAVA Systembehandler\IKAVA DBConnectionHandler\obj\Debug\IKAVA DBConnectionHandler.csproj.GenerateResource.Cache
@@ -27,9 +26,34 @@ C:\Users\Tormod\Jottacloud\code\IKAVA Systembehandler\IKAVA DBConnectionHandler\
 C:\Users\Tormod\Jottacloud\code\IKAVA Systembehandler\IKAVA DBConnectionHandler\obj\Debug\IKAVA DBConnectionHandler.pdb
 C:\Users\Tormod.IKAVA\Jottacloud\code\IKAVA Systembehandler\Programfiler\IKAVA DBConnectionHandler.dll
 C:\Users\Tormod.IKAVA\Jottacloud\code\IKAVA Systembehandler\Programfiler\IKAVA DBConnectionHandler.pdb
-C:\Users\Tormod.IKAVA\Jottacloud\code\IKAVA Systembehandler\IKAVA DBConnectionHandler\obj\Debug\IKAVA DBConnectionHandler.csprojResolveAssemblyReference.cache
 C:\Users\Tormod.IKAVA\Jottacloud\code\IKAVA Systembehandler\IKAVA DBConnectionHandler\obj\Debug\IKAVA_Systembehandler.DB.DBConnectionControl.resources
 C:\Users\Tormod.IKAVA\Jottacloud\code\IKAVA Systembehandler\IKAVA DBConnectionHandler\obj\Debug\IKAVA_DBConnectionHandler.Properties.Resources.resources
 C:\Users\Tormod.IKAVA\Jottacloud\code\IKAVA Systembehandler\IKAVA DBConnectionHandler\obj\Debug\IKAVA DBConnectionHandler.csproj.GenerateResource.Cache
 C:\Users\Tormod.IKAVA\Jottacloud\code\IKAVA Systembehandler\IKAVA DBConnectionHandler\obj\Debug\IKAVA DBConnectionHandler.dll
 C:\Users\Tormod.IKAVA\Jottacloud\code\IKAVA Systembehandler\IKAVA DBConnectionHandler\obj\Debug\IKAVA DBConnectionHandler.pdb
+C:\Users\Tormod.IKAVA\Jottacloud\code\IKAVA Systembehandler\IKAVA DBConnectionHandler\obj\Debug\IKAVA DBConnectionHandler.csprojAssemblyReference.cache
+C:\Users\Tormod.IKAVA\Jottacloud\code\IKAVA Systembehandler\IKAVA DBConnectionHandler\obj\Debug\IKAVA DBConnectionHandler.csproj.CoreCompileInputs.cache
+C:\Users\Tormod.IKAVA\Jottacloud\code\IKAVA Systembehandler\IKAVA DBConnectionHandler\obj\Debug\IKAVA DBConnectionHandler.csproj.CopyComplete
+G:\Jottacloud\code\IKAVA Systembehandler\Programfiler\IKAVA DBConnectionHandler.dll
+G:\Jottacloud\code\IKAVA Systembehandler\Programfiler\IKAVA DBConnectionHandler.pdb
+G:\Jottacloud\code\IKAVA Systembehandler\IKAVA DBConnectionHandler\obj\Debug\IKAVA DBConnectionHandler.csprojAssemblyReference.cache
+G:\Jottacloud\code\IKAVA Systembehandler\IKAVA DBConnectionHandler\obj\Debug\IKAVA_Systembehandler.DB.DBConnectionControl.resources
+G:\Jottacloud\code\IKAVA Systembehandler\IKAVA DBConnectionHandler\obj\Debug\IKAVA_DBConnectionHandler.Properties.Resources.resources
+G:\Jottacloud\code\IKAVA Systembehandler\IKAVA DBConnectionHandler\obj\Debug\IKAVA DBConnectionHandler.csproj.GenerateResource.cache
+G:\Jottacloud\code\IKAVA Systembehandler\IKAVA DBConnectionHandler\obj\Debug\IKAVA DBConnectionHandler.csproj.CoreCompileInputs.cache
+G:\Jottacloud\code\IKAVA Systembehandler\IKAVA DBConnectionHandler\obj\Debug\IKAVA DBConnectionHandler.csproj.CopyComplete
+G:\Jottacloud\code\IKAVA Systembehandler\IKAVA DBConnectionHandler\obj\Debug\IKAVA DBConnectionHandler.dll
+G:\Jottacloud\code\IKAVA Systembehandler\IKAVA DBConnectionHandler\obj\Debug\IKAVA DBConnectionHandler.pdb
+D:\Jottacloud\code\IKAVA Systembehandler\Programfiler\IKAVA DBConnectionHandler.dll
+D:\Jottacloud\code\IKAVA Systembehandler\Programfiler\IKAVA DBConnectionHandler.pdb
+D:\Jottacloud\code\IKAVA Systembehandler\IKAVA DBConnectionHandler\obj\Debug\IKAVA DBConnectionHandler.csprojAssemblyReference.cache
+D:\Jottacloud\code\IKAVA Systembehandler\IKAVA DBConnectionHandler\obj\Debug\IKAVA_Systembehandler.DB.DBConnectionControl.resources
+D:\Jottacloud\code\IKAVA Systembehandler\IKAVA DBConnectionHandler\obj\Debug\IKAVA_DBConnectionHandler.Properties.Resources.resources
+D:\Jottacloud\code\IKAVA Systembehandler\IKAVA DBConnectionHandler\obj\Debug\IKAVA DBConnectionHandler.csproj.GenerateResource.cache
+D:\Jottacloud\code\IKAVA Systembehandler\IKAVA DBConnectionHandler\obj\Debug\IKAVA DBConnectionHandler.csproj.CoreCompileInputs.cache
+D:\Jottacloud\code\IKAVA Systembehandler\IKAVA DBConnectionHandler\obj\Debug\IKAVA DBConnectionHandler.csproj.CopyComplete
+D:\Jottacloud\code\IKAVA Systembehandler\IKAVA DBConnectionHandler\obj\Debug\IKAVA DBConnectionHandler.dll
+D:\Jottacloud\code\IKAVA Systembehandler\IKAVA DBConnectionHandler\obj\Debug\IKAVA DBConnectionHandler.pdb
+C:\Users\Tormod\Jottacloud\code\IKAVA Systembehandler\IKAVA DBConnectionHandler\obj\Debug\IKAVA DBConnectionHandler.csprojAssemblyReference.cache
+C:\Users\Tormod\Jottacloud\code\IKAVA Systembehandler\IKAVA DBConnectionHandler\obj\Debug\IKAVA DBConnectionHandler.csproj.CoreCompileInputs.cache
+C:\Users\Tormod\Jottacloud\code\IKAVA Systembehandler\IKAVA DBConnectionHandler\obj\Debug\IKAVA DBConnectionHandler.csproj.CopyComplete
