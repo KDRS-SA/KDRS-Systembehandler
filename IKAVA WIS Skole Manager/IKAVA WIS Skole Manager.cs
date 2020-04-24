@@ -141,7 +141,7 @@ namespace IKAVA_WISSkole_Manager
                     logg1.Log(cnt.ToString().PadLeft(5,Char.Parse("0")) + ". Karakterutskrift for " + currentElev.fornavn + " " + currentElev.etternavn + Environment.NewLine, Logg.LogType.Info);
                     sw.Close();
                 }
-                string filename = Path.Combine(txtSavePath.Text, (currentElev.fodt.ToString("yyyy-MM-dd") + "-" + currentElev.etternavn + ", " + currentElev.fornavn + ".rtf");
+                string filename = Path.Combine(txtSavePath.Text, (currentElev.fodt.ToString("yyyy-MM-dd") + "-" + currentElev.etternavn + ", " + currentElev.fornavn + ".rtf"));
                 
                 documentText = originalTemplateText;
 
