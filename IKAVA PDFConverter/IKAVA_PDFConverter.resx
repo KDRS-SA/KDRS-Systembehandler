@@ -119,8 +119,7 @@
   </resheader>
   <data name="label11.Text" xml:space="preserve">
     <value>Vis Word-vindu. For debug og evt. ved mye feil.
-Noen ganger kan MSWord komme med meldingsbokser etc. som ikke automatisk kan lukkes uten manuell betjening. Hvis prosessen stopper opp, eller henger, avbryt prosessen, og avslutt eventuelle MS Word-prosesser i taskmanageren før du velger vis_vindu=ja for å debugge.
-Default = ja</value>
+Noen ganger kan MSWord komme med meldingsbokser etc. som ikke automatisk kan lukkes uten manuell betjening. Hvis prosessen stopper opp, eller henger, avbryt prosessen, og avslutt eventuelle MS Word-prosesser i taskmanageren før du velger vis_vindu=ja for å debugge. Default = ja</value>
   </data>
   <metadata name="folderBrowserDialog1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>17, 17</value>

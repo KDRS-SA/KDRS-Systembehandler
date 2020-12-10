@@ -66,88 +66,56 @@ namespace IKAVA_Systembehandler.DB
             button1.Enabled = true;
             ConnectionHandler.Server = txtServer.Text;
             return;
-            /*
-            string Message = "";
-            pictureBox1.Image = Resources.error;
-
-            switch (ServerTypeSelected)
-            {
-                case "MySql" :
-                case "Firebird":
-                    {
-                        if (Tools.PingServer(txtServer.Text, out Message))
-                            pictureBox1.Image = Resources.ok;
-                        break;
-                    }
-                case "SqlServer":
-                    {
-                        if (Tools.TcpConnect(txtServer.Text, "1433", out Message))
-                            pictureBox1.Image = Resources.ok;
-                        break;
-                    }
-            }
-            logg1.Log(Message, Logg.LogType.Info);
-            pictureBox1.Visible = true;
-
-            if (pictureBox1.Image == Resources.ok)
-                button1.Enabled = true;
-
-            ConnectionHandler.Server = txtServer.Text;
-             * */
         }
 
         private void button1_Click(object sender, EventArgs e)
         {
-            //switch (cbServerType.SelectedItem.ToString())
-            //{
-            //    case "MySql":
-            //    case "MSSql":
-                    if (cbRememberSettings.Checked)
-                    {
-                        Tools.SetSetting("servertype", cbServerType.SelectedIndex.ToString());
-                        Tools.SetSetting("server", txtServer.Text);
-                        Tools.SetSetting("user", txtUser.Text);
-                        Tools.SetSetting("pass", txtPassword.Text);
-                        Tools.SetSetting("fdbfile", txtFDBFil.Text);
-                        Tools.SaveSettings();
-                        logg1.Log("Innstillinger lagret." + Environment.NewLine, Logg.LogType.Info);
-                    }
+            if (cbRememberSettings.Checked)
+            {
+                Tools.SetSetting("servertype", cbServerType.SelectedIndex.ToString());
+                Tools.SetSetting("server", txtServer.Text);
+                Tools.SetSetting("user", txtUser.Text);
+                Tools.SetSetting("pass", txtPassword.Text);
+                Tools.SetSetting("fdbfile", txtFDBFil.Text);
+                Tools.SaveSettings();
+                logg1.Log("Innstillinger lagret." + Environment.NewLine, Logg.LogType.Info);
+            }
 
-                    if (ShowDatabaseSelector && cbDatabase.SelectedItem == null)
-                    {
-                        logg1.Log("Vennligst bruk nedtrekksmenyen og velg en aktuell database." + Environment.NewLine, Logg.LogType.Error);
-                        return;
-                    }
-                    else
-                    {
-                        if (ShowDatabaseSelector)
-                            ConnectionHandler.Database = cbDatabase.SelectedItem.ToString();
-                    }
-                    Cursor = Cursors.WaitCursor;
+            if (ShowDatabaseSelector && cbDatabase.SelectedItem == null)
+            {
+                logg1.Log("Vennligst bruk nedtrekksmenyen og velg en aktuell database." + Environment.NewLine, Logg.LogType.Error);
+                return;
+            }
+            else
+            {
+                if (ShowDatabaseSelector)
+                    ConnectionHandler.Database = cbDatabase.SelectedItem.ToString();
+            }
+            Cursor = Cursors.WaitCursor;
 
-                    try
-                    {
-                        if (conn == null)
-                        {
-                            var obj = Enum.Parse(typeof(ConnectionHandler.enDatabaseType), cbServerType.SelectedItem.ToString());
-                            conn = new ConnectionHandler((ConnectionHandler.enDatabaseType)obj);
-                        }
+            try
+            {
+                if (conn == null)
+                {
+                    var obj = Enum.Parse(typeof(ConnectionHandler.enDatabaseType), cbServerType.SelectedItem.ToString());
+                    conn = new ConnectionHandler((ConnectionHandler.enDatabaseType)obj);
+                }
 
-                        if (ConnectionHandler.Database != null)
-                            conn.CreateConnection(ConnectionHandler.Server, ConnectionHandler.Database, ConnectionHandler.Username, ConnectionHandler.Password);
+                if (ConnectionHandler.Database != null)
+                    conn.CreateConnection(ConnectionHandler.Server, ConnectionHandler.Database, ConnectionHandler.Username, ConnectionHandler.Password);
 
-                        logg1.Log("Koblet til databaseserver " + ConnectionHandler.Server + "." + Environment.NewLine, Logg.LogType.Info);
-                        DatabaseConnected();
-                    }
-                    catch (Exception ex)
-                    {
-                        logg1.Log("Tilkoblingen til databasen feilet. Kontroller innstillinger og prøv igjen." + Environment.NewLine + ex.Message + Environment.NewLine, Logg.LogType.Error);
-                        return;
-                    }
-                    finally
-                    {
-                        Cursor = Cursors.Default;
-                    }
+                logg1.Log("Koblet til databaseserver " + ConnectionHandler.Server + "." + Environment.NewLine, Logg.LogType.Info);
+                DatabaseConnected();
+            }
+            catch (Exception ex)
+            {
+                logg1.Log("Tilkoblingen til databasen feilet. Kontroller innstillinger og prøv igjen." + Environment.NewLine + ex.Message + Environment.NewLine, Logg.LogType.Error);
+                return;
+            }
+            finally
+            {
+                Cursor = Cursors.Default;
+            }
         }
 
         public delegate void DatabaseConnectedEventHandler();
@@ -243,15 +211,11 @@ namespace IKAVA_Systembehandler.DB
                     btnFDBFil.Visible = false;
                     break;
                 case "FireBird":
-                    //txtServer.Visible = false;
                     lblServer.Visible = false;
                     lblFDBFil.Visible = true;
-                    //txtFDBFil.Visible = true;
                     txtUser.Text = "SYSDBA";
                     txtPassword.Text = "masterkey";
                     ShowDatabaseSelector = false;    
-                    //label5.Visible = false;
-                    //cbDatabase.Visible = false;
                     btnFDBFil.Visible = true;
                     break;
             }

@@ -41,17 +41,19 @@
             this.label5 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
+            this.tabPage2 = new System.Windows.Forms.TabPage();
+            this.chkOverwrite = new System.Windows.Forms.CheckBox();
+            this.button3 = new System.Windows.Forms.Button();
+            this.txtReportSavePath = new System.Windows.Forms.TextBox();
+            this.label6 = new System.Windows.Forms.Label();
+            this.button2 = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.dbConnectionControl1 = new IKAVA_Systembehandler.DB.DBConnectionControl();
             this.folderBrowserDialog1 = new System.Windows.Forms.FolderBrowserDialog();
             this.openFileDialog1 = new System.Windows.Forms.OpenFileDialog();
-            this.tabPage2 = new System.Windows.Forms.TabPage();
-            this.button2 = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
-            this.txtReportSavePath = new System.Windows.Forms.TextBox();
-            this.label6 = new System.Windows.Forms.Label();
-            this.chkOverwrite = new System.Windows.Forms.CheckBox();
+            this.chkElevlister = new System.Windows.Forms.CheckBox();
+            this.chkFravaer = new System.Windows.Forms.CheckBox();
             this.tabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
             this.tabPage2.SuspendLayout();
@@ -121,7 +123,7 @@
             // 
             // btnStart
             // 
-            this.btnStart.Location = new System.Drawing.Point(318, 83);
+            this.btnStart.Location = new System.Drawing.Point(318, 88);
             this.btnStart.Name = "btnStart";
             this.btnStart.Size = new System.Drawing.Size(75, 23);
             this.btnStart.TabIndex = 16;
@@ -190,6 +192,72 @@
             this.label3.TabIndex = 0;
             this.label3.Text = "Antall elever :";
             // 
+            // tabPage2
+            // 
+            this.tabPage2.Controls.Add(this.chkElevlister);
+            this.tabPage2.Controls.Add(this.chkFravaer);
+            this.tabPage2.Controls.Add(this.chkOverwrite);
+            this.tabPage2.Controls.Add(this.button3);
+            this.tabPage2.Controls.Add(this.txtReportSavePath);
+            this.tabPage2.Controls.Add(this.label6);
+            this.tabPage2.Controls.Add(this.button2);
+            this.tabPage2.Location = new System.Drawing.Point(4, 22);
+            this.tabPage2.Name = "tabPage2";
+            this.tabPage2.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPage2.Size = new System.Drawing.Size(399, 260);
+            this.tabPage2.TabIndex = 1;
+            this.tabPage2.Text = "Rapporter";
+            this.tabPage2.UseVisualStyleBackColor = true;
+            // 
+            // chkOverwrite
+            // 
+            this.chkOverwrite.AutoSize = true;
+            this.chkOverwrite.Location = new System.Drawing.Point(10, 225);
+            this.chkOverwrite.Name = "chkOverwrite";
+            this.chkOverwrite.Size = new System.Drawing.Size(220, 17);
+            this.chkOverwrite.TabIndex = 17;
+            this.chkOverwrite.Text = "Overskriv eksisterende med samme navn";
+            this.chkOverwrite.UseVisualStyleBackColor = true;
+            // 
+            // button3
+            // 
+            this.button3.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.button3.Location = new System.Drawing.Point(343, 6);
+            this.button3.Name = "button3";
+            this.button3.Size = new System.Drawing.Size(47, 21);
+            this.button3.TabIndex = 16;
+            this.button3.Text = "Velg...";
+            this.button3.UseVisualStyleBackColor = true;
+            this.button3.Click += new System.EventHandler(this.button3_Click);
+            // 
+            // txtReportSavePath
+            // 
+            this.txtReportSavePath.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.txtReportSavePath.Location = new System.Drawing.Point(76, 6);
+            this.txtReportSavePath.Name = "txtReportSavePath";
+            this.txtReportSavePath.Size = new System.Drawing.Size(261, 20);
+            this.txtReportSavePath.TabIndex = 15;
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Location = new System.Drawing.Point(7, 9);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(63, 13);
+            this.label6.TabIndex = 14;
+            this.label6.Text = "Lagringssti :";
+            // 
+            // button2
+            // 
+            this.button2.Location = new System.Drawing.Point(289, 221);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(101, 23);
+            this.button2.TabIndex = 0;
+            this.button2.Text = "Skriv rapporter";
+            this.button2.UseVisualStyleBackColor = true;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
+            // 
             // label1
             // 
             this.label1.AutoSize = true;
@@ -223,69 +291,29 @@
             this.openFileDialog1.FileName = "openFileDialog1";
             this.openFileDialog1.Filter = "RTF-fil|*.rtf";
             // 
-            // tabPage2
+            // chkElevlister
             // 
-            this.tabPage2.Controls.Add(this.chkOverwrite);
-            this.tabPage2.Controls.Add(this.button3);
-            this.tabPage2.Controls.Add(this.txtReportSavePath);
-            this.tabPage2.Controls.Add(this.label6);
-            this.tabPage2.Controls.Add(this.button2);
-            this.tabPage2.Location = new System.Drawing.Point(4, 22);
-            this.tabPage2.Name = "tabPage2";
-            this.tabPage2.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage2.Size = new System.Drawing.Size(399, 260);
-            this.tabPage2.TabIndex = 1;
-            this.tabPage2.Text = "Fraværsrapporter";
-            this.tabPage2.UseVisualStyleBackColor = true;
+            this.chkElevlister.AutoSize = true;
+            this.chkElevlister.Checked = true;
+            this.chkElevlister.CheckState = System.Windows.Forms.CheckState.Checked;
+            this.chkElevlister.Location = new System.Drawing.Point(10, 64);
+            this.chkElevlister.Name = "chkElevlister";
+            this.chkElevlister.Size = new System.Drawing.Size(68, 17);
+            this.chkElevlister.TabIndex = 22;
+            this.chkElevlister.Text = "Elevlister";
+            this.chkElevlister.UseVisualStyleBackColor = true;
             // 
-            // button2
+            // chkFravaer
             // 
-            this.button2.Location = new System.Drawing.Point(289, 33);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(101, 23);
-            this.button2.TabIndex = 0;
-            this.button2.Text = "Skriv rapporter";
-            this.button2.UseVisualStyleBackColor = true;
-            this.button2.Click += new System.EventHandler(this.button2_Click);
-            // 
-            // button3
-            // 
-            this.button3.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.button3.Location = new System.Drawing.Point(343, 6);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(47, 21);
-            this.button3.TabIndex = 16;
-            this.button3.Text = "Velg...";
-            this.button3.UseVisualStyleBackColor = true;
-            this.button3.Click += new System.EventHandler(this.button3_Click);
-            // 
-            // txtReportSavePath
-            // 
-            this.txtReportSavePath.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.txtReportSavePath.Location = new System.Drawing.Point(76, 6);
-            this.txtReportSavePath.Name = "txtReportSavePath";
-            this.txtReportSavePath.Size = new System.Drawing.Size(261, 20);
-            this.txtReportSavePath.TabIndex = 15;
-            // 
-            // label6
-            // 
-            this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(7, 9);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(63, 13);
-            this.label6.TabIndex = 14;
-            this.label6.Text = "Lagringssti :";
-            // 
-            // chkOverwrite
-            // 
-            this.chkOverwrite.AutoSize = true;
-            this.chkOverwrite.Location = new System.Drawing.Point(10, 33);
-            this.chkOverwrite.Name = "chkOverwrite";
-            this.chkOverwrite.Size = new System.Drawing.Size(220, 17);
-            this.chkOverwrite.TabIndex = 17;
-            this.chkOverwrite.Text = "Overskriv eksisterende med samme navn";
-            this.chkOverwrite.UseVisualStyleBackColor = true;
+            this.chkFravaer.AutoSize = true;
+            this.chkFravaer.Checked = true;
+            this.chkFravaer.CheckState = System.Windows.Forms.CheckState.Checked;
+            this.chkFravaer.Location = new System.Drawing.Point(10, 41);
+            this.chkFravaer.Name = "chkFravaer";
+            this.chkFravaer.Size = new System.Drawing.Size(107, 17);
+            this.chkFravaer.TabIndex = 21;
+            this.chkFravaer.Text = "Fraværsrapporter";
+            this.chkFravaer.UseVisualStyleBackColor = true;
             // 
             // IKAVA_ISTExtens_Manager
             // 
@@ -334,5 +362,7 @@
         private System.Windows.Forms.TextBox txtReportSavePath;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.CheckBox chkOverwrite;
+        private System.Windows.Forms.CheckBox chkElevlister;
+        private System.Windows.Forms.CheckBox chkFravaer;
     }
 }

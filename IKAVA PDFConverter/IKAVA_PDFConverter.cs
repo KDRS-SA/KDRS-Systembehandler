@@ -397,11 +397,14 @@ namespace IKAVA_Systembehandler.Plugins
             
             try
             {
-                if (wordApplication.Documents.Count > 0)
-                {
-                    procs = Process.GetProcessesByName("WINWORD");
-                    foreach (Process process in procs)
-                        process.Kill();
+                if (wordApplication != null)
+                { 
+                    if (wordApplication.Documents.Count > 0)
+                    {
+                        procs = Process.GetProcessesByName("WINWORD");
+                        foreach (Process process in procs)
+                            process.Kill();
+                    }
                 }
             }
             catch { }
@@ -409,7 +412,14 @@ namespace IKAVA_Systembehandler.Plugins
 
             try
             {
-                string title = wordApplication.Caption;
+                if (wordApplication != null)
+                {
+                    string title = wordApplication.Caption;
+                } else
+                {
+                    LogFromThread(progress, "Oppretter word-app.." + Environment.NewLine);
+                    CreateApplication();
+                }
             }
             catch
             {
@@ -489,6 +499,8 @@ namespace IKAVA_Systembehandler.Plugins
                         if (wordDocument.ProtectionType != WdProtectionType.wdNoProtection)
                             wordDocument.Protect(WdProtectionType.wdNoProtection, ref paramMissing, ref paramMissing, ref paramMissing, ref paramMissing);
 
+                        
+
                         passwordprotected++;
                         currentPassword = pwMatch;
                     }
@@ -496,6 +508,11 @@ namespace IKAVA_Systembehandler.Plugins
                     {
                         LogFromThread(progress, "Finner ingen måte å åpne dokumentet på. Går videre. " + Environment.NewLine);
                         FileLog.LogWrite("Fant ingen måte å åpne '" + filename + "' på. Hopper videre." + ex.Message, FileLog.logType.Info);
+                        StreamWriter sw = File.CreateText(outfile + ".errorlog");
+                        sw.WriteLine("Fant ingen måte å åpne fila på. Enten er fila skadet, passord manglet i passordfil, eller en annen feil har oppstått:" + Environment.NewLine + ex.Message);
+                        sw.Close();
+                        if (chkCopyOriginalOnError.Checked)
+                            File.Copy(filename, Path.Combine(Path.GetDirectoryName(outfile), Path.GetFileName(filename)));
                         FileLog.LogWrite(filename, FileLog.logType.Filliste_ikkekonvertert);
                         error++;
                         return;
@@ -507,11 +524,11 @@ namespace IKAVA_Systembehandler.Plugins
                 {
                     try
                     {
-                        // åpne kilde uten passord.
+                        // åpne kilde med passord "mypass" to force continue.
                         wordDocument = wordApplication.Documents.OpenNoRepairDialog(
                             filename, ref paramMissing, false,
-                            ref paramMissing, ref paramMissing, ref paramMissing,
-                            ref paramMissing, ref paramMissing, ref paramMissing,
+                            ref paramMissing, "mypass", ref paramMissing,
+                            ref paramMissing, "mypass", ref paramMissing,
                             ref paramMissing, 28591, ref paramMissing,
                             ref paramMissing, ref paramMissing, ref paramMissing,
                             ref paramMissing);
@@ -520,6 +537,11 @@ namespace IKAVA_Systembehandler.Plugins
                     {
                         LogFromThread(progress, "Finner ingen måte å åpne dokumentet på. Går videre. " + Environment.NewLine);
                         FileLog.LogWrite("Fant ingen måte å åpne '" + filename + "' på. Hopper videre." + ex.Message, FileLog.logType.Info);
+                        StreamWriter sw = File.CreateText(outfile + ".errorlog");
+                        sw.WriteLine("Fant ingen måte å åpne fila på. Enten er fila skadet, passord manglet i passordfil, eller en annen feil har oppstått:" + Environment.NewLine + ex.Message);
+                        sw.Close();
+                        if (chkCopyOriginalOnError.Checked)
+                            File.Copy(filename, Path.Combine(Path.GetDirectoryName(outfile), Path.GetFileName(filename)));
                         FileLog.LogWrite(filename, FileLog.logType.Filliste_ikkekonvertert);
                         error++;
                         return;
@@ -847,6 +869,11 @@ retry:  //stygt.. men dog..
         }
 
         private void rbFileType_CheckedChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void chkShowWindow_CheckedChanged(object sender, EventArgs e)
         {
 
         }

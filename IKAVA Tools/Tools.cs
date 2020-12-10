@@ -23,7 +23,7 @@ namespace IKAVA_Systembehandler
         public static Hashtable LoadSettings(string FileName, string[] Parameters)
         {
             SettingsPath = FileName;
-
+            
             Hashtable hashtable = new Hashtable();
             xDoc.Load(FileName);
             foreach (string p in Parameters)

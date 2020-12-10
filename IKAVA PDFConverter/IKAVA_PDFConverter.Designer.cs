@@ -83,6 +83,7 @@
             this.folderBrowserDialog1 = new System.Windows.Forms.FolderBrowserDialog();
             this.openFileDialog1 = new System.Windows.Forms.OpenFileDialog();
             this.backgroundWorker1 = new System.ComponentModel.BackgroundWorker();
+            this.chkCopyOriginalOnError = new System.Windows.Forms.CheckBox();
             this.groupBox1.SuspendLayout();
             this.groupBox7.SuspendLayout();
             this.groupBox6.SuspendLayout();
@@ -279,6 +280,7 @@
             // 
             // groupBox4
             // 
+            this.groupBox4.Controls.Add(this.chkCopyOriginalOnError);
             this.groupBox4.Controls.Add(this.label16);
             this.groupBox4.Controls.Add(this.txtSkipNumber);
             this.groupBox4.Controls.Add(this.label15);
@@ -297,7 +299,7 @@
             // 
             // label16
             // 
-            this.label16.Location = new System.Drawing.Point(110, 166);
+            this.label16.Location = new System.Drawing.Point(110, 143);
             this.label16.Name = "label16";
             this.label16.Size = new System.Drawing.Size(325, 42);
             this.label16.TabIndex = 38;
@@ -307,7 +309,7 @@
             // 
             // txtSkipNumber
             // 
-            this.txtSkipNumber.Location = new System.Drawing.Point(72, 177);
+            this.txtSkipNumber.Location = new System.Drawing.Point(72, 154);
             this.txtSkipNumber.Name = "txtSkipNumber";
             this.txtSkipNumber.Size = new System.Drawing.Size(32, 20);
             this.txtSkipNumber.TabIndex = 37;
@@ -316,7 +318,7 @@
             // label15
             // 
             this.label15.AutoSize = true;
-            this.label15.Location = new System.Drawing.Point(9, 180);
+            this.label15.Location = new System.Drawing.Point(9, 157);
             this.label15.Name = "label15";
             this.label15.Size = new System.Drawing.Size(57, 13);
             this.label15.TabIndex = 36;
@@ -324,7 +326,7 @@
             // 
             // txtWaitProcess
             // 
-            this.txtWaitProcess.Location = new System.Drawing.Point(36, 127);
+            this.txtWaitProcess.Location = new System.Drawing.Point(36, 111);
             this.txtWaitProcess.Name = "txtWaitProcess";
             this.txtWaitProcess.Size = new System.Drawing.Size(29, 20);
             this.txtWaitProcess.TabIndex = 33;
@@ -332,7 +334,7 @@
             // 
             // label12
             // 
-            this.label12.Location = new System.Drawing.Point(110, 116);
+            this.label12.Location = new System.Drawing.Point(110, 100);
             this.label12.Name = "label12";
             this.label12.Size = new System.Drawing.Size(325, 43);
             this.label12.TabIndex = 32;
@@ -358,11 +360,12 @@
             this.chkShowWindow.TabIndex = 31;
             this.chkShowWindow.Text = "Vis vindu";
             this.chkShowWindow.UseVisualStyleBackColor = true;
+            this.chkShowWindow.CheckedChanged += new System.EventHandler(this.chkShowWindow_CheckedChanged);
             // 
             // label13
             // 
             this.label13.AutoSize = true;
-            this.label13.Location = new System.Drawing.Point(65, 130);
+            this.label13.Location = new System.Drawing.Point(69, 114);
             this.label13.Name = "label13";
             this.label13.Size = new System.Drawing.Size(20, 13);
             this.label13.TabIndex = 34;
@@ -371,7 +374,7 @@
             // label14
             // 
             this.label14.AutoSize = true;
-            this.label14.Location = new System.Drawing.Point(9, 130);
+            this.label14.Location = new System.Drawing.Point(9, 114);
             this.label14.Name = "label14";
             this.label14.Size = new System.Drawing.Size(29, 13);
             this.label14.TabIndex = 35;
@@ -404,9 +407,9 @@
             this.chkRecursive.AutoSize = true;
             this.chkRecursive.Location = new System.Drawing.Point(17, 42);
             this.chkRecursive.Name = "chkRecursive";
-            this.chkRecursive.Size = new System.Drawing.Size(210, 17);
+            this.chkRecursive.Size = new System.Drawing.Size(218, 17);
             this.chkRecursive.TabIndex = 21;
-            this.chkRecursive.Text = "Ta med undermapper til innsti (rekursiv)";
+            this.chkRecursive.Text = "Ta med undermapper til kildesti (rekursiv)";
             this.chkRecursive.UseVisualStyleBackColor = true;
             // 
             // chkOverwrite
@@ -542,9 +545,9 @@
             // 
             this.txtInFile.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.txtInFile.Location = new System.Drawing.Point(60, 99);
+            this.txtInFile.Location = new System.Drawing.Point(75, 99);
             this.txtInFile.Name = "txtInFile";
-            this.txtInFile.Size = new System.Drawing.Size(491, 20);
+            this.txtInFile.Size = new System.Drawing.Size(476, 20);
             this.txtInFile.TabIndex = 18;
             // 
             // label6
@@ -573,7 +576,7 @@
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(287, 30);
             this.label4.TabIndex = 15;
-            this.label4.Text = "Innsti er stien hvor programmet skal se etter filer til konvertering";
+            this.label4.Text = "Kildesti er stien hvor programmet skal se etter filer til konvertering";
             // 
             // label3
             // 
@@ -582,8 +585,8 @@
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(287, 30);
             this.label3.TabIndex = 14;
-            this.label3.Text = "Utsti er som default lik innsti. Konverterte filer legges sammen med originalfil." +
-    "";
+            this.label3.Text = "Destinasjon er som default lik Kildesti. Konverterte filer legges sammen med orig" +
+    "inalfil.";
             // 
             // btnChooseOutPath
             // 
@@ -611,9 +614,9 @@
             // 
             this.txtOutPath.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.txtOutPath.Location = new System.Drawing.Point(60, 49);
+            this.txtOutPath.Location = new System.Drawing.Point(75, 49);
             this.txtOutPath.Name = "txtOutPath";
-            this.txtOutPath.Size = new System.Drawing.Size(491, 20);
+            this.txtOutPath.Size = new System.Drawing.Size(476, 20);
             this.txtOutPath.TabIndex = 3;
             // 
             // label2
@@ -621,26 +624,26 @@
             this.label2.AutoSize = true;
             this.label2.Location = new System.Drawing.Point(7, 52);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(28, 13);
+            this.label2.Size = new System.Drawing.Size(65, 13);
             this.label2.TabIndex = 2;
-            this.label2.Text = "Utsti";
+            this.label2.Text = "Destinasjon:";
             // 
             // label1
             // 
             this.label1.AutoSize = true;
             this.label1.Location = new System.Drawing.Point(7, 27);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(35, 13);
+            this.label1.Size = new System.Drawing.Size(43, 13);
             this.label1.TabIndex = 1;
-            this.label1.Text = "Innsti:";
+            this.label1.Text = "Kildesti:";
             // 
             // txtInPath
             // 
             this.txtInPath.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.txtInPath.Location = new System.Drawing.Point(60, 24);
+            this.txtInPath.Location = new System.Drawing.Point(75, 24);
             this.txtInPath.Name = "txtInPath";
-            this.txtInPath.Size = new System.Drawing.Size(491, 20);
+            this.txtInPath.Size = new System.Drawing.Size(476, 20);
             this.txtInPath.TabIndex = 0;
             // 
             // openFileDialog1
@@ -654,6 +657,18 @@
             this.backgroundWorker1.DoWork += new System.ComponentModel.DoWorkEventHandler(this.bw_DoWork);
             this.backgroundWorker1.ProgressChanged += new System.ComponentModel.ProgressChangedEventHandler(this.backgroundWorker1_ProgressChanged);
             this.backgroundWorker1.RunWorkerCompleted += new System.ComponentModel.RunWorkerCompletedEventHandler(this.bw_RunWorkerCompleted);
+            // 
+            // chkCopyOriginalOnError
+            // 
+            this.chkCopyOriginalOnError.AutoSize = true;
+            this.chkCopyOriginalOnError.Checked = true;
+            this.chkCopyOriginalOnError.CheckState = System.Windows.Forms.CheckState.Checked;
+            this.chkCopyOriginalOnError.Location = new System.Drawing.Point(16, 188);
+            this.chkCopyOriginalOnError.Name = "chkCopyOriginalOnError";
+            this.chkCopyOriginalOnError.Size = new System.Drawing.Size(202, 17);
+            this.chkCopyOriginalOnError.TabIndex = 39;
+            this.chkCopyOriginalOnError.Text = "Kopier originalfil til destinasjon ved feil";
+            this.chkCopyOriginalOnError.UseVisualStyleBackColor = true;
             // 
             // PDFConverter
             // 
@@ -737,5 +752,6 @@
         private System.Windows.Forms.GroupBox groupBox7;
         private System.Windows.Forms.Label lblMultiCore;
         private System.Windows.Forms.CheckBox chkMulticore;
+        private System.Windows.Forms.CheckBox chkCopyOriginalOnError;
     }
 }

@@ -1,15 +1,9 @@
-﻿using System;
+﻿using FirebirdSql.Data.FirebirdClient;
+using System;
 using System.Collections.Generic;
-using System.ComponentModel;
-using System.Drawing;
-using System.Data;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using System.Windows.Forms;
-using FirebirdSql.Data.FirebirdClient;
 using System.IO;
 using System.Threading;
+using System.Windows.Forms;
 
 namespace IKAVA_Systembehandler.Plugins
 {
@@ -107,7 +101,6 @@ namespace IKAVA_Systembehandler.Plugins
                     logg1.Log("Feil ved uthenting av " + t.tableName + ". Feilen var : " + ex.Message + Environment.NewLine, Logg.LogType.Info);
                 }
             }
-            //Console.ReadKey();
         }
 
         private void ParseNew()
@@ -165,7 +158,6 @@ namespace IKAVA_Systembehandler.Plugins
                 }
             }
             logg1.Log("Ferdig med eksport av totalt " + count + " dokumenter" + Environment.NewLine, Logg.LogType.Info); ;
-            //Console.ReadKey();
         }
     }
 

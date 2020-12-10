@@ -29,7 +29,7 @@
     </NoWarn>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
-    <PlatformTarget>x86</PlatformTarget>
+    <PlatformTarget>AnyCPU</PlatformTarget>
     <DebugType>pdbonly</DebugType>
     <Optimize>true</Optimize>
     <OutputPath>bin\Release\</OutputPath>
@@ -92,7 +92,6 @@
     <ProjectReference Include="..\IKAVA Systembehandler Host\IKAVA Systembehandler Host.csproj">
       <Project>{f1e22eaf-194a-438b-ad12-5ced66205109}</Project>
       <Name>IKAVA Systembehandler Host</Name>
-      <Private>False</Private>
     </ProjectReference>
     <ProjectReference Include="..\IKAVA Tools\IKAVA Tools.csproj">
       <Project>{d4752f25-6049-4dfb-b979-79eb10a75e92}</Project>

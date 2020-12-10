@@ -4,7 +4,6 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Data;
-//using FirebirdSql.Data.FirebirdClient;
 
 namespace IKAVA_Systembehandler.DB
 {
@@ -70,24 +69,7 @@ namespace IKAVA_Systembehandler.DB
                         FireBirdConnector.Server = Server;
                         FireBirdConnector.Username = User;
                         FireBirdConnector.Password = Password;
-                        //FireBirdConnector.Database = Database;
                         firebirdConnector.CreateConnection();
-                        /*
-                        try
-                        {
-                            FbConnectionStringBuilder csb = new FbConnectionStringBuilder();
-                            csb.UserID = User;
-                            csb.Password = Password;
-                            csb.Database = Server;
-                            csb.ServerType = FbServerType.Default;
-                            fbConnection = new FbConnection();
-                        }
-                        catch (Exception ex)
-                        {
-                            IsConnected = false;
-                            throw ex;
-                        }
-                        */
                         IsConnected = true;
                         return true;
                 }
@@ -193,7 +175,6 @@ namespace IKAVA_Systembehandler.DB
                     return mssqlConnector.GetListOfTables();
                 case enDatabaseType.FireBird:
                     return firebirdConnector.GetListOfTables();
-                    //throw new NotImplementedException("Funksjon ikke tilgjengelig for FireBird-db");
             }
             return new List<string>();
         }

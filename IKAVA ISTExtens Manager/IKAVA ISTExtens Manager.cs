@@ -1,20 +1,10 @@
-﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Drawing;
-using System.Data;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using System.Windows.Forms;
-using IKAVA_Systembehandler;
-using IKAVA_DBConnectionHandler;
-using System.Collections;
+﻿using IKAVA_Systembehandler;
 using IKAVA_Systembehandler.DB;
-using IKAVA_DBConnectionHandler.Properties;
 using MySql.Data.MySqlClient;
+using System;
+using System.Collections;
 using System.IO;
-using System.Threading;
+using System.Windows.Forms;
 
 
 namespace IKAVA_ISTExtens_Manager
@@ -231,43 +221,34 @@ namespace IKAVA_ISTExtens_Manager
 
             Cursor.Current = Cursors.WaitCursor;
 
-            string sql = "select e.personid, p.fornamn, p.efternamn, p.adr, p.postnr, p.ort, e.enhet, en.namn, e.startdatum, e.anttimmar, e.antdagar "
-            + "from elevfranv e, enhet en, person p "
-            + "where e.enhet = en.enhet and p.personid = e.personid "
-            + "order by e.personid, e.startdatum;";
-
-            MySqlCommand cmd = new MySqlCommand(sql, MySqlConnector.connection);
-            MySqlDataReader reader = cmd.ExecuteReader();
-
-            bool first = true;
-            int cnt = 0;
-            try
+            if (chkFravaer.Checked)
             {
-                while (reader.Read())
+                string sql = "select e.personid, p.fornamn, p.efternamn, p.adr, p.postnr, p.ort, e.enhet, en.namn, e.startdatum, e.anttimmar, e.antdagar, e.anm "
+                + "from elevfranv e, enhet en, person p "
+                + "where e.enhet = en.enhet and p.personid = e.personid "
+                + "order by e.personid, e.startdatum;";
+
+                MySqlCommand cmd = new MySqlCommand(sql, MySqlConnector.connection);
+                MySqlDataReader reader = cmd.ExecuteReader();
+
+                bool first = true;
+                int cnt = 0;
+                try
                 {
-                    if ((reader.IsDBNull(0) ? "0" : reader.GetString(0)) == persId)
+                    while (reader.Read())
                     {
-                        first = false;
-                        cnt++;
-                    }
-                    else
-                    {
-                        if (filetext != string.Empty)
+                        if ((reader.IsDBNull(0) ? "0" : reader.GetString(0)) == persId)
                         {
-                            string currentFilename = Path.Combine(txtReportSavePath.Text, filename);
-                            if (!File.Exists(currentFilename))
+                            first = false;
+                            cnt++;
+                        }
+                        else
+                        {
+                            if (filetext != string.Empty)
                             {
-                                StreamWriter sw = File.CreateText(currentFilename);
-                                logg1.Log("Skriver rapport for '" + persId + "'" + Environment.NewLine, Logg.LogType.Info);
-                                sw.Write(filetext);
-                                sw.Flush();
-                                sw.Close();
-                            }
-                            else
-                            {
-                                if (chkOverwrite.Checked)
+                                string currentFilename = Path.Combine(txtReportSavePath.Text, filename);
+                                if (!File.Exists(currentFilename))
                                 {
-                                    File.Delete(currentFilename);
                                     StreamWriter sw = File.CreateText(currentFilename);
                                     logg1.Log("Skriver rapport for '" + persId + "'" + Environment.NewLine, Logg.LogType.Info);
                                     sw.Write(filetext);
@@ -276,39 +257,44 @@ namespace IKAVA_ISTExtens_Manager
                                 }
                                 else
                                 {
-                                    logg1.Log("Fil for '" + persId + "' finnes. Skriver ikke over." + Environment.NewLine, Logg.LogType.Info);
+                                    if (chkOverwrite.Checked)
+                                    {
+                                        File.Delete(currentFilename);
+                                        StreamWriter sw = File.CreateText(currentFilename);
+                                        logg1.Log("Skriver rapport for '" + persId + "'" + Environment.NewLine, Logg.LogType.Info);
+                                        sw.Write(filetext);
+                                        sw.Flush();
+                                        sw.Close();
+                                    }
+                                    else
+                                    {
+                                        logg1.Log("Fil for '" + persId + "' finnes. Skriver ikke over." + Environment.NewLine, Logg.LogType.Info);
+                                    }
                                 }
                             }
+
+                            persId = (reader.IsDBNull(0) ? "" : reader.GetString(0));
+                            filename = persId + ".txt";
+                            first = true;
+                            filetext = string.Empty;
                         }
 
-                        persId = (reader.IsDBNull(0) ? "" : reader.GetString(0));
-                        filename = persId + ".txt";
-                        first = true;
-                        filetext = string.Empty;
+                        if (first)
+                            filetext += "Fraværsrapport for " + (reader.IsDBNull(1) ? "" : reader.GetString(1)) + " " + (reader.IsDBNull(2) ? "" : reader.GetString(2)) + " (" + (reader.IsDBNull(0) ? "" : reader.GetString(0)) + ")" + Environment.NewLine + Environment.NewLine;
+                        //else
+                        filetext +=
+                            "Fraværets start : " + (reader.IsDBNull(8) ? "" : reader.GetString(8)).Substring(0, 10)
+                            + " - Fraværslengde : " + (reader.IsDBNull(10) ? "0" : reader.GetString(10))
+                            + " dager og " + (reader.IsDBNull(9) ? "0" : reader.GetString(9)) + " timer."
+                            + (reader.IsDBNull(11) ? "" : " Fraværsgrunn: " + reader.GetString(11) + ".")
+                            + Environment.NewLine;
                     }
 
-                    if (first)
-                        filetext += "Fraværsrapport for " + (reader.IsDBNull(1) ? "" : reader.GetString(1)) + " " + (reader.IsDBNull(2) ? "" : reader.GetString(2)) + " (" + (reader.IsDBNull(0) ? "" : reader.GetString(0)) + ")" + Environment.NewLine + Environment.NewLine;
-                    //else
-                    filetext += "Fraværets start : " + (reader.IsDBNull(8) ? "" : reader.GetString(8)).Substring(0,10) + " - Fraværslengde : " + (reader.IsDBNull(10) ? "0" : reader.GetString(10)) + " dager og " + (reader.IsDBNull(9) ? "0" : reader.GetString(9)) + " timer." + Environment.NewLine;
-                }
-
-                if (filetext != string.Empty)
-                {
-                    string currentFilename = Path.Combine(txtReportSavePath.Text, filename);
-                    if (!File.Exists(currentFilename))
+                    if (filetext != string.Empty)
                     {
-                        StreamWriter sw = File.CreateText(currentFilename);
-                        logg1.Log("Skriver rapport for '" + persId + "'" + Environment.NewLine, Logg.LogType.Info);
-                        sw.Write(filetext);
-                        sw.Flush();
-                        sw.Close();
-                    }
-                    else
-                    {
-                        if (chkOverwrite.Checked)
+                        string currentFilename = Path.Combine(txtReportSavePath.Text, filename);
+                        if (!File.Exists(currentFilename))
                         {
-                            File.Delete(currentFilename);
                             StreamWriter sw = File.CreateText(currentFilename);
                             logg1.Log("Skriver rapport for '" + persId + "'" + Environment.NewLine, Logg.LogType.Info);
                             sw.Write(filetext);
@@ -317,18 +303,52 @@ namespace IKAVA_ISTExtens_Manager
                         }
                         else
                         {
-                            logg1.Log("Fil for '" + persId + "' finnes. Skriver ikke over." + Environment.NewLine, Logg.LogType.Info);
+                            if (chkOverwrite.Checked)
+                            {
+                                File.Delete(currentFilename);
+                                StreamWriter sw = File.CreateText(currentFilename);
+                                logg1.Log("Skriver rapport for '" + persId + "'" + Environment.NewLine, Logg.LogType.Info);
+                                sw.Write(filetext);
+                                sw.Flush();
+                                sw.Close();
+                            }
+                            else
+                            {
+                                logg1.Log("Fil for '" + persId + "' finnes. Skriver ikke over." + Environment.NewLine, Logg.LogType.Info);
+                            }
                         }
                     }
+
+                }
+                catch (Exception ex)
+                {
+                    filetext += ex.Message;
+                }
+                reader.Close();
+                logg1.Log("Totalt " + cnt + " rapportfiler skrevet." + Environment.NewLine, Logg.LogType.Info);
+            }
+
+            if (chkElevlister.Checked)
+            {
+                string sql = "select e.personid, p.fornamn, p.efternamn, p.adr, p.postnr, p.ort, e.enhet, en.namn, e.startdatum, e.anttimmar, e.antdagar, e.anm "
+                + "from elevfranv e, enhet en, person p "
+                + "where e.enhet = en.enhet and p.personid = e.personid "
+                + "order by e.personid, e.startdatum;";
+
+                MySqlCommand cmd = new MySqlCommand(sql, MySqlConnector.connection);
+                MySqlDataReader reader = cmd.ExecuteReader();
+
+                try
+                {
+                    while (reader.Read())
+                    {
+                    }
+                } 
+                catch (Exception ex)
+                {
+
                 }
 
-            }
-            catch (Exception ex)
-            {
-                filetext += ex.Message;
-            }
-            reader.Close();
-            logg1.Log("Totalt "+cnt+" rapportfiler skrevet." + Environment.NewLine, Logg.LogType.Info);
             Cursor.Current = DefaultCursor;
         }
 

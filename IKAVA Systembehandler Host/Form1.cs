@@ -1,4 +1,5 @@
-﻿using System;
+﻿using IKAVA_Systembehandler.Properties;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -34,9 +35,6 @@ namespace IKAVA_Systembehandler
 
             // no larger than screen size
             this.MaximumSize = new System.Drawing.Size((int)System.Windows.Forms.Screen.PrimaryScreen.WorkingArea.Width, (int)System.Windows.Forms.Screen.PrimaryScreen.WorkingArea.Height);
-
-            //this.AutoSize = true;
-            //this.AutoSizeMode = AutoSizeMode.GrowAndShrink;
         }
 
         private void omIKAVASystembehandlerToolStripMenuItem_Click(object sender, EventArgs e)
@@ -205,6 +203,34 @@ namespace IKAVA_Systembehandler
         private void verktøyToolStripMenuItem_Click(object sender, EventArgs e)
         {
 
+        }
+
+        public static string CurrentSettings(string settingName)
+        {
+            //Properties.Settings.Default.Reload();
+            try
+            {
+                return Properties.Settings.Default[settingName].ToString();
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+                return "";
+            }
+        }
+
+        public bool SetSetting(string settingName, string settingValue)
+        {
+            try
+            {
+                Properties.Settings.Default[settingName] = settingValue;
+                Properties.Settings.Default.Save();
+            } catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+                return false;
+            }
+            return true;
         }
     }
 }
