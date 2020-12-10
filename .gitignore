@@ -179,3 +179,90 @@ Desktop.ini
 # Recycle Bin used on file shares
 $RECYCLE.BIN/
 /.vs/IKAVA Systembehandler
+IKAVA DBConnectionHandler/obj/Debug/IKAVA DBConnectionHandler.dll
+IKAVA DBConnectionHandler/obj/Debug/IKAVA DBConnectionHandler.pdb
+IKAVA DialogFinder/obj/x86/Debug/IKAVA DialogFinder.dll
+IKAVA DialogFinder/obj/x86/Debug/IKAVA DialogFinder.pdb
+IKAVA DialogFinder/obj/x86/Release/DesignTimeResolveAssemblyReferencesInput.cache
+IKAVA DialogFinder/obj/x86/Release/IKAVA DialogFinder.csproj.FileListAbsolute.txt
+IKAVA FireBirdBlobExtractor/bin/Release/FirebirdSql.Data.FirebirdClient.dll
+IKAVA FireBirdBlobExtractor/bin/Release/FirebirdSql.Data.FirebirdClient.pdb
+IKAVA FireBirdBlobExtractor/bin/Release/IKAVA FireBirdBlobExtractor.dll
+IKAVA FireBirdBlobExtractor/bin/Release/IKAVA FireBirdBlobExtractor.pdb
+IKAVA FireBirdBlobExtractor/obj/x86/Debug/IKAVA FireBirdBlobExtractor.dll
+IKAVA FireBirdBlobExtractor/obj/x86/Debug/IKAVA FireBirdBlobExtractor.pdb
+IKAVA FireBirdBlobExtractor/obj/x86/Release/DesignTimeResolveAssemblyReferences.cache
+IKAVA FireBirdBlobExtractor/obj/x86/Release/DesignTimeResolveAssemblyReferencesInput.cache
+IKAVA FireBirdBlobExtractor/obj/x86/Release/IKAVA FireBirdBlobExtractor.csproj.FileListAbsolute.txt
+IKAVA FireBirdBlobExtractor/obj/x86/Release/IKAVA FireBirdBlobExtractor.csproj.GenerateResource.Cache
+IKAVA FireBirdBlobExtractor/obj/x86/Release/IKAVA FireBirdBlobExtractor.dll
+IKAVA FireBirdBlobExtractor/obj/x86/Release/IKAVA FireBirdBlobExtractor.pdb
+IKAVA ISTExtens Manager/obj/Debug/IKAVA ISTExtens Manager.dll
+IKAVA ISTExtens Manager/obj/Debug/IKAVA ISTExtens Manager.pdb
+IKAVA Logger/obj/Debug/IKAVA Logger.dll
+IKAVA Logger/obj/Debug/IKAVA Logger.pdb
+IKAVA MSSql/obj/Debug/IKAVA MSSql.dll
+IKAVA MSSql/obj/Debug/IKAVA MSSql.pdb
+IKAVA MSSql/obj/Release/IKAVA MSSql.csproj.FileListAbsolute.txt
+IKAVA MySql/obj/Debug/IKAVA MySql.dll
+IKAVA MySql/obj/Debug/IKAVA MySql.pdb
+IKAVA MySql/obj/Release/IKAVA MySql.csproj.FileListAbsolute.txt
+IKAVA OpprettDatabase_MySql/obj/Debug/IKAVA OpprettDatabase_MySql.dll
+IKAVA OpprettDatabase_MySql/obj/Debug/IKAVA OpprettDatabase_MySql.pdb
+IKAVA PDFConverter/obj/Debug/DesignTimeResolveAssemblyReferences.cache
+IKAVA PDFConverter/obj/Debug/DesignTimeResolveAssemblyReferencesInput.cache
+IKAVA PDFConverter/obj/Debug/IKAVA PDFConverter.dll
+IKAVA PDFConverter/obj/Debug/IKAVA PDFConverter.pdb
+IKAVA PDFConverter/obj/Debug/IKAVA_Systembehandler.Plugins.PDFConverter.resources
+IKAVA Systembehandler Host/bin/Release/IKAVA DBConnectionHandler.dll
+IKAVA Systembehandler Host/bin/Release/IKAVA DBConnectionHandler.pdb
+IKAVA Systembehandler Host/bin/Release/IKAVA Systembehandler.exe
+IKAVA Systembehandler Host/bin/Release/IKAVA Systembehandler.pdb
+IKAVA Systembehandler Host/obj/Debug/DesignTimeResolveAssemblyReferences.cache
+IKAVA Systembehandler Host/obj/Debug/DesignTimeResolveAssemblyReferencesInput.cache
+IKAVA Systembehandler Host/obj/Debug/IKAVA Systembehandler.exe
+IKAVA Systembehandler Host/obj/Debug/IKAVA Systembehandler.pdb
+IKAVA Systembehandler Host/obj/Release/IKAVA Systembehandler.exe
+IKAVA Systembehandler Host/obj/Release/IKAVA Systembehandler.pdb
+IKAVA Systembehandler.rar
+IKAVA Tabelleksport/obj/Debug/IKAVA Tabelleksport.dll
+IKAVA Tabelleksport/obj/Debug/IKAVA Tabelleksport.pdb
+IKAVA Tools/obj/Debug/IKAVA Tools.dll
+IKAVA Tools/obj/Debug/IKAVA Tools.pdb
+IKAVA Tools/obj/Release/IKAVA Tools.csproj.FileListAbsolute.txt
+IKAVA Unique/obj/Debug/IKAVA Unique.dll
+IKAVA Unique/obj/Debug/IKAVA Unique.pdb
+Programfiler/IKAVA DBConnectionHandler.dll
+Programfiler/IKAVA DBConnectionHandler.pdb
+Programfiler/IKAVA DialogFinder.dll
+Programfiler/IKAVA DialogFinder.pdb
+Programfiler/IKAVA FireBird.dll
+Programfiler/IKAVA Logger.dll
+Programfiler/IKAVA Logger.pdb
+Programfiler/IKAVA MSSql.dll
+Programfiler/IKAVA MSSql.pdb
+Programfiler/IKAVA MySql.dll
+Programfiler/IKAVA MySql.pdb
+Programfiler/IKAVA Systembehandler.exe
+Programfiler/IKAVA Systembehandler.pdb
+Programfiler/IKAVA Systembehandler.zip
+Programfiler/IKAVA Tools.dll
+Programfiler/IKAVA Tools.pdb
+Programfiler/Plugins/IKAVA FireBirdBlobExtractor.dll
+Programfiler/Plugins/IKAVA FireBirdBlobExtractor.pdb
+Programfiler/Plugins/IKAVA ISTExtens Manager.dll
+Programfiler/Plugins/IKAVA ISTExtens Manager.pdb
+Programfiler/Plugins/IKAVA MySql.dll
+Programfiler/Plugins/IKAVA OpprettDatabase_MySql.dll
+Programfiler/Plugins/IKAVA OpprettDatabase_MySql.pdb
+Programfiler/Plugins/IKAVA PDFConverter.dll
+Programfiler/Plugins/IKAVA PDFConverter.pdb
+Programfiler/Plugins/IKAVA Systembehandler.exe
+Programfiler/Plugins/IKAVA Systembehandler.exe.config
+Programfiler/Plugins/IKAVA Tabelleksport.dll
+Programfiler/Plugins/IKAVA Tabelleksport.pdb
+Programfiler/Plugins/IKAVA Unique.dll
+Programfiler/Plugins/IKAVA Unique.pdb
+Programfiler/Plugins/IKAVA WIS Skole Manager.dll
+Programfiler/Plugins/settings.xml
+Programfiler/settings.xml
