@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
@@ -8,8 +8,8 @@
     <OutputType>WinExe</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>IKAVA_Systembehandler</RootNamespace>
-    <AssemblyName>IKAVA Systembehandler</AssemblyName>
-    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <AssemblyName>KDRS Systembehandler</AssemblyName>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <IsWebBootstrapper>true</IsWebBootstrapper>
     <TargetFrameworkProfile />
@@ -79,6 +79,9 @@
   </PropertyGroup>
   <PropertyGroup>
     <SignAssembly>false</SignAssembly>
+  </PropertyGroup>
+  <PropertyGroup>
+    <StartupObject>IKAVA_Systembehandler.Program</StartupObject>
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
@@ -172,18 +175,6 @@
     <ProjectReference Include="..\IKAVA DBConnectionHandler\IKAVA DBConnectionHandler.csproj">
       <Project>{49A48F47-13B9-48EF-B765-66BBD2DA87BF}</Project>
       <Name>IKAVA DBConnectionHandler</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\IKAVA MSSql\IKAVA MSSql.csproj">
-      <Project>{5b6c5ff8-b437-4737-9f82-82fbe9ddf203}</Project>
-      <Name>IKAVA MSSql</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\IKAVA MySql\IKAVA MySql.csproj">
-      <Project>{bfa35504-b1f5-4a9a-a8da-f0ba5591731d}</Project>
-      <Name>IKAVA MySql</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\IKAVA Tools\IKAVA Tools.csproj">
-      <Project>{d4752f25-6049-4dfb-b979-79eb10a75e92}</Project>
-      <Name>IKAVA Tools</Name>
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>

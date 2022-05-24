@@ -3,3 +3,8 @@ D:\code\IKAVA Systembehandler\IKAVA_AnyDoc2PDFAConverter\ConsoleApplication1\bin
 D:\code\IKAVA Systembehandler\IKAVA_AnyDoc2PDFAConverter\ConsoleApplication1\obj\x86\Release\IKAVA DialogFinder.csprojResolveAssemblyReference.cache
 D:\code\IKAVA Systembehandler\IKAVA_AnyDoc2PDFAConverter\ConsoleApplication1\obj\x86\Release\IKAVA_DialogFinder.dll
 D:\code\IKAVA Systembehandler\IKAVA_AnyDoc2PDFAConverter\ConsoleApplication1\obj\x86\Release\IKAVA_DialogFinder.pdb
+C:\Users\Tormod\Jottacloud\code\IKAVA Systembehandler\IKAVA DialogFinder\bin\Release\IKAVA DialogFinder.dll
+C:\Users\Tormod\Jottacloud\code\IKAVA Systembehandler\IKAVA DialogFinder\bin\Release\IKAVA DialogFinder.pdb
+C:\Users\Tormod\Jottacloud\code\IKAVA Systembehandler\IKAVA DialogFinder\obj\x86\Release\IKAVA DialogFinder.csproj.CoreCompileInputs.cache
+C:\Users\Tormod\Jottacloud\code\IKAVA Systembehandler\IKAVA DialogFinder\obj\x86\Release\IKAVA DialogFinder.dll
+C:\Users\Tormod\Jottacloud\code\IKAVA Systembehandler\IKAVA DialogFinder\obj\x86\Release\IKAVA DialogFinder.pdb

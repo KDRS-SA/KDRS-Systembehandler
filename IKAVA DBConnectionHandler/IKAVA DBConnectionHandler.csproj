@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
@@ -9,7 +9,7 @@
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>IKAVA_DBConnectionHandler</RootNamespace>
     <AssemblyName>IKAVA DBConnectionHandler</AssemblyName>
-    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <TargetFrameworkProfile />
   </PropertyGroup>
@@ -76,24 +76,6 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\ok.jpg" />
-  </ItemGroup>
-  <ItemGroup>
-    <ProjectReference Include="..\IKAVA FireBird\IKAVA FireBird.csproj">
-      <Project>{fe004a78-5d58-4276-8973-2dba7fb50f67}</Project>
-      <Name>IKAVA FireBird</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\IKAVA MSSql\IKAVA MSSql.csproj">
-      <Project>{5b6c5ff8-b437-4737-9f82-82fbe9ddf203}</Project>
-      <Name>IKAVA MSSql</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\IKAVA MySql\IKAVA MySql.csproj">
-      <Project>{bfa35504-b1f5-4a9a-a8da-f0ba5591731d}</Project>
-      <Name>IKAVA MySql</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\IKAVA Tools\IKAVA Tools.csproj">
-      <Project>{d4752f25-6049-4dfb-b979-79eb10a75e92}</Project>
-      <Name>IKAVA Tools</Name>
-    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

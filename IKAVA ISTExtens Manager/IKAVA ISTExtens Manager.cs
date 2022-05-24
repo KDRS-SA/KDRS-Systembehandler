@@ -330,7 +330,7 @@ namespace IKAVA_ISTExtens_Manager
 
             if (chkElevlister.Checked)
             {
-                string sql = "select e.personid, p.fornamn, p.efternamn, p.adr, p.postnr, p.ort, e.enhet, en.namn, e.startdatum, e.anttimmar, e.antdagar, e.anm "
+                string sql = "select e.enhet, e.namn, p.efternamn, p.adr, p.postnr, p.ort, e.enhet, en.namn, e.startdatum, e.anttimmar, e.antdagar, e.anm "
                 + "from elevfranv e, enhet en, person p "
                 + "where e.enhet = en.enhet and p.personid = e.personid "
                 + "order by e.personid, e.startdatum;";
@@ -342,13 +342,14 @@ namespace IKAVA_ISTExtens_Manager
                 {
                     while (reader.Read())
                     {
+                        // Not implemented
                     }
-                } 
+                }
                 catch (Exception ex)
                 {
-
+                    // Not implemented
                 }
-
+            }
             Cursor.Current = DefaultCursor;
         }
 

@@ -62,3 +62,15 @@ C:\Users\Tormod\Jottacloud\code\IKAVA Systembehandler\IKAVA FireBirdBlobExtracto
 C:\Users\Tormod\Jottacloud\code\IKAVA Systembehandler\IKAVA FireBirdBlobExtractor\obj\x86\Debug\IKAVA FireBirdBlobExtractor.csproj.CopyComplete
 C:\Users\Tormod\Jottacloud\code\IKAVA Systembehandler\Programfiler\Plugins\settings.xml
 D:\Jottacloud\code\IKAVA Systembehandler\Programfiler\Plugins\settings.xml
+C:\Users\tormo\Jottacloud\code\IKAVA Systembehandler\Programfiler\Plugins\settings.xml
+C:\Users\tormo\Jottacloud\code\IKAVA Systembehandler\Programfiler\Plugins\IKAVA FireBirdBlobExtractor.dll
+C:\Users\tormo\Jottacloud\code\IKAVA Systembehandler\Programfiler\Plugins\IKAVA FireBirdBlobExtractor.pdb
+C:\Users\tormo\Jottacloud\code\IKAVA Systembehandler\IKAVA FireBirdBlobExtractor\obj\x86\Debug\IKAVA FireBirdBlobExtractor.csproj.AssemblyReference.cache
+C:\Users\tormo\Jottacloud\code\IKAVA Systembehandler\IKAVA FireBirdBlobExtractor\obj\x86\Debug\IKAVA_Systembehandler.Plugins.FirebirdBlobExtractorControl.resources
+C:\Users\tormo\Jottacloud\code\IKAVA Systembehandler\IKAVA FireBirdBlobExtractor\obj\x86\Debug\FireBirdBlobExtractor.Properties.Resources.resources
+C:\Users\tormo\Jottacloud\code\IKAVA Systembehandler\IKAVA FireBirdBlobExtractor\obj\x86\Debug\IKAVA FireBirdBlobExtractor.csproj.GenerateResource.cache
+C:\Users\tormo\Jottacloud\code\IKAVA Systembehandler\IKAVA FireBirdBlobExtractor\obj\x86\Debug\IKAVA FireBirdBlobExtractor.csproj.CoreCompileInputs.cache
+C:\Users\tormo\Jottacloud\code\IKAVA Systembehandler\IKAVA FireBirdBlobExtractor\obj\x86\Debug\IKAVA FireBirdBlobExtractor.csproj.CopyComplete
+C:\Users\tormo\Jottacloud\code\IKAVA Systembehandler\IKAVA FireBirdBlobExtractor\obj\x86\Debug\IKAVA FireBirdBlobExtractor.dll
+C:\Users\tormo\Jottacloud\code\IKAVA Systembehandler\IKAVA FireBirdBlobExtractor\obj\x86\Debug\IKAVA FireBirdBlobExtractor.pdb
+D:\Jottacloud\code\IKAVA Systembehandler\IKAVA FireBirdBlobExtractor\obj\x86\Debug\IKAVA FireBirdBlobExtractor.csproj.AssemblyReference.cache

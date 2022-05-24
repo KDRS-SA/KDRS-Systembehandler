@@ -56,3 +56,14 @@ D:\Jottacloud\code\IKAVA Systembehandler\IKAVA Tools\obj\Debug\IKAVA Tools.dll
 D:\Jottacloud\code\IKAVA Systembehandler\IKAVA Tools\obj\Debug\IKAVA Tools.pdb
 C:\Users\Tormod\Jottacloud\code\IKAVA Systembehandler\IKAVA Tools\obj\Debug\IKAVA Tools.csprojAssemblyReference.cache
 C:\Users\Tormod\Jottacloud\code\IKAVA Systembehandler\IKAVA Tools\obj\Debug\IKAVA Tools.csproj.CoreCompileInputs.cache
+C:\Users\tormo\Jottacloud\code\IKAVA Systembehandler\Programfiler\IKAVA Tools.dll
+C:\Users\tormo\Jottacloud\code\IKAVA Systembehandler\Programfiler\IKAVA Tools.pdb
+C:\Users\tormo\Jottacloud\code\IKAVA Systembehandler\IKAVA Tools\obj\Debug\IKAVA_Systembehandler.Logg.resources
+C:\Users\tormo\Jottacloud\code\IKAVA Systembehandler\IKAVA Tools\obj\Debug\IKAVA_Tools.Properties.Resources.resources
+C:\Users\tormo\Jottacloud\code\IKAVA Systembehandler\IKAVA Tools\obj\Debug\IKAVA_Tools.SelectDestinationFolder.resources
+C:\Users\tormo\Jottacloud\code\IKAVA Systembehandler\IKAVA Tools\obj\Debug\IKAVA Tools.csproj.GenerateResource.cache
+C:\Users\tormo\Jottacloud\code\IKAVA Systembehandler\IKAVA Tools\obj\Debug\IKAVA Tools.csproj.CoreCompileInputs.cache
+C:\Users\tormo\Jottacloud\code\IKAVA Systembehandler\IKAVA Tools\obj\Debug\IKAVA Tools.dll
+C:\Users\tormo\Jottacloud\code\IKAVA Systembehandler\IKAVA Tools\obj\Debug\IKAVA Tools.pdb
+C:\Users\tormo\Jottacloud\code\IKAVA Systembehandler\IKAVA Tools\obj\Debug\IKAVA Tools.csproj.AssemblyReference.cache
+D:\Jottacloud\code\IKAVA Systembehandler\IKAVA Tools\obj\Debug\IKAVA Tools.csproj.AssemblyReference.cache

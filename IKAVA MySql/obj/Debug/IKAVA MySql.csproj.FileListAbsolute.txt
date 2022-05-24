@@ -43,3 +43,11 @@ D:\Jottacloud\code\IKAVA Systembehandler\IKAVA MySql\obj\Debug\IKAVA MySql.pdb
 C:\Users\Tormod\Jottacloud\code\IKAVA Systembehandler\IKAVA MySql\obj\Debug\IKAVA MySql.csprojAssemblyReference.cache
 C:\Users\Tormod\Jottacloud\code\IKAVA Systembehandler\IKAVA MySql\obj\Debug\IKAVA MySql.csproj.CoreCompileInputs.cache
 C:\Users\Tormod\Jottacloud\code\IKAVA Systembehandler\IKAVA MySql\obj\Debug\IKAVA MySql.csproj.CopyComplete
+C:\Users\tormo\Jottacloud\code\IKAVA Systembehandler\Programfiler\IKAVA MySql.dll
+C:\Users\tormo\Jottacloud\code\IKAVA Systembehandler\Programfiler\IKAVA MySql.pdb
+C:\Users\tormo\Jottacloud\code\IKAVA Systembehandler\IKAVA MySql\obj\Debug\IKAVA MySql.csproj.CoreCompileInputs.cache
+C:\Users\tormo\Jottacloud\code\IKAVA Systembehandler\IKAVA MySql\obj\Debug\IKAVA MySql.csproj.CopyComplete
+C:\Users\tormo\Jottacloud\code\IKAVA Systembehandler\IKAVA MySql\obj\Debug\IKAVA MySql.dll
+C:\Users\tormo\Jottacloud\code\IKAVA Systembehandler\IKAVA MySql\obj\Debug\IKAVA MySql.pdb
+C:\Users\tormo\Jottacloud\code\IKAVA Systembehandler\IKAVA MySql\obj\Debug\IKAVA MySql.csproj.AssemblyReference.cache
+D:\Jottacloud\code\IKAVA Systembehandler\IKAVA MySql\obj\Debug\IKAVA MySql.csproj.AssemblyReference.cache

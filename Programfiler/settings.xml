@@ -1,4 +1,8 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <settings>
-  /* Servertype 0 = MySql, 1 = MSSql, 2 = Firebird */
-  <servertype>0</servertype><server>localhost</server><user>root</user><pass></pass><MySqlInstallationPath>D:\xampp\mysql\bin</MySqlInstallationPath></settings>
+  <servertype>0</servertype>
+  <server>localhost</server>
+  <user>root</user>
+  <pass>root</pass>
+  <MySqlInstallationPath>c:\program files\mysqls\mysql server 5.6\bin</MySqlInstallationPath>
+</settings>

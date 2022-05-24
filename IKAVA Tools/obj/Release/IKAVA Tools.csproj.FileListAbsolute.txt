@@ -14,7 +14,6 @@ C:\Users\Tormod.IKAVA\Jottacloud\code\IKAVA Systembehandler\IKAVA Tools\obj\Rele
 C:\Users\Tormod.IKAVA\Jottacloud\code\IKAVA Systembehandler\IKAVA Tools\obj\Release\IKAVA Tools.pdb
 C:\Users\Tormod\Jottacloud\code\IKAVA Systembehandler\IKAVA Tools\bin\Release\IKAVA Tools.dll
 C:\Users\Tormod\Jottacloud\code\IKAVA Systembehandler\IKAVA Tools\bin\Release\IKAVA Tools.pdb
-C:\Users\Tormod\Jottacloud\code\IKAVA Systembehandler\IKAVA Tools\obj\Release\IKAVA Tools.csprojAssemblyReference.cache
 C:\Users\Tormod\Jottacloud\code\IKAVA Systembehandler\IKAVA Tools\obj\Release\IKAVA_Systembehandler.Logg.resources
 C:\Users\Tormod\Jottacloud\code\IKAVA Systembehandler\IKAVA Tools\obj\Release\IKAVA_Tools.Properties.Resources.resources
 C:\Users\Tormod\Jottacloud\code\IKAVA Systembehandler\IKAVA Tools\obj\Release\IKAVA_Tools.SelectDestinationFolder.resources

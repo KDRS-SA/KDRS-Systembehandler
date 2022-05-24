@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
@@ -9,7 +9,7 @@
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>IKAVA_ISTExtens_Manager</RootNamespace>
     <AssemblyName>IKAVA ISTExtens Manager</AssemblyName>
-    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <TargetFrameworkProfile />
   </PropertyGroup>
@@ -66,20 +66,6 @@
     <ProjectReference Include="..\IKAVA DBConnectionHandler\IKAVA DBConnectionHandler.csproj">
       <Project>{49A48F47-13B9-48EF-B765-66BBD2DA87BF}</Project>
       <Name>IKAVA DBConnectionHandler</Name>
-      <Private>False</Private>
-    </ProjectReference>
-    <ProjectReference Include="..\IKAVA MySql\IKAVA MySql.csproj">
-      <Project>{bfa35504-b1f5-4a9a-a8da-f0ba5591731d}</Project>
-      <Name>IKAVA MySql</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\IKAVA Systembehandler Host\IKAVA Systembehandler Host.csproj">
-      <Project>{f1e22eaf-194a-438b-ad12-5ced66205109}</Project>
-      <Name>IKAVA Systembehandler Host</Name>
-      <Private>False</Private>
-    </ProjectReference>
-    <ProjectReference Include="..\IKAVA Tools\IKAVA Tools.csproj">
-      <Project>{d4752f25-6049-4dfb-b979-79eb10a75e92}</Project>
-      <Name>IKAVA Tools</Name>
       <Private>False</Private>
     </ProjectReference>
   </ItemGroup>

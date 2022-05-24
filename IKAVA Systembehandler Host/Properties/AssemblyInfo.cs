@@ -5,12 +5,12 @@ using System.Runtime.InteropServices;
 // General Information about an assembly is controlled through the following 
 // set of attributes. Change these attribute values to modify the information
 // associated with an assembly.
-[assembly: AssemblyTitle("IKAVA Systembehandler")]
-[assembly: AssemblyDescription("Programmer er et arbeidsverktøy for å behandle eldre databaser fra systemer som ikke lenger er i bruk i kommunene i Norge. For mer informasjon om programmet, og informasjon om interface for eventuelt å lage Plugins, ta kontakt med Tormod Engebu ved IKAVA (engebu@ikava.va.no).")]
+[assembly: AssemblyTitle("KDRS Systembehandler")]
+[assembly: AssemblyDescription("Programmer er et arbeidsverktøy for å behandle eldre databaser fra systemer som ikke lenger er i bruk i kommunene i Norge. For mer informasjon om programmet, og informasjon om interface for eventuelt å lage Plugins, ta kontakt med Tormod Engebu ved Arkivsenter sør (tormod.engebu@arkivsentersor.no).")]
 [assembly: AssemblyConfiguration("")]
-[assembly: AssemblyCompany("IKAVA - www.ikava.no")]
-[assembly: AssemblyProduct("IKAVA Systembehandler")]
-[assembly: AssemblyCopyright("Copyright ©  2013")]
+[assembly: AssemblyCompany("KDRS - www.kdrs.no")]
+[assembly: AssemblyProduct("KDRS Systembehandler")]
+[assembly: AssemblyCopyright("Copyright ©  2021")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
 
@@ -32,5 +32,5 @@ using System.Runtime.InteropServices;
 // You can specify all the values or you can default the Build and Revision Numbers 
 // by using the '*' as shown below:
 // [assembly: AssemblyVersion("1.0.*")]
-[assembly: AssemblyVersion("1.0.0.0")]
-[assembly: AssemblyFileVersion("1.0.0.0")]
+[assembly: AssemblyVersion("1.2.0.0")]
+[assembly: AssemblyFileVersion("1.2.0.0")]

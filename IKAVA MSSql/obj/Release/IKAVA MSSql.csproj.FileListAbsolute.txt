@@ -10,7 +10,6 @@ C:\Users\Tormod.IKAVA\Jottacloud\code\IKAVA Systembehandler\IKAVA MSSql\obj\Rele
 C:\Users\Tormod.IKAVA\Jottacloud\code\IKAVA Systembehandler\IKAVA MSSql\obj\Release\IKAVA MSSql.pdb
 C:\Users\Tormod\Jottacloud\code\IKAVA Systembehandler\IKAVA MSSql\bin\Release\IKAVA MSSql.dll
 C:\Users\Tormod\Jottacloud\code\IKAVA Systembehandler\IKAVA MSSql\bin\Release\IKAVA MSSql.pdb
-C:\Users\Tormod\Jottacloud\code\IKAVA Systembehandler\IKAVA MSSql\obj\Release\IKAVA MSSql.csprojAssemblyReference.cache
 C:\Users\Tormod\Jottacloud\code\IKAVA Systembehandler\IKAVA MSSql\obj\Release\IKAVA MSSql.csproj.CoreCompileInputs.cache
 C:\Users\Tormod\Jottacloud\code\IKAVA Systembehandler\IKAVA MSSql\obj\Release\IKAVA MSSql.dll
 C:\Users\Tormod\Jottacloud\code\IKAVA Systembehandler\IKAVA MSSql\obj\Release\IKAVA MSSql.pdb
