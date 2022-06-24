@@ -30,11 +30,6 @@ G:\Jottacloud\code\IKAVA Systembehandler\IKAVA MSSql\obj\Debug\IKAVA MSSql.cspro
 G:\Jottacloud\code\IKAVA Systembehandler\IKAVA MSSql\obj\Debug\IKAVA MSSql.csproj.CoreCompileInputs.cache
 G:\Jottacloud\code\IKAVA Systembehandler\IKAVA MSSql\obj\Debug\IKAVA MSSql.dll
 G:\Jottacloud\code\IKAVA Systembehandler\IKAVA MSSql\obj\Debug\IKAVA MSSql.pdb
-D:\Jottacloud\code\IKAVA Systembehandler\Programfiler\IKAVA MSSql.dll
-D:\Jottacloud\code\IKAVA Systembehandler\Programfiler\IKAVA MSSql.pdb
-D:\Jottacloud\code\IKAVA Systembehandler\IKAVA MSSql\obj\Debug\IKAVA MSSql.csproj.CoreCompileInputs.cache
-D:\Jottacloud\code\IKAVA Systembehandler\IKAVA MSSql\obj\Debug\IKAVA MSSql.dll
-D:\Jottacloud\code\IKAVA Systembehandler\IKAVA MSSql\obj\Debug\IKAVA MSSql.pdb
 C:\Users\Tormod\Jottacloud\code\IKAVA Systembehandler\IKAVA MSSql\obj\Debug\IKAVA MSSql.csprojAssemblyReference.cache
 C:\Users\Tormod\Jottacloud\code\IKAVA Systembehandler\IKAVA MSSql\obj\Debug\IKAVA MSSql.csproj.CoreCompileInputs.cache
 C:\Users\tormo\Jottacloud\code\IKAVA Systembehandler\Programfiler\IKAVA MSSql.dll
@@ -43,4 +38,7 @@ C:\Users\tormo\Jottacloud\code\IKAVA Systembehandler\IKAVA MSSql\obj\Debug\IKAVA
 C:\Users\tormo\Jottacloud\code\IKAVA Systembehandler\IKAVA MSSql\obj\Debug\IKAVA MSSql.dll
 C:\Users\tormo\Jottacloud\code\IKAVA Systembehandler\IKAVA MSSql\obj\Debug\IKAVA MSSql.pdb
 C:\Users\tormo\Jottacloud\code\IKAVA Systembehandler\IKAVA MSSql\obj\Debug\IKAVA MSSql.csproj.AssemblyReference.cache
+D:\Jottacloud\code\IKAVA Systembehandler\Programfiler\IKAVA MSSql.dll
 D:\Jottacloud\code\IKAVA Systembehandler\IKAVA MSSql\obj\Debug\IKAVA MSSql.csproj.AssemblyReference.cache
+D:\Jottacloud\code\IKAVA Systembehandler\IKAVA MSSql\obj\Debug\IKAVA MSSql.csproj.CoreCompileInputs.cache
+D:\Jottacloud\code\IKAVA Systembehandler\IKAVA MSSql\obj\Debug\IKAVA MSSql.dll

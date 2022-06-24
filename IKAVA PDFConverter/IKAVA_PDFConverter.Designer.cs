@@ -45,6 +45,7 @@
             this.label17 = new System.Windows.Forms.Label();
             this.button2 = new System.Windows.Forms.Button();
             this.groupBox4 = new System.Windows.Forms.GroupBox();
+            this.chkCopyOriginalOnError = new System.Windows.Forms.CheckBox();
             this.label16 = new System.Windows.Forms.Label();
             this.txtSkipNumber = new System.Windows.Forms.TextBox();
             this.label15 = new System.Windows.Forms.Label();
@@ -83,7 +84,6 @@
             this.folderBrowserDialog1 = new System.Windows.Forms.FolderBrowserDialog();
             this.openFileDialog1 = new System.Windows.Forms.OpenFileDialog();
             this.backgroundWorker1 = new System.ComponentModel.BackgroundWorker();
-            this.chkCopyOriginalOnError = new System.Windows.Forms.CheckBox();
             this.groupBox1.SuspendLayout();
             this.groupBox7.SuspendLayout();
             this.groupBox6.SuspendLayout();
@@ -296,6 +296,18 @@
             this.groupBox4.TabIndex = 34;
             this.groupBox4.TabStop = false;
             this.groupBox4.Text = "Feilhåndtering";
+            // 
+            // chkCopyOriginalOnError
+            // 
+            this.chkCopyOriginalOnError.AutoSize = true;
+            this.chkCopyOriginalOnError.Checked = true;
+            this.chkCopyOriginalOnError.CheckState = System.Windows.Forms.CheckState.Checked;
+            this.chkCopyOriginalOnError.Location = new System.Drawing.Point(16, 188);
+            this.chkCopyOriginalOnError.Name = "chkCopyOriginalOnError";
+            this.chkCopyOriginalOnError.Size = new System.Drawing.Size(202, 17);
+            this.chkCopyOriginalOnError.TabIndex = 39;
+            this.chkCopyOriginalOnError.Text = "Kopier originalfil til destinasjon ved feil";
+            this.chkCopyOriginalOnError.UseVisualStyleBackColor = true;
             // 
             // label16
             // 
@@ -657,18 +669,6 @@
             this.backgroundWorker1.DoWork += new System.ComponentModel.DoWorkEventHandler(this.bw_DoWork);
             this.backgroundWorker1.ProgressChanged += new System.ComponentModel.ProgressChangedEventHandler(this.backgroundWorker1_ProgressChanged);
             this.backgroundWorker1.RunWorkerCompleted += new System.ComponentModel.RunWorkerCompletedEventHandler(this.bw_RunWorkerCompleted);
-            // 
-            // chkCopyOriginalOnError
-            // 
-            this.chkCopyOriginalOnError.AutoSize = true;
-            this.chkCopyOriginalOnError.Checked = true;
-            this.chkCopyOriginalOnError.CheckState = System.Windows.Forms.CheckState.Checked;
-            this.chkCopyOriginalOnError.Location = new System.Drawing.Point(16, 188);
-            this.chkCopyOriginalOnError.Name = "chkCopyOriginalOnError";
-            this.chkCopyOriginalOnError.Size = new System.Drawing.Size(202, 17);
-            this.chkCopyOriginalOnError.TabIndex = 39;
-            this.chkCopyOriginalOnError.Text = "Kopier originalfil til destinasjon ved feil";
-            this.chkCopyOriginalOnError.UseVisualStyleBackColor = true;
             // 
             // PDFConverter
             // 

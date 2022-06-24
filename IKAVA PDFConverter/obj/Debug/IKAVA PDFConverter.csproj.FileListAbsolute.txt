@@ -38,15 +38,6 @@ G:\Jottacloud\code\IKAVA Systembehandler\IKAVA PDFConverter\obj\Debug\IKAVA PDFC
 G:\Jottacloud\code\IKAVA Systembehandler\IKAVA PDFConverter\obj\Debug\IKAVA PDFConverter.pdb
 G:\Jottacloud\code\IKAVA Systembehandler\Programfiler\Plugins\IKAVA PDFConverter.dll
 G:\Jottacloud\code\IKAVA Systembehandler\Programfiler\Plugins\IKAVA PDFConverter.pdb
-D:\Jottacloud\code\IKAVA Systembehandler\Programfiler\Plugins\IKAVA PDFConverter.dll
-D:\Jottacloud\code\IKAVA Systembehandler\Programfiler\Plugins\IKAVA PDFConverter.pdb
-D:\Jottacloud\code\IKAVA Systembehandler\IKAVA PDFConverter\obj\Debug\IKAVA PDFConverter.csprojAssemblyReference.cache
-D:\Jottacloud\code\IKAVA Systembehandler\IKAVA PDFConverter\obj\Debug\IKAVA_Systembehandler.Plugins.PDFConverter.resources
-D:\Jottacloud\code\IKAVA Systembehandler\IKAVA PDFConverter\obj\Debug\IKAVA_PDFConverter.Properties.Resources.resources
-D:\Jottacloud\code\IKAVA Systembehandler\IKAVA PDFConverter\obj\Debug\IKAVA PDFConverter.csproj.GenerateResource.cache
-D:\Jottacloud\code\IKAVA Systembehandler\IKAVA PDFConverter\obj\Debug\IKAVA PDFConverter.csproj.CoreCompileInputs.cache
-D:\Jottacloud\code\IKAVA Systembehandler\IKAVA PDFConverter\obj\Debug\IKAVA PDFConverter.dll
-D:\Jottacloud\code\IKAVA Systembehandler\IKAVA PDFConverter\obj\Debug\IKAVA PDFConverter.pdb
 C:\Users\Tormod\Jottacloud\code\IKAVA Systembehandler\IKAVA PDFConverter\obj\Debug\IKAVA PDFConverter.csprojAssemblyReference.cache
 C:\Users\Tormod\Jottacloud\code\IKAVA Systembehandler\IKAVA PDFConverter\obj\Debug\IKAVA PDFConverter.csproj.CoreCompileInputs.cache
 C:\Users\tormo\Jottacloud\code\IKAVA Systembehandler\Programfiler\Plugins\IKAVA PDFConverter.dll
@@ -58,4 +49,14 @@ C:\Users\tormo\Jottacloud\code\IKAVA Systembehandler\IKAVA PDFConverter\obj\Debu
 C:\Users\tormo\Jottacloud\code\IKAVA Systembehandler\IKAVA PDFConverter\obj\Debug\IKAVA PDFConverter.csproj.CoreCompileInputs.cache
 C:\Users\tormo\Jottacloud\code\IKAVA Systembehandler\IKAVA PDFConverter\obj\Debug\IKAVA PDFConverter.dll
 C:\Users\tormo\Jottacloud\code\IKAVA Systembehandler\IKAVA PDFConverter\obj\Debug\IKAVA PDFConverter.pdb
+D:\Jottacloud\code\IKAVA Systembehandler\IKAVA PDFConverter\IKAVA PDFConverter.dll
+D:\Jottacloud\code\IKAVA Systembehandler\IKAVA PDFConverter\IKAVA PDFConverter.pdb
+D:\Jottacloud\code\IKAVA Systembehandler\Programfiler\IKAVA PDFConverter.dll
+D:\Jottacloud\code\IKAVA Systembehandler\Programfiler\IKAVA PDFConverter.pdb
+D:\Jottacloud\code\IKAVA Systembehandler\Programfiler\Plugins\IKAVA PDFConverter.dll
 D:\Jottacloud\code\IKAVA Systembehandler\IKAVA PDFConverter\obj\Debug\IKAVA PDFConverter.csproj.AssemblyReference.cache
+D:\Jottacloud\code\IKAVA Systembehandler\IKAVA PDFConverter\obj\Debug\IKAVA_Systembehandler.Plugins.PDFConverter.resources
+D:\Jottacloud\code\IKAVA Systembehandler\IKAVA PDFConverter\obj\Debug\IKAVA_PDFConverter.Properties.Resources.resources
+D:\Jottacloud\code\IKAVA Systembehandler\IKAVA PDFConverter\obj\Debug\IKAVA PDFConverter.csproj.GenerateResource.cache
+D:\Jottacloud\code\IKAVA Systembehandler\IKAVA PDFConverter\obj\Debug\IKAVA PDFConverter.csproj.CoreCompileInputs.cache
+D:\Jottacloud\code\IKAVA Systembehandler\IKAVA PDFConverter\obj\Debug\IKAVA PDFConverter.dll

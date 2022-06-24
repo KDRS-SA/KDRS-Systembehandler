@@ -9,7 +9,7 @@
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>IKAVA_ISTExtens_Manager</RootNamespace>
     <AssemblyName>IKAVA ISTExtens Manager</AssemblyName>
-    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <TargetFrameworkVersion>v4.7.1</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <TargetFrameworkProfile />
   </PropertyGroup>
@@ -61,13 +61,6 @@
     <EmbeddedResource Include="IKAVA ISTExtens Manager.resx">
       <DependentUpon>IKAVA ISTExtens Manager.cs</DependentUpon>
     </EmbeddedResource>
-  </ItemGroup>
-  <ItemGroup>
-    <ProjectReference Include="..\IKAVA DBConnectionHandler\IKAVA DBConnectionHandler.csproj">
-      <Project>{49A48F47-13B9-48EF-B765-66BBD2DA87BF}</Project>
-      <Name>IKAVA DBConnectionHandler</Name>
-      <Private>False</Private>
-    </ProjectReference>
   </ItemGroup>
   <ItemGroup>
     <None Include="templates\Karakterutskrift.rtf">

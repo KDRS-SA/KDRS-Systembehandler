@@ -131,6 +131,6 @@ Noen ganger kan MSWord komme med meldingsbokser etc. som ikke automatisk kan luk
     <value>326, 17</value>
   </metadata>
   <metadata name="$this.TrayHeight" type="System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>34</value>
+    <value>44</value>
   </metadata>
 </root>

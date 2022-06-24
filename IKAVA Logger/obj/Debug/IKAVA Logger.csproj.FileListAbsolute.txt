@@ -32,11 +32,6 @@ G:\Jottacloud\code\IKAVA Systembehandler\IKAVA Logger\obj\Debug\IKAVA Logger.csp
 G:\Jottacloud\code\IKAVA Systembehandler\IKAVA Logger\obj\Debug\IKAVA Logger.csproj.CoreCompileInputs.cache
 G:\Jottacloud\code\IKAVA Systembehandler\IKAVA Logger\obj\Debug\IKAVA Logger.dll
 G:\Jottacloud\code\IKAVA Systembehandler\IKAVA Logger\obj\Debug\IKAVA Logger.pdb
-D:\Jottacloud\code\IKAVA Systembehandler\Programfiler\IKAVA Logger.dll
-D:\Jottacloud\code\IKAVA Systembehandler\Programfiler\IKAVA Logger.pdb
-D:\Jottacloud\code\IKAVA Systembehandler\IKAVA Logger\obj\Debug\IKAVA Logger.csproj.CoreCompileInputs.cache
-D:\Jottacloud\code\IKAVA Systembehandler\IKAVA Logger\obj\Debug\IKAVA Logger.dll
-D:\Jottacloud\code\IKAVA Systembehandler\IKAVA Logger\obj\Debug\IKAVA Logger.pdb
 C:\Users\Tormod\Jottacloud\code\IKAVA Systembehandler\IKAVA Logger\obj\Debug\IKAVA Logger.csprojAssemblyReference.cache
 C:\Users\Tormod\Jottacloud\code\IKAVA Systembehandler\IKAVA Logger\obj\Debug\IKAVA Logger.csproj.CoreCompileInputs.cache
 C:\Users\tormo\Jottacloud\code\IKAVA Systembehandler\Programfiler\IKAVA Logger.dll
@@ -45,4 +40,7 @@ C:\Users\tormo\Jottacloud\code\IKAVA Systembehandler\IKAVA Logger\obj\Debug\IKAV
 C:\Users\tormo\Jottacloud\code\IKAVA Systembehandler\IKAVA Logger\obj\Debug\IKAVA Logger.dll
 C:\Users\tormo\Jottacloud\code\IKAVA Systembehandler\IKAVA Logger\obj\Debug\IKAVA Logger.pdb
 C:\Users\tormo\Jottacloud\code\IKAVA Systembehandler\IKAVA Logger\obj\Debug\IKAVA Logger.csproj.AssemblyReference.cache
+D:\Jottacloud\code\IKAVA Systembehandler\Programfiler\IKAVA Logger.dll
 D:\Jottacloud\code\IKAVA Systembehandler\IKAVA Logger\obj\Debug\IKAVA Logger.csproj.AssemblyReference.cache
+D:\Jottacloud\code\IKAVA Systembehandler\IKAVA Logger\obj\Debug\IKAVA Logger.csproj.CoreCompileInputs.cache
+D:\Jottacloud\code\IKAVA Systembehandler\IKAVA Logger\obj\Debug\IKAVA Logger.dll

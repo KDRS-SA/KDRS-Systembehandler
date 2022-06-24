@@ -55,19 +55,6 @@ G:\Jottacloud\code\IKAVA Systembehandler\IKAVA Systembehandler Host\obj\Debug\IK
 G:\Jottacloud\code\IKAVA Systembehandler\IKAVA Systembehandler Host\obj\Debug\IKAVA Systembehandler Host.csproj.CopyComplete
 G:\Jottacloud\code\IKAVA Systembehandler\IKAVA Systembehandler Host\obj\Debug\IKAVA Systembehandler.exe
 G:\Jottacloud\code\IKAVA Systembehandler\IKAVA Systembehandler Host\obj\Debug\IKAVA Systembehandler.pdb
-D:\Jottacloud\code\IKAVA Systembehandler\Programfiler\settings.xml
-D:\Jottacloud\code\IKAVA Systembehandler\Programfiler\IKAVA Systembehandler.exe.config
-D:\Jottacloud\code\IKAVA Systembehandler\Programfiler\IKAVA Systembehandler.exe
-D:\Jottacloud\code\IKAVA Systembehandler\Programfiler\IKAVA Systembehandler.pdb
-D:\Jottacloud\code\IKAVA Systembehandler\IKAVA Systembehandler Host\obj\Debug\IKAVA Systembehandler Host.csprojAssemblyReference.cache
-D:\Jottacloud\code\IKAVA Systembehandler\IKAVA Systembehandler Host\obj\Debug\IKAVA_Systembehandler.AboutBox1.resources
-D:\Jottacloud\code\IKAVA Systembehandler\IKAVA Systembehandler Host\obj\Debug\IKAVA_Systembehandler.Form1.resources
-D:\Jottacloud\code\IKAVA Systembehandler\IKAVA Systembehandler Host\obj\Debug\IKAVA_Systembehandler.Properties.Resources.resources
-D:\Jottacloud\code\IKAVA Systembehandler\IKAVA Systembehandler Host\obj\Debug\IKAVA Systembehandler Host.csproj.GenerateResource.cache
-D:\Jottacloud\code\IKAVA Systembehandler\IKAVA Systembehandler Host\obj\Debug\IKAVA Systembehandler Host.csproj.CoreCompileInputs.cache
-D:\Jottacloud\code\IKAVA Systembehandler\IKAVA Systembehandler Host\obj\Debug\IKAVA Systembehandler Host.csproj.CopyComplete
-D:\Jottacloud\code\IKAVA Systembehandler\IKAVA Systembehandler Host\obj\Debug\IKAVA Systembehandler.exe
-D:\Jottacloud\code\IKAVA Systembehandler\IKAVA Systembehandler Host\obj\Debug\IKAVA Systembehandler.pdb
 C:\Users\Tormod\Jottacloud\code\IKAVA Systembehandler\IKAVA Systembehandler Host\obj\Debug\IKAVA Systembehandler Host.csprojAssemblyReference.cache
 C:\Users\Tormod\Jottacloud\code\IKAVA Systembehandler\IKAVA Systembehandler Host\obj\Debug\IKAVA Systembehandler Host.csproj.CoreCompileInputs.cache
 C:\Users\Tormod\Jottacloud\code\IKAVA Systembehandler\IKAVA Systembehandler Host\obj\Debug\IKAVA Systembehandler Host.csproj.CopyComplete
@@ -89,9 +76,13 @@ C:\Users\tormo\Jottacloud\code\IKAVA Systembehandler\IKAVA Systembehandler Host\
 C:\Users\tormo\Jottacloud\code\IKAVA Systembehandler\IKAVA Systembehandler Host\obj\Debug\IKAVA Systembehandler Host.csproj.CopyComplete
 C:\Users\tormo\Jottacloud\code\IKAVA Systembehandler\IKAVA Systembehandler Host\obj\Debug\KDRS Systembehandler.exe
 C:\Users\tormo\Jottacloud\code\IKAVA Systembehandler\IKAVA Systembehandler Host\obj\Debug\KDRS Systembehandler.pdb
-D:\Jottacloud\code\IKAVA Systembehandler\IKAVA Systembehandler Host\obj\Debug\KDRS Systembehandler.exe
-D:\Jottacloud\code\IKAVA Systembehandler\IKAVA Systembehandler Host\obj\Debug\KDRS Systembehandler.pdb
+D:\Jottacloud\code\IKAVA Systembehandler\Programfiler\settings.xml
 D:\Jottacloud\code\IKAVA Systembehandler\Programfiler\KDRS Systembehandler.exe.config
 D:\Jottacloud\code\IKAVA Systembehandler\Programfiler\KDRS Systembehandler.exe
 D:\Jottacloud\code\IKAVA Systembehandler\IKAVA Systembehandler Host\obj\Debug\IKAVA Systembehandler Host.csproj.AssemblyReference.cache
-D:\Jottacloud\code\IKAVA Systembehandler\IKAVA Systembehandler Host\obj\Debug\IKAVA Systembehandler Host.csproj.SuggestedBindingRedirects.cache
+D:\Jottacloud\code\IKAVA Systembehandler\IKAVA Systembehandler Host\obj\Debug\IKAVA_Systembehandler.AboutBox1.resources
+D:\Jottacloud\code\IKAVA Systembehandler\IKAVA Systembehandler Host\obj\Debug\IKAVA_Systembehandler.Form1.resources
+D:\Jottacloud\code\IKAVA Systembehandler\IKAVA Systembehandler Host\obj\Debug\IKAVA_Systembehandler.Properties.Resources.resources
+D:\Jottacloud\code\IKAVA Systembehandler\IKAVA Systembehandler Host\obj\Debug\IKAVA Systembehandler Host.csproj.GenerateResource.cache
+D:\Jottacloud\code\IKAVA Systembehandler\IKAVA Systembehandler Host\obj\Debug\IKAVA Systembehandler Host.csproj.CoreCompileInputs.cache
+D:\Jottacloud\code\IKAVA Systembehandler\IKAVA Systembehandler Host\obj\Debug\KDRS Systembehandler.exe

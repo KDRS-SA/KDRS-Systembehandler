@@ -39,15 +39,6 @@ G:\Jottacloud\code\IKAVA Systembehandler\IKAVA Unique\obj\Debug\IKAVA Unique.csp
 G:\Jottacloud\code\IKAVA Systembehandler\IKAVA Unique\obj\Debug\IKAVA Unique.csproj.CoreCompileInputs.cache
 G:\Jottacloud\code\IKAVA Systembehandler\IKAVA Unique\obj\Debug\IKAVA Unique.dll
 G:\Jottacloud\code\IKAVA Systembehandler\IKAVA Unique\obj\Debug\IKAVA Unique.pdb
-D:\Jottacloud\code\IKAVA Systembehandler\Programfiler\Plugins\IKAVA Unique.dll
-D:\Jottacloud\code\IKAVA Systembehandler\Programfiler\Plugins\IKAVA Unique.pdb
-D:\Jottacloud\code\IKAVA Systembehandler\IKAVA Unique\obj\Debug\IKAVA Unique.csprojAssemblyReference.cache
-D:\Jottacloud\code\IKAVA Systembehandler\IKAVA Unique\obj\Debug\IKAVA_Unique.Properties.Resources.resources
-D:\Jottacloud\code\IKAVA Systembehandler\IKAVA Unique\obj\Debug\IKAVA_Systembehandler.Plugins.Unique.resources
-D:\Jottacloud\code\IKAVA Systembehandler\IKAVA Unique\obj\Debug\IKAVA Unique.csproj.GenerateResource.cache
-D:\Jottacloud\code\IKAVA Systembehandler\IKAVA Unique\obj\Debug\IKAVA Unique.csproj.CoreCompileInputs.cache
-D:\Jottacloud\code\IKAVA Systembehandler\IKAVA Unique\obj\Debug\IKAVA Unique.dll
-D:\Jottacloud\code\IKAVA Systembehandler\IKAVA Unique\obj\Debug\IKAVA Unique.pdb
 C:\Users\Tormod\Jottacloud\code\IKAVA Systembehandler\IKAVA Unique\obj\Debug\IKAVA Unique.csprojAssemblyReference.cache
 C:\Users\Tormod\Jottacloud\code\IKAVA Systembehandler\IKAVA Unique\obj\Debug\IKAVA Unique.csproj.CoreCompileInputs.cache
 C:\Users\tormo\Jottacloud\code\IKAVA Systembehandler\Programfiler\Plugins\IKAVA Unique.dll
@@ -60,3 +51,10 @@ C:\Users\tormo\Jottacloud\code\IKAVA Systembehandler\IKAVA Unique\obj\Debug\IKAV
 C:\Users\tormo\Jottacloud\code\IKAVA Systembehandler\IKAVA Unique\obj\Debug\IKAVA Unique.dll
 C:\Users\tormo\Jottacloud\code\IKAVA Systembehandler\IKAVA Unique\obj\Debug\IKAVA Unique.pdb
 D:\Jottacloud\code\IKAVA Systembehandler\IKAVA Unique\obj\Debug\IKAVA Unique.csproj.AssemblyReference.cache
+D:\Jottacloud\code\IKAVA Systembehandler\IKAVA Unique\obj\Debug\IKAVA_Unique.Properties.Resources.resources
+D:\Jottacloud\code\IKAVA Systembehandler\IKAVA Unique\obj\Debug\IKAVA_Systembehandler.Plugins.Unique.resources
+D:\Jottacloud\code\IKAVA Systembehandler\IKAVA Unique\obj\Debug\IKAVA Unique.csproj.GenerateResource.cache
+D:\Jottacloud\code\IKAVA Systembehandler\IKAVA Unique\obj\Debug\IKAVA Unique.csproj.CoreCompileInputs.cache
+D:\Jottacloud\code\IKAVA Systembehandler\Programfiler\Plugins\IKAVA Unique.dll
+D:\Jottacloud\code\IKAVA Systembehandler\IKAVA Unique\obj\Debug\IKAVA Unique.csproj.CopyComplete
+D:\Jottacloud\code\IKAVA Systembehandler\IKAVA Unique\obj\Debug\IKAVA Unique.dll

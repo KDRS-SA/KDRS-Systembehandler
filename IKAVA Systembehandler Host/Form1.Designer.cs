@@ -93,8 +93,8 @@
             // omIKAVASystembehandlerToolStripMenuItem
             // 
             this.omIKAVASystembehandlerToolStripMenuItem.Name = "omIKAVASystembehandlerToolStripMenuItem";
-            this.omIKAVASystembehandlerToolStripMenuItem.Size = new System.Drawing.Size(222, 22);
-            this.omIKAVASystembehandlerToolStripMenuItem.Text = "Om IKAVA Systembehandler";
+            this.omIKAVASystembehandlerToolStripMenuItem.Size = new System.Drawing.Size(219, 22);
+            this.omIKAVASystembehandlerToolStripMenuItem.Text = "Om KDRS Systembehandler";
             this.omIKAVASystembehandlerToolStripMenuItem.Click += new System.EventHandler(this.omIKAVASystembehandlerToolStripMenuItem_Click);
             // 
             // panel1

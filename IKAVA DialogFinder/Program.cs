@@ -87,7 +87,6 @@ namespace IKAVA_Systembehandler.Tools
 
         public class SearchData
         {
-            // You can put any dicks or Doms in here...
             public string Wndclass;
             public string Title;
             public IntPtr hWnd;

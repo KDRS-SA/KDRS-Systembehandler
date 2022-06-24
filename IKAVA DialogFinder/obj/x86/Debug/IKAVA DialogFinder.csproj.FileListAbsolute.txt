@@ -35,11 +35,6 @@ G:\Jottacloud\code\IKAVA Systembehandler\IKAVA DialogFinder\obj\x86\Debug\IKAVA 
 G:\Jottacloud\code\IKAVA Systembehandler\IKAVA DialogFinder\obj\x86\Debug\IKAVA DialogFinder.csproj.CoreCompileInputs.cache
 G:\Jottacloud\code\IKAVA Systembehandler\IKAVA DialogFinder\obj\x86\Debug\IKAVA DialogFinder.dll
 G:\Jottacloud\code\IKAVA Systembehandler\IKAVA DialogFinder\obj\x86\Debug\IKAVA DialogFinder.pdb
-D:\Jottacloud\code\IKAVA Systembehandler\Programfiler\IKAVA DialogFinder.dll
-D:\Jottacloud\code\IKAVA Systembehandler\Programfiler\IKAVA DialogFinder.pdb
-D:\Jottacloud\code\IKAVA Systembehandler\IKAVA DialogFinder\obj\x86\Debug\IKAVA DialogFinder.csproj.CoreCompileInputs.cache
-D:\Jottacloud\code\IKAVA Systembehandler\IKAVA DialogFinder\obj\x86\Debug\IKAVA DialogFinder.dll
-D:\Jottacloud\code\IKAVA Systembehandler\IKAVA DialogFinder\obj\x86\Debug\IKAVA DialogFinder.pdb
 C:\Users\Tormod\Jottacloud\code\IKAVA Systembehandler\IKAVA DialogFinder\obj\x86\Debug\IKAVA DialogFinder.csprojAssemblyReference.cache
 C:\Users\Tormod\Jottacloud\code\IKAVA Systembehandler\IKAVA DialogFinder\obj\x86\Debug\IKAVA DialogFinder.csproj.CoreCompileInputs.cache
 C:\Users\tormo\Jottacloud\code\IKAVA Systembehandler\Programfiler\IKAVA DialogFinder.dll
@@ -48,4 +43,9 @@ C:\Users\tormo\Jottacloud\code\IKAVA Systembehandler\IKAVA DialogFinder\obj\x86\
 C:\Users\tormo\Jottacloud\code\IKAVA Systembehandler\IKAVA DialogFinder\obj\x86\Debug\IKAVA DialogFinder.csproj.CoreCompileInputs.cache
 C:\Users\tormo\Jottacloud\code\IKAVA Systembehandler\IKAVA DialogFinder\obj\x86\Debug\IKAVA DialogFinder.dll
 C:\Users\tormo\Jottacloud\code\IKAVA Systembehandler\IKAVA DialogFinder\obj\x86\Debug\IKAVA DialogFinder.pdb
+D:\Jottacloud\code\IKAVA Systembehandler\Programfiler\IKAVA DialogFinder.dll
+D:\Jottacloud\code\IKAVA Systembehandler\Programfiler\IKAVA DialogFinder.pdb
 D:\Jottacloud\code\IKAVA Systembehandler\IKAVA DialogFinder\obj\x86\Debug\IKAVA DialogFinder.csproj.AssemblyReference.cache
+D:\Jottacloud\code\IKAVA Systembehandler\IKAVA DialogFinder\obj\x86\Debug\IKAVA DialogFinder.csproj.CoreCompileInputs.cache
+D:\Jottacloud\code\IKAVA Systembehandler\IKAVA DialogFinder\obj\x86\Debug\IKAVA DialogFinder.dll
+D:\Jottacloud\code\IKAVA Systembehandler\IKAVA DialogFinder\obj\x86\Debug\IKAVA DialogFinder.pdb

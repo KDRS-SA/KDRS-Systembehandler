@@ -106,5 +106,10 @@ namespace IKAVA_Systembehandler
         {
             this.Close();
         }
+
+        private void labelProductName_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
